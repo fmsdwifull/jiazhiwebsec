@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.3, maximum-scale=1.0" />
+        <title>嘉值科技</title>
+		<link rel="icon" href="./static/img/vas.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="./static/css/main.css"/>		
+		<script type="text/javascript" src="./static/js/jquery.min.js"></script>		
+        <script type="text/javascript" src="./static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./static/js/respond.min.js"></script>	
+		<script type="text/javascript" src="./static/js/main.js"></script>	
+		<script type="text/javascript" src="./static/js/area.js"></script>					
+
+		
+		<script type="text/javascript">
+		$(function(){   
+			//产品链接
+			$("#system").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=409";
+			})	
+			$("#computer").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=433";
+			})	
+			$("#host").on("click",function(){
+				window.location.href="http://cloud-open.cn/yunzhuji/yzjpc.html";
+			})	
+			
+			//行点击事件
+		    $('#dxproduct').on('click-row.bs.table', function (e, row, element)   
+			{  
+				//$(element).css({"color":"blue","font-size":"16px;"});  
+				console.log(row);
+				alert();
+				  
+			});  			
+		}); 
+		
+		function submitNeed()
+		{
+			var clientdata = {};
+			clientdata['city'] = $('#city').find("option:selected").text();
+			clientdata['country'] =  $('#country').find("option:selected").text();
+			clientdata['addr'] =  $('#addr').val();;
+			clientdata['contactname'] =  $('#contactname').val();;
+			clientdata['contactmobile'] =  $('#contactmobile').val();
+			clientdata['page'] =  $('#page').val();;
+			clientdata['from'] =  $('#from').val();;
+
+
+			var  clientdata = JSON.stringify(clientdata);
+			console.info(clientdata);
+			$.ajax({
+			//几个参数需要注意一下
+				type: "POST",//方法类型
+				url: "http://www.cloud-open.cn/client.php?c=feedback&a=pushClientNeed" ,//url
+				data: {'ctd':clientdata},
+				success: function (result) {
+					alert("提交成功，敬请等待客服联系！");
+				},
+				error : function() {
+					alert("异常！");
+				}
+			});		
+		}		
+		function getMobileCode()
+		{
+			var mobile = $('#contactmobile').val();
+			$.ajax({
+			//几个参数需要注意一下
+				type: "POST",//方法类型
+				url: "http://www.cloud-open.cn/client.php?c=feedback&a=getVerifyCode",//url
+				data: {'mobile':mobile},
+				success: function (result) {
+					alert(result);
+				},
+				error : function() {
+					alert("异常！");
+				}
+			});				
+		}
+		
+		function setBackgroudImage(obj)
+		{
+		  obj.style="background-image:url('./static/img/web/sblc/宽带运营商_列表中国联通.png')";
+		}
+		
+		var countdown=60; 
+		function settime(obj) { 
+			if (countdown == 0) { 
+				obj.removeAttribute("disabled");    
+				obj.value="免费获取验证码"; 
+				countdown = 60; 
+				return;
+			} else { 
+				obj.setAttribute("disabled", true); 
+				obj.value="重新发送(" + countdown + ")"; 
+				countdown--; 
+			} 
+		setTimeout(function() { 
+			settime(obj) }
+			,1000) 
+		}		
+		</script>  
+				
+		<style type="text/css">
+	        input{
+				height:20px;
+			}
+			select{		
+				width:120px;
+				height:22px;
+				appearance:none;
+				-moz-appearance:none;
+				-webkit-appearance:none;
+				background: url("./static/img/web/zycx/表单_下拉箭头.png") no-repeat scroll right  transparent;
+				background-size: 12px 8px;
+				background-position: right 4px top 6px;
+				-webkit-appearance: none;
+				border-radius: 0;			
+			}
+			select::-ms-expand { display: none; }
+			option{
+				text-align: center;
+			}
+
+		</style>  		  
+    </head>
+    <body>
+		<div class="container-fluid">
+			<div class="head">
+				<ul>
+					<li><a href="" style="background-color: #f2f2f2;" >首页</a></li>
+					<li><a href="./qykd-dxwp.html" >企业宽带</a></li>
+					<li><a href="./zscp-dxsjzx-mstp.html">专属产品</a></li>
+					<li><a href="./ziyuancx.html">资源查询</a></li>
+					<li><a href="./subanlc.html">速办流程</a></li>
+					<li><a href="./about.html">关于我们</a></li>
+					<li style="width: 28%" id="kong"><a style="background-color: #dcdddd"></a></li>
+					<li style="width: 5%;display: inline;float: left" id="tel" onmousemove="over('tel')" onmouseout="out('tel')">
+						<a href="">
+							<div>
+								<img width="40px" id="navtel"  src="./static/img/web/home/导航_电话.png"/>
+							</div>
+						</a>
+					</li>
+					<li style="width: 5%" id="email" onmousemove="over('email')" onmouseout="out('email')">
+						<a href="">
+							<div>
+								<img width="40px"  id="navmail"   src="./static/img/web/home/导航_邮箱.png"/>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>			
+			<div  class="main"> 
+				<div class="headerx" >  
+					<div class="logo">  
+						<img  src="./static/img/web/kdsuban/KDSUBAN_LOGO.png" />
+					</div>  
+					<div class="search">  
+					    <input type="text" name="fname"  style="border:none;"/>
+						<img  src="./static/img/web/kdsuban/搜索_放大镜.png" />
+						<hr style="margin-top:4px;color:#727171" />			
+					</div> 
+				</div> 
+			    <div class="ptitle">从申请到使用，仅<span style="color:#F90000;;font-family:GOTHIC">25</span>小时！</div>			
+			</div>	
+			
+			<div style="width:100%;height:auto;background-color:#DCDCDC;padding:0px">
+				<div class="main" style="height:auto;">
+					<table border="0px" width="100%;line-height:0px">
+						<tr>
+							<td style="width:25%;" >
+								<img style="width:100%" src="./static/img/web/home/Banner_01.png"
+								onmouseover="this.src='./static/img/web/home/Banner_01_.png'"
+								onmouseout="this.src='./static/img/web/home/Banner_01.png'							
+							">
+							<td style="width:25%" >
+								<img style="width:100%" src="./static/img/web/home/Banner_02.png"
+								onmouseover="this.src='./static/img/web/home/Banner_02_.png'"
+								onmouseout="this.src='./static/img/web/home/Banner_02.png'							
+							">
+							</td>
+							<td style="width:25%" >
+								<img style="width:100%" src="./static/img/web/home/Banner_03.png"
+								onmouseover="this.src='./static/img/web/home/Banner_03_.png'"
+								onmouseout="this.src='./static/img/web/home/Banner_03.png'							
+							">
+							<td style="width:25%" >
+								<img style="width:100%" src="./static/img/web/home/Banner_04.png"
+								onmouseover="this.src='./static/img/web/home/Banner_04_.png'"
+								onmouseout="this.src='./static/img/web/home/Banner_04.png'							
+							">
+						</tr>
+					</table>
+				
+				</div>
+			</div>
+			<br/> <br/>
+	        <div class="main"> 
+				<table border="0px" width="100%;line-height:0px">
+					<tr>
+						<td style="width:36%;font-size:23px;padding-bottom:20px"><span style="color:#F90000;">常规办理</span>流程最少耗时</td>
+						<td style="width:28%"></td>
+						<td style="width:36%;font-size:23px;padding-bottom:20px"><span style="color:#F90000;">速办网办理</span>流程最快用时</td>
+					</tr>
+					<tr>
+						<td style="width:36%"><img style="width:100%" src="./static/img/web/home/PK_3工作日.png"></td>
+						<td style="width:26%"><img style="width:72%;" src="./static/img/web/home/PK.png"></td>
+						<td style="width:36%"><img style="width:100%" src="./static/img/web/home/PK_25小时.png"></td>
+					</tr>
+					<tr height="20px"><td></td></tr>
+					<tr>
+						<td style="width:36%"></td>
+						<td style="width:28%"><a href="./subanlc.html"><img style="width:78%;" src="./static/img/web/home/立刻速办企业宽带.png"></a></td>
+						<td style="width:36%"></td>
+					</tr>					
+				</table>
+				
+			    <div style="font-size:23px;margin:55px 0px 5px 0px">我们办宽带为什么这么<span style="color:#F90000;">快</span>！</div>
+				<br/>	
+                <table border="0px" width="100%;">
+					<tr>
+						<td onmousemove="setBackgroudImage(this)" 
+						style="align:center;padding 10px;width:33%;background-image:url('./static/img/web/home/赛道01_.jpg');color:#FFFFFF;"
+		
+							  
+						
+					    >
+							<span style="font-size:18px;color:#FFFFFF"><br/>合作优势</span>
+							<br/>
+							<div style="text-align:left;font-size:12px;width:80%;margin:20px auto;">
+								宽迪科技是电信、联通、移动等运营商核心<br/>
+								代理，结合各运营商电子下单平台和地面营<br/>
+								业厅网点多管道受理优势，为企业用户提供<br/>
+								超高效的业务办理流程体验。<br/>
+							</div>
+						</td>
+						<td width="1px"></td>
+						<td style="width:33%;background-image:url('./static/img/web/home/赛道02.jpg');color:#FFFFFF;">
+							<span style="font-size:18px;color:#FFFFFF"><br/>团队优势</span>
+							<br/>
+							<div style="text-align:left;font-size:12px;width:80%;margin:20px auto;">
+								宽迪科技有独立的业务订单受理团队，和各<br/>
+								运营商的预约安装及报修部门建立长期的运<br/>
+								营合作，为企业用户提供高效安装及加速报<br/>
+								修的服务体验！<br/>
+
+							</div>
+						</td>
+						<td width="1px"></td>
+						<td style="width:33%;background-image:url('./static/img/web/home/赛道03.jpg');color:#FFFFFF;">
+							<span style="font-size:18px;color:#FFFFFF"><br/>专业优势</span>
+							<br/>
+							<div style="text-align:left;font-size:12px;width:80%;margin:20px auto;">
+								宽迪科技成立13年来为上海数万家中小企业<br/>
+								提供企业通信服务，致力于为企业用户提供<br/>
+								集专业、高效、超值的通信业务体验！<br/>
+							</div>
+						</td>
+					</tr>				
+				</table>
+			    <div style="font-size:20px;margin:75px 0px 35px 0px">您一定需要<span style="color:#F90000;">查询</span>宽带资源！</div>			
+			
+				<table >
+				   <tr>
+						<td>
+							<form id="form1" name="form1">
+								<table  border="0px" >
+									<tr>
+										<td style="padding: 5px 0px;background: #EFEFEF;border:#A40B5D solid 1px;">
+											<span style="font-size: 14px">您的企业所在的位置</span>
+											<select id="city" name="city" style="background-color:#FFFFFF;padding-left:28px;"  onChange="selectcityarea('city','country','form1');"		
+ >
+												<option>未选择</option>  
+											</select>
+											<select id="country" name="country"  style="background-color:#FFFFFF;padding-left:26px">
+												<option>未选择</option>  
+											</select>
+										</td>
+										
+									</tr>
+								</table>
+							</form>
+							<script language="javascript">
+								first("city","country","form1",0,0);
+							</script>							
+						</td>
+						<td style="padding-left:10px;">
+							<table  border="0px" >
+								<tr>
+									<td style="padding:6px 3px 6px 3px;background: #EFEFEF;border:#A40B5D solid 1px;">
+										<span style="font-size: 14px">手动输入您的企业地址</span>
+										<input type="text"   id="addr"  name="addr"    style="width:300px" />
+									</td>
+								</tr>
+							</table>
+							<input type="hidden" id="page"  name="page" value="HOME">
+							<input type="hidden" id="from"  name="from" value="PC">
+						</td>							
+				   </tr>
+				</table>
+				<table style="margin-top:13.5px">
+				   <tr>
+						<td>
+							<table  border="0px" >
+								<tr>
+									<td style="padding:6px 3px 6px 3px;background: #EFEFEF;border:#A40B5D solid 1px;">
+										<span style="font-size: 14px">联系姓名</span>
+										<input  type="text" id="contactname"   name="contactname"   style="width:145px" />
+									</td>
+								</tr>
+							</table>
+						</td>	
+						<td style="padding-left:10px;">
+							<table  border="0px" >
+								<tr>
+									<td style="padding:6px;background: #EFEFEF;border:#A40B5D solid 1px;">
+										<span style="font-size: 14px">联系手机</span>
+										<input type="text"  id="contactmobile"   name="contactmobile"   style="width:135px" />
+										<span style="font-size: 14px;color: #A40B5D;">
+										<!--
+										<a href="javascript:void(0)" style="text-decoration:none;color:#A40B5D"  onclick="getMobileCode()" >获取验证码</a>
+										-->
+										<input type="button" id="btn" style="color:#A40B5D;background-color:#EFEFEF;border: 0px;"  value="获取验证码" onclick="settime(this)" /> 
+
+										</span>
+									</td>
+								</tr>
+							</table>
+						</td>	
+						<td style="padding-left:10px;">
+							<table  border="0px" >
+								<tr>
+									<td style="padding:6px;background: #EFEFEF;border:#A40B5D solid 1px;">
+										<span style="font-size: 14px">短信验证码</span>
+										<input type="text"  id="verifycode"  name="verifycode"  style="width:110px" />
+									</td>
+								</tr>
+							</table>
+						</td>	
+						<td style="padding-left:10px">
+							<a href="javascript:void(0)" onclick="submitNeed();" ><img width="116px"  src="./static/img/web/home/表单_提交查询需求.png" /></a>
+						</td>							
+				   </tr>
+				</table>
+			    <div style="font-size:20px;margin:75px 0px 35px 0px">您还需要<span style="color:#F90000;">了解更多</span>？</div>			
+				<table border="0px" style="width:100%;margin:0px 0px 75px 0px">
+					<tr>
+						<td style="width:33%;"><a href="./qykd-dxwp.html"><img style="width:100%" src="./static/img/web/home/底部链接_企业宽带.png"></a></td>
+						<td style="width:33%;padding-left:5.5px"><a href="./zscp-dxsjzx-mstp.html"><img style="width:100%;" src="./static/img/web/home/底部链接_专属产品.png"></a></td>
+						<td style="width:33%;padding-left:5.5px"><a href="./subanlc.html"><img style="width:100%" src="./static/img/web/home/底部链接_立刻速办.png"></a> </td>
+					</tr>				
+				</table>
+            </div>
+			<div class="footer">
+				沪<span class="zftb">ICP</span>备<span class="zftb">12010294</span>号<span class="zftb">-1 Copyright © 2018 </span>上海宽迪信息科技有限公司 - 保留所有权利
+			</div>
+		</div>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?6bf7ae9b5212b8c52b57065299f133f8";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>		
+    </body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.3, maximum-scale=1.0" />
+        <title>嘉值科技</title>
+		<link rel="icon" href="./static/img/vas.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="./static/css/main.css"/>		
+		<script type="text/javascript" src="./static/js/jquery.min.js"></script>		
+        <script type="text/javascript" src="./static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./static/js/respond.min.js"></script>		
+		<script type="text/javascript" src="./static/js/main.js"></script>		
+		
+		<script type="text/javascript">
+		$(function(){   
+			//产品链接
+			$("#system").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=409";
+			})	
+			$("#computer").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=433";
+			})	
+			$("#host").on("click",function(){
+				window.location.href="http://cloud-open.cn/yunzhuji/yzjpc.html";
+			})	
+			
+			//行点击事件
+		    $('#dxproduct').on('click-row.bs.table', function (e, row, element)   
+			{  
+				//$(element).css({"color":"blue","font-size":"16px;"});  
+				console.log(row);
+				alert();
+				  
+			});  			
+		}); 
+	
+		
+		</script>  
+		<style type="text/css">
+
+		</style>  		  
+    </head>
+    <body>
+		<div class="container-fluid">
+			<div class="head">
+				<ul>
+					<li><a href="./home.html">首页</a></li>
+					<li><a href="./qykd-dxwp.html" >企业宽带</a></li>
+					<li><a href="" style="background-color: #f2f2f2;">专属产品</a></li>
+					<li><a href="./ziyuancx.html">资源查询</a></li>
+					<li><a href="./subanlc.html">速办流程</a></li>
+					<li><a href="./about.html">关于我们</a></li>
+					<!---第0种-->
+					<div id="li_0" >
+						<li style="width: 11.5%" id="kong"><a style="background-color: #dcdddd"></a></li>
+						<li style="width: 3%;display: inline;float: left;background:red;margin-top:0px;padding-top:0px" id="tel"  onmousemove="over1('tel');this.style.cursor='hand'" onmouseout="out1('tel')"    >
+							<img width="100%" height="30px"  style="margin-top:0px" id="navtel"  src="./static/img/web/home/导航_电话.png"/>
+						</li>
+						<li style="width: 3%; padding:0px" id="email" onmousemove="over1('email')" onmouseout="out1('email')">
+							<img width="100%" height="30px"  id="navmail"   src="./static/img/web/home/导航_邮箱.png"/>
+						</li>		
+                    </div>					
+					
+					
+					<!---第一种--->
+					<div id="li_1" hidden >
+						<li style="width: 1%" id="kong"><a style="background-color: #dcdddd"></a></li>
+						<li style="width: 13.5%;display: inline;float: left;background:red;margin-top:0px;padding-top:0px" id="tel" onmousemove="over2('tel')" onmouseout="out2('tel')">
+							<a href="" style="margin-top:0px"><img width="100%"  style="margin-top:0px" id="navtel"  src="./static/img/web/home/导航_电话_.png"/></a>
+						</li>
+						<li style="width: 3%;     padding:0px" id="email" onmousemove="over('email')" onmouseout="out('email')">
+							<img width="100%" height="30px"  id="navmail"   src="./static/img/web/home/导航_邮箱.png"/>
+						</li>
+					</div>
+					
+					
+					<!---第二种--->
+					<div id="li_2" hidden>
+						<li style="width: 1%" id="kong"><a style="background-color: #dcdddd"></a></li>
+						<li style="width: 3%;display: inline;float: left;background:red;margin-top:0px;padding-top:0px" id="tel2" onmousemove="over3('tel2')" onmouseout="out3('tel2')">
+							<img width="100%"   height="30px"  style="margin-top:0px" id="navtel"  src="./static/img/web/home/导航_电话.png"/>
+						</li>
+						<li style="width: 13.5%;     padding:0px" id="email2" onmousemove="over('email2')" onmouseout="out3('email2')">
+							<a href="" style="margin-top:0px"><img width="100%" height="30px"  id="navmail"   src="./static/img/web/home/导航_邮箱_.png"/></a>
+					    </li>
+					</div>
+				</ul>
+			</div>				
+			<div  class="main"> 
+				<div id="headerx" style="padding:28px 0px;">  
+					<div style="float:left;">  
+						<img style="width: 100px"; src="./static/img/web/kdsuban/KDSUBAN_LOGO.png" />						
+					</div>  
+	                <div  class="secmenu" style="padding-left: 130px">
+	                	<span style="padding-bottom:15px; border-bottom:1px solid #000;color: #A40B5D;">数据专线</span>
+	        	        <span style="padding:0 30px"> <a href="./zscp-hzkd.html">会展宽带 </a></span>        	
+	                	<span style=""><a href="./zscp-hwyh.html">海外优化</a></span>
+	                </div>
+					<div class="search">  
+					    <input type="text" name="fname"  style="border:none;width: 160px"/>
+						<img src="./static/img/web/kdsuban/搜索_放大镜.png" />
+						<hr style="margin-top:4px" />			
+					</div> 
+
+				</div> 
+			    <div class="ptitle" >数据专线，为企业带来<span class="keywordcolor">高速</span>且<span class="keywordcolor">安全</span>网络系统！</div>			
+				
+			</div>	
+			
+			<div style="width:100%;height:200px;padding:0px;background:url('./static/img/web/shujuzx/Banner_电信MSTP专线.jpg') no-repeat 5px 5px;background-size:100% 96%;">
+				
+			</div>
+             
+	        <div class="main"> 
+			    <br/>
+				<table align="center" style="width:70%"  border="0px" >
+					<tr>
+						<td><img width="92%"  src="./static/img/web/shujuzx/按钮_电信数据专线.png"> </td>
+						<td><a href="./zscp-ltsjzx-sndplc.html"><img width="92%"  src="./static/img/web/shujuzx/按钮_联通数据专线_.png"
+										onmouseover="this.src='./static/img/web/shujuzx/按钮_联通数据专线.png'"
+										onmouseout="this.src='./static/img/web/shujuzx/按钮_联通数据专线_.png'"
+						>  </a></td>
+						<td><a href="./zscp-ydsjzx-sn.html"><img width="92%"  src="./static/img/web/shujuzx/按钮_移动数据专线_.png"
+										onmouseover="this.src='./static/img/web/shujuzx/按钮_移动数据专线.png'"
+										onmouseout="this.src='./static/img/web/shujuzx/按钮_移动数据专线_.png'"
+						> </a> </td>
+					</tr>
+				</table>			
+	        	<br/><br/>
+				<table align="center" style="width:60%" border="0px" >
+					<tr>
+						<td><img width="90%" src="./static/img/web/shujuzx/分页按钮_电信MSTP数据专线.png"> </td>
+						<td><a href="./zscp-dxsjzx-pin.html"><img width="90%"  src="./static/img/web/shujuzx/分页按钮_信网PTN数据专线_.png"
+											onmouseover="this.src='./static/img/web/shujuzx/分页按钮_信网PTN数据专线.png'"
+											onmouseout="this.src='./static/img/web/shujuzx/分页按钮_信网PTN数据专线_.png'"
+						> </a>  </td>					
+					</tr>
+				</table>
+				<div style="text-align: left; font-size:14px">
+				    <br/>
+					<h1>产品介绍</h1>
+					<p><span style="font-family:GOTHIC">MSTP</span> 是指基于 <span style="font-family:GOTHIC">SDH</span> 平台同时实现 <span style="font-family:GOTHIC">TDM、ATM、</span>以太网等业务接入、处理和传送，提供统一网管的多业务节点。构建统一的城域多业务传送网，将传统话音、专线、视频、数据、<span style="font-family:GOTHIC">VOIP、IPTV </span>等业务在接入层分类收敛，并统一送到骨干层对应的业务网络中集中处理，从而实现所有业务统一接入、统一管理、统一维护，提高了端到端电路的服务等级。	
+					<br/><span style="text-decoration:underline">主要功能</span>：
+					<br/><span style="font-size:12px">●</span>端到端带宽保证：由传送网络提供端到端带宽保证；
+					<br/><span style="font-size:12px">●</span>以太网接入，带宽灵活调整：提供 
+					<span style="font-family:GOTHIC">2Mbps</span> 至 <span style="font-family:GOTHIC">1000 Mbps </span> 的接入带宽选择，调整颗粒为 <span style="font-family:GOTHIC">2Mbps； </span>
+					<br/><span style="font-size:12px">●</span>多业务承载功能：透传上层业务，可承载语音视频多种业务；
+					<br/><span style="font-size:12px">●</span>保护倒换：利用 
+					<span style="font-family:GOTHIC">SDH</span> 网络提供的保护恢复功能，实施网络保护。</p>
+					<br/>							
+					
+					<h1>产品优势</h1>	
+					<p><span style="font-size:12px">●</span> 泛用性：
+					<span style="font-family:GOTHIC">MSTP</span> 电路适用于任何高速率、信息量大、实时性强的业务传送在通信领域的应用前景广阔，用户端接口，为通用性的 <span style="font-family:GOTHIC">RJ45</span> 接口。
+					<br/><span style="font-size:12px">●</span> 可选性：<span style="font-family:GOTHIC">MSTP</span> 专线带宽灵活，在 <span style="font-family:GOTHIC">2M</span> 到 <span style="font-family:GOTHIC">1000M </span>的区间内，可以灵活选择。
+					<br/><span style="font-size:12px">●</span> 安全性：安全性有保障，比纯粹基于互联网的 <span style="font-family:GOTHIC">VPN</span> 业务安全性更高。
+					<br/><span style="font-size:12px">●</span> 灵活性：组网灵活，可支持星形网络、环形网络、点到点连接、多点汇聚等。</p><br/>	
+
+					<h1>产品应用</h1>	
+					<p>广域以太网专线主要实现独占 <span style="font-family:GOTHIC">VC</span> 链路带宽、点到点的业务传送。通过以太网专线，可以协助企业构建企业专网，即实现地理位置分散的企业总部与各个分支机构之间广域互连。
+由于各传送通道物理隔离，带宽可以得到保证，也隔绝了外界侵袭的可能，提供绝对的安全性。并且，能灵活支持点到点、点到多点的组网方式。
+					<br/><span style="font-size:12px">●</span> <span style="font-family:GOTHIC">SDH</span> 网络：即光同步数字传输网。主要特点：统一的光接口、自愈环、<span style="font-family:GOTHIC">SDH </span>网同步。
+					<br/><span style="font-size:12px">●</span> <span style="font-family:GOTHIC">MSTP</span> 网络：基于 <span style="font-family:GOTHIC">SDH</span> 的多业务传送平台，同时实现 TDM、ATM、以太网等业务的接入、处理和传送，提供统一网管的多业务节点。
+					<br/><span style="font-size:12px">●</span> 主要特点：带宽灵活配置，可根据工作需要，工作在端口组方式和 <span style="font-family:GOTHIC">VLAN</span> 方式、全双工、半双工及自适应模式下 QoS 设置、对每个客户的<br/>&nbsp;&nbsp;&nbsp;&nbsp;独立运行生成树协议。 </p>						
+			
+					<br/>
+					<h1>套餐资费</h1>
+					<div style="font-size:12px;color:#A40B5D;margin-bottom: 8px; "><span style="font-family:GOTHIC">MSTP</span>  长途月租计算方式：本地资费<span style="font-family:GOTHIC">×2+</span>国内长途资费<span style="font-family:GOTHIC">×50%；MSTP</span> 速率最高可至 2.5G。</div> 
+					<table   class="table table-condensed producttable ">
+						 <thead >
+							<th>速率</th>
+							<th>本地资费（元/月）</th>
+							<th>区间资费（元/月）</th>
+							<th>国内长途资费（元/月）</th>
+						</thead>
+						<tbody class="zftb">
+							<tr>
+								<td>1M</td>
+								<td>1333</td>
+								<td>3333</td>								
+								<td>4167</td>
+							</tr>
+							<tr>
+								<td>2M</td>
+								<td>2000</td>
+								<td>4000</td>
+								<td>6000</td>
+							</tr>	
+							<tr>
+								<td>4M</td>
+								<td>3333</td>
+								<td>5333</td>
+								<td>9667</td>
+							</tr>
+							<tr>
+								<td>6M</td>
+								<td>4667</td>
+								<td>6667</td>
+								<td>13333</td>
+							</tr>
+							<tr>
+								<td>8M</td>
+								<td>6000</td>
+								<td>8000</td>
+								<td>17000</td>
+							</tr>
+							<tr>
+								<td>10M</td>
+								<td>6769</td>
+								<td>9769</td>
+								<td>19308</td>
+							</tr>
+							<tr>
+								<td>15M</td>
+								<td>8692</td>
+								<td>14192</td>
+								<td>25077</td>
+							</tr>
+							<tr>
+								<td>20M</td>
+								<td>10615</td>
+								<td>18615</td>
+								<td>30846</td>
+							</tr>
+							<tr>
+								<td>25M</td>
+								<td>12538</td>
+								<td>23038</td>
+								<td>36615</td>
+							</tr>
+							<tr>
+								<td>30M</td>
+								<td>14462</td>
+								<td>27462</td>
+								<td>42385</td>
+							</tr>	
+							<tr>
+								<td>34M</td>
+								<td>16000</td>
+								<td>31000</td>
+								<td>47000</td>
+							</tr>	
+							<tr>
+								<td>40M</td>
+								<td>17388</td>
+								<td>33826</td>
+								<td>51215</td>
+							</tr>	
+							<tr>
+								<td>50M</td>
+								<td>19702</td>
+								<td>38537</td>
+								<td>58240</td>
+							</tr>	
+							<tr>
+								<td>60M</td>
+								<td>22017</td>
+								<td>43248</td>
+								<td>65264</td>
+							</tr>	
+							<tr>
+								<td>70M</td>
+								<td>24331</td>
+								<td>47959</td>
+								<td>72289</td>
+							</tr>	
+							<tr>
+								<td>80M</td>
+								<td>26645</td>
+								<td>52669</td>
+								<td>79314</td>
+							</tr>	
+							<tr>
+								<td>90M</td>
+								<td>28959</td>
+								<td>57380</td>
+								<td>86339</td>
+							</tr>
+							<tr>
+								<td>100M</td>
+								<td>31273</td>
+								<td>62091</td>
+								<td>93364</td>
+							</tr>	
+							<tr>
+								<td>150M</td>
+								<td>42843</td>
+								<td>85645</td>
+								<td>128488</td>
+							</tr>								
+						</tbody>						
+					</table>
+					<div>  
+						<hr style="height:1px;border-width:0;color:gray;background-color:#bfc0c0;margin-top:3px"; />			
+					</div>				
+				</div>	
+								
+            </div>
+
+            <div>
+            	<a href="skype:+8602131262710?call"><img width="220px" src="./static/img/web/shujuzx/致电免费咨询.png"></a><br/><br/>
+            </div>
+
+       </div>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?6bf7ae9b5212b8c52b57065299f133f8";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>		
+    </body>
+</html>

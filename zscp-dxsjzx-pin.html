@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.3, maximum-scale=1.0" />
+        <title>嘉值科技</title>
+		<link rel="icon" href="./static/img/vas.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="./static/css/main.css"/>		
+		<script type="text/javascript" src="./static/js/jquery.min.js"></script>		
+        <script type="text/javascript" src="./static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./static/js/respond.min.js"></script>	
+		<script type="text/javascript" src="./static/js/main.js"></script>		
+		
+		<script type="text/javascript">
+		$(function(){   
+			//产品链接
+			$("#system").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=409";
+			})	
+			$("#computer").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=433";
+			})	
+			$("#host").on("click",function(){
+				window.location.href="http://cloud-open.cn/yunzhuji/yzjpc.html";
+			})	
+			
+			//行点击事件
+		    $('#dxproduct').on('click-row.bs.table', function (e, row, element)   
+			{  
+				//$(element).css({"color":"blue","font-size":"16px;"});  
+				console.log(row);
+				alert();
+				  
+			});  			
+		}); 
+
+		</script>  
+		<style type="text/css">
+		</style>  		  
+    </head>
+    <body>
+		<div class="container-fluid">	
+			<div class="head">
+				<ul>
+					<li><a href="./home.html">首页</a></li>
+					<li><a href="./qykd-dxwp.html" >企业宽带</a></li>
+					<li><a href="" style="background-color: #f2f2f2;">专属产品</a></li>
+					<li><a href="./ziyuancx.html">资源查询</a></li>
+					<li><a href="./subanlc.html">速办流程</a></li>
+					<li><a href="./about.html">关于我们</a></li>
+					<li style="width: 28%" id="kong"><a style="background-color: #dcdddd"></a></li>
+					<li style="width: 5%;display: inline;float: left" id="tel" onmousemove="over('tel')" onmouseout="out('tel')">
+						<a href="">
+							<div>
+								<img width="40px" id="navtel"  src="./static/img/web/home/导航_电话.png"/>
+							</div>
+						</a>
+					</li>
+					<li style="width: 5%" id="email" onmousemove="over('email')" onmouseout="out('email')">
+						<a href="">
+							<div>
+								<img width="40px"  id="navmail"   src="./static/img/web/home/导航_邮箱.png"/>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>				
+			<div  class="main"> 
+				<div id="headerx" style="padding:28px 0px;">  
+					<div style="float:left;">  
+						<img style="width: 100px"; src="./static/img/web/kdsuban/KDSUBAN_LOGO.png" />						
+					</div>  
+	                <div  class="secmenu" style="padding-left: 130px">
+	                	<span style="padding-bottom:15px; border-bottom:1px solid #000;color: #A40B5D;">数据专线</span>
+	        	        <span style="padding:0 30px"> <a href="./zscp-hzkd.html">会展宽带 </a></span>        	
+	                	<span style=""><a href="./zscp-hwyh.html">海外优化</a></span>
+	                </div>
+					<div class="search">  
+					    <input type="text" name="fname"  style="border:none;width: 160px"/>
+						<img src="./static/img/web/kdsuban/搜索_放大镜.png" />
+						<hr style="margin-top:4px" />			
+					</div> 
+
+				</div> 
+			    <div class="ptitle" >企业<span class="keywordcolor">全方位保证</span>，来自<span class="keywordcolor">全球一体化</span>网络覆盖能力！</div>			
+			</div>	
+			<div style="width:100%;height:200px;padding:0px;background:url('./static/img/web/shujuzx/Banner_电信PTN专线.jpg') no-repeat 5px 5px;background-size:100% 96%;">
+			</div>
+	        <div class="main"> 
+			    <br/>
+				<table align="center" style="width:70%"  border="0px" >
+					<tr>
+						<td><img width="92%"  src="./static/img/web/shujuzx/按钮_电信数据专线.png"> </td>
+						<td><a href="./zscp-ltsjzx-sndplc.html"><img width="92%"  src="./static/img/web/shujuzx/按钮_联通数据专线_.png"
+										onmouseover="this.src='./static/img/web/shujuzx/按钮_联通数据专线.png'"
+										onmouseout="this.src='./static/img/web/shujuzx/按钮_联通数据专线_.png'"
+						>  </a></td>
+						<td><a href="./zscp-ydsjzx-sn.html"><img width="92%"  src="./static/img/web/shujuzx/按钮_移动数据专线_.png"
+										onmouseover="this.src='./static/img/web/shujuzx/按钮_移动数据专线.png'"
+										onmouseout="this.src='./static/img/web/shujuzx/按钮_移动数据专线_.png'"
+						> </a> </td>
+					</tr>
+				</table>			
+	        	<br/><br/>
+				<table align="center" style="width:60%" border="0px" >
+					<tr>
+						<td><a href="./zscp-dxsjzx-mstp.html"><img width="90%" src="./static/img/web/shujuzx/分页按钮_电信MSTP数据专线_.png"
+								onmouseover="this.src='./static/img/web/shujuzx/分页按钮_电信MSTP数据专线.png'"
+								onmouseout="this.src='./static/img/web/shujuzx/分页按钮_电信MSTP数据专线_.png'"
+						
+						> </a></td>
+						<td><img width="90%"  src="./static/img/web/shujuzx/分页按钮_信网PTN数据专线.png"></td>					
+					</tr>
+				</table>
+				<div style="text-align: left; font-size:14px">
+				    <br/><br/>
+					<h1>产品介绍</h1>
+					<p><span style="font-family:GOTHIC">PTN</span>（分组传送网）是一个具有传输网络特性的网络，支持环形、链行等多种组网方式。本次网络结构分为两层：核心层和汇聚/接入层。 核心层选取上海电信八大传输局作为核心节点，通过 10GE 中继组建 MESH 网络，达到城域覆盖、各个节点负载均担。核心节点负责与外部网络互通，仅实现业务分区汇聚、灵活转发的功能。
+					<br/>网络扁平化是一个发展趋势，二层网络比三层在业务配置方面更为灵活，同时了降低单节点中继利用率过高的风险。</p>
+					<br/>
+					<h1>产品属性</h1>	
+					<p><span style="font-size:10px">●</span> 客户端采用以太接口。
+					<br/><span style="font-size:10px">●</span> 点对点的二层透明传输，客户自由控制规划网络路由，保证了用户的网络安全性。
+					<br/><span style="font-size:10px">●</span> <span style="font-family:GOTHIC">2M-100M</span>  高带宽，今后提供 <span style="font-family:GOTHIC">100M</span>  到 <span style="font-family:GOTHIC">GE</span> 带宽。
+					<br/><span style="font-size:10px">●</span> 带宽平滑升级，并对带宽进行 QOS 保证。
+					<br/><span style="font-size:10px">●</span> 具有类似 <span style="font-family:GOTHIC">SDH</span>  的可视化网管，实行端到端的控制管理，<span style="font-family:GOTHIC">PTN</span>  网内保护倒换时间小于 <span style="font-family:GOTHIC">50ms。</span> </p>
+					<br/>
+					<h1>套餐资费</h1>
+					<div style="font-size:12px;color:#A40B5D">申请手续费：单次<span style="font-family:GOTHIC">100</span> 元；工料费：每端单次<span style="font-family:GOTHIC">200</span> 元；联网调试费：单次<span style="font-family:GOTHIC">1000元。</span> </div> 
+					<table   class="table table-condensed producttable ">
+						 <thead >
+							<th>速率</th>
+							<th>计费方式（元/月）</th>
+							<th>资费标准（营业区内）</th>
+						</thead>
+						<tbody class="zftb">
+							<tr>
+								<td>2M</td>
+								<td>每条</td>
+								<td>2000</td>								
+							</tr>
+							<tr>
+								<td>4M</td>
+								<td>每条</td>
+								<td>3333</td>								
+							</tr>
+							<tr>
+								<td>6M</td>
+								<td>每条</td>
+								<td>4667</td>								
+							</tr>
+							<tr>
+								<td>8M</td>
+								<td>每条</td>
+								<td>6000</td>								
+							</tr>
+							<tr>
+								<td>10M</td>
+								<td>每条</td>
+								<td>6769</td>								
+							</tr>
+							<tr>
+								<td>15M</td>
+								<td>每条</td>
+								<td>8692</td>								
+							</tr>
+							<tr>
+								<td>20M</td>
+								<td>每条</td>
+								<td>10615</td>								
+							</tr>
+							<tr>
+								<td>25M</td>
+								<td>每条</td>
+								<td>12538</td>								
+							</tr>
+							<tr>
+								<td>30M</td>
+								<td>每条</td>
+								<td>14462</td>								
+							</tr>
+							<tr>
+								<td>35M</td>
+								<td>每条</td>
+								<td>16000</td>								
+							</tr>
+							<tr>
+								<td>40M</td>
+								<td>每条</td>
+								<td>17388</td>								
+							</tr>
+							<tr>
+								<td>50M</td>
+								<td>每条</td>
+								<td>19702</td>								
+							</tr>
+							<tr>
+								<td>60M</td>
+								<td>每条</td>
+								<td>22017</td>								
+							</tr>
+							<tr>
+								<td>80M</td>
+								<td>每条</td>
+								<td>26645</td>								
+							</tr>
+							<tr>
+								<td>100M</td>
+								<td>每条</td>
+								<td>31273</td>								
+							</tr>							
+						</tbody>						
+					</table>
+					<div>  
+						<hr style="height:1px;border-width:0;color:gray;background-color:#bfc0c0;margin-top:3px"; />			
+					</div>	
+				</div>	
+            </div>
+
+
+            <div>
+            	<a href="skype:+8602131262710?call"><img width="220px" src="./static/img/web/shujuzx/致电免费咨询.png"></a><br/><br/>
+            </div>
+
+       </div>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?6bf7ae9b5212b8c52b57065299f133f8";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>		
+    </body>
+</html>

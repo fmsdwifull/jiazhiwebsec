@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.3, maximum-scale=1.0" />
+        <title>嘉值科技</title>
+		<link rel="icon" href="./static/img/vas.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="./static/css/main.css"/>		
+		<script type="text/javascript" src="./static/js/jquery.min.js"></script>		
+        <script type="text/javascript" src="./static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./static/js/respond.min.js"></script>	
+		<script type="text/javascript" src="./static/js/main.js"></script>		
+		<script type="text/javascript" src="./static/js/area.js"></script>				
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=tAGCYbDEkvvCQPSsILBYGWsGwLGQIz4c">
+        //v2.0版本的引用方式：src="http://api.map.baidu.com/api?v=2.0&ak=您的密钥"
+        </script>
+		<script type="text/javascript">
+		$(function(){   
+			//产品链接
+			$("#system").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=409";
+			})	
+			$("#computer").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=433";
+			})	
+			$("#host").on("click",function(){
+				window.location.href="http://cloud-open.cn/yunzhuji/yzjpc.html";
+			})	
+			
+			//行点击事件
+		    $('#dxproduct').on('click-row.bs.table', function (e, row, element)   
+			{  
+				//$(element).css({"color":"blue","font-size":"16px;"});  
+				//console.log(row);
+				//alert();
+				  
+			});  			
+		}); 
+
+		function submitNeed()
+		{
+			var clientdata = {};;
+			clientdata['city'] = $('#city').find("option:selected").text();
+			clientdata['country'] =  $('#country').find("option:selected").text();
+			clientdata['addr'] =  $('#addr').val();;
+			clientdata['contactname'] =  $('#contactname').val();;
+			clientdata['contactmobile'] =  $('#contactmobile').val();;
+
+			var  clientdata = JSON.stringify(clientdata);
+			console.info(clientdata);
+			$.ajax({
+			//几个参数需要注意一下
+				type: "POST",//方法类型
+				url: "http://www.cloud-open.cn/client.php?c=feedback&a=pushClientNeed" ,//url
+				data: {'ctd':clientdata},
+				success: function (result) {
+					///console.log(result);//打印服务端返回的数据(调试用)
+						alert("提交成功，敬请等待客服联系！");
+														},
+				error : function() {
+					alert("异常！");
+				}
+			});		
+		}	
+
+		function getMobileCode()
+		{
+			var mobile = $('#contactmobile').val();
+			$.ajax({
+			//几个参数需要注意一下
+				type: "POST",//方法类型
+				url: "http://www.cloud-open.cn/client.php?c=feedback&a=getVerifyCode",//url
+				data: {'mobile':mobile},
+				success: function (result) {
+					alert(result);
+				},
+				error : function() {
+					alert("异常！");
+				}
+			});				
+		}       
+
+
+		</script>  
+		
+	    	
+		
+		<style type="text/css">
+		    input{
+				height:20px;
+			}
+			select{		
+				width:120px;
+				height:22px;
+				appearance:none;
+				-moz-appearance:none;
+				-webkit-appearance:none;
+				background: url("./static/img/web/zycx/表单_下拉箭头.png") no-repeat scroll right  transparent;
+				background-size: 12px 8px;
+				background-position: right 4px top 6px;
+			}
+			select::-ms-expand { display: none; }
+			option{
+				text-align: center;
+			}
+		</style>  		  
+    </head>
+    <body>
+		<div class="container-fluid">
+			<div class="head">
+				<ul>
+					<li><a href="./home.html">首页</a></li>
+					<li><a href="./qykd-dxwp.html" >企业宽带</a></li>
+					<li><a href="./zscp-dxsjzx-mstp.html">专属产品</a></li>
+					<li><a href=""   style="background-color: #f2f2f2;">资源查询</a></li>
+					<li><a href="./subanlc.html">速办流程</a></li>
+					<li><a href="./about.html">关于我们</a></li>
+					<li style="width: 28%" id="kong"><a style="background-color: #dcdddd"></a></li>
+					<li style="width: 5%;display: inline;float: left" id="tel" onmousemove="over('tel')" onmouseout="out('tel')">
+						<a href="">
+							<div>
+								<img width="40px" id="navtel"  src="./static/img/web/home/导航_电话.png"/>
+							</div>
+						</a>
+					</li>
+					<li style="width: 5%" id="email" onmousemove="over('email')" onmouseout="out('email')">
+						<a href="">
+							<div>
+								<img width="40px"  id="navmail"   src="./static/img/web/home/导航_邮箱.png"/>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>	
+
+
+			<div  class="main"> 
+				<div class="headerx" >  
+					<div style="float:left;">  
+						<img style="width: 100px"; src="./static/img/web/kdsuban/KDSUBAN_LOGO.png" />
+					</div>  
+					<div class="search">  
+					    <input type="text" name="fname"  style="border:none;"/>
+						<img  src="./static/img/web/kdsuban/搜索_放大镜.png" />
+						<hr style="margin-top:4px" />			
+
+					</div> 
+
+				</div>  <br/> <br/>
+			    <div style="font-size:28px;"><strong>为您<span style="color: red">快速查询</span>最适配、最优惠的<span style="color: #A40B5D">宽带资源</span></strong>
+			    </div>			
+				
+			</div>	
+			<div style="width:100%;height:200px;padding:0px;background:url('./static/img/web/zycx/查询区底色.png') no-repeat 5px 5px;background-size:100% 96%;position:relative;">
+	        	<div class="main" style="text-align: center;padding-top: 60px"> 
+					<table >
+					   <tr>
+                      		<td>
+								<form id="form1" name="form1">
+									<table  border="0px" >
+										<tr>
+											<td style="padding:6px 0px;background: #EFEFEF">
+												<span style="font-size: 14px">您的企业所在的位置</span>
+												<select  id="city" name="city" style="background-color:#FFFFFF;padding-left:26px;"  onChange="selectcityarea('city','country','form1');"		
+	 >
+													<option>未选择</option>  
+												</select>
+												<select id="country" name="country"  style="background-color:#FFFFFF;padding-left:26px">
+													<option>未选择</option>  
+												</select>
+											</td>
+											
+										</tr>
+									</table>
+								</form>
+								<script language="javascript">
+                                    first("city","country","form1",0,0);
+                                </script>
+							</td>
+                            <td style="padding-left:10px;">
+								<table  border="0px" >
+									<tr>
+										<td style="padding:6px;background: #EFEFEF">
+											<span style="font-size: 14px">手动输入您的企业地址</span>
+											<input type="text" id="addr" name="addr" style="width:300px" />
+										</td>
+									</tr>
+								</table>
+							</td>							
+					   </tr>
+					</table>
+					<table style="margin-top:10px">
+					   <tr>
+                      		<td>
+								<table  border="0px" >
+									<tr>
+										<td style="padding:6px;background: #EFEFEF">
+											<span style="font-size: 14px">联系姓名</span>
+										<input  type="text" id="contactname"   name="contactname"   style="width:150px" />
+										</td>
+									</tr>
+								</table>
+							</td>	
+                            <td style="padding-left:10px;">
+								<table  border="0px" >
+									<tr>
+										<td style="padding:6px;background: #EFEFEF">
+											<span style="font-size: 14px">联系手机</span>
+										<input type="text"  id="contactmobile"   name="contactmobile"   style="width:160px" />
+											<span style="font-size: 14px;color: #A40B5D;"><a href="javascript:void(0)" style="text-decoration:none;color:#A40B5D"  onclick="getMobileCode()" >获取验证码</a></span>										</td>
+									</tr>
+								</table>
+							</td>	
+                            <td style="padding-left:10px;">
+								<table  border="0px" >
+									<tr>
+										<td style="padding:6px;background: #EFEFEF">
+											<span style="font-size: 14px">短信验证码</span>
+											<input type="text" style="width:110px" />
+										</td>
+									</tr>
+								</table>
+								<input type="hidden" id="page"  name="page" value="HOME">
+								<input type="hidden" id="from"  name="from" value="PC">
+							</td>	
+                            <td style="padding-left:10px;text-align: right;">
+								<a href="javascript:void(0)" onclick="submitNeed();" ><img width="118px"  src="./static/img/web/zycx/表单_提交需求.png" /></a>
+							</td>							
+					   </tr>
+					</table>
+				</div>
+			</div>
+
+
+	        <div class="main" style="text-align: center;"> 
+				<div style="font-size:28px;margin: 75px 0px 30px 0px"><strong>您的企业位置<span style="color:#A40B5D ">在这里</span></strong></div>
+				<div id="map" style="width:100%;height:200px;">
+					<script type="text/javascript">
+						var map = new BMap.Map("map");
+						// 创建地图实例
+						var point = new BMap.Point(116.404, 39.915);
+						// 创建点坐标
+						map.centerAndZoom(point, 15);
+						// 初始化地图，设置中心点坐标和地图级别
+
+						var geolocation = new BMap.Geolocation();
+						geolocation.getCurrentPosition(function(r){
+							if(this.getStatus() == BMAP_STATUS_SUCCESS){
+								var mk = new BMap.Marker(r.point);
+								map.addOverlay(mk);
+								map.panTo(r.point);
+								// alert('您的位置：'+r.point.lng+','+r.point.lat);
+							} else {
+								alert('failed'+this.getStatus());
+							}
+						});
+					</script>				
+				</div>									
+            </div>
+			<br/>
+            <div>
+            	<a href="./subanlc.html"> <img width="200px" src="./static/img/web/qykd/点击立即速办.png"></a> <br/>
+            	<span style="font-size: 18px;font-weight: bold;"> 或免费咨询</span><span style="font-size: 20px;color: #A40B5D ;font-family: GOTHIC;">&nbsp;<a href="skype:+8602131262710?call" style="color: #A40B5D">021-31262710</a></span><br/><br/><br/>
+            </div>
+			<div class="footer">
+				沪<span class="zftb">ICP</span>备<span class="zftb">12010294</span>号<span class="zftb">-1 Copyright © 2018 </span>上海宽迪信息科技有限公司 - 保留所有权利
+			</div>	
+		</div>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?6bf7ae9b5212b8c52b57065299f133f8";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>		
+    </body>
+</html>

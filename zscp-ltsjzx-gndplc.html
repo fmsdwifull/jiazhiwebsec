@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.3, maximum-scale=1.0" />
+        <title>嘉值科技</title>
+		<link rel="icon" href="./static/img/vas.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="./static/css/main.css"/>		
+		<script type="text/javascript" src="./static/js/jquery.min.js"></script>		
+        <script type="text/javascript" src="./static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./static/js/respond.min.js"></script>	
+		<script type="text/javascript" src="./static/js/main.js"></script>		
+		
+		<script type="text/javascript">
+		$(function(){   
+			//产品链接
+			$("#system").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=409";
+			})	
+			$("#computer").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=433";
+			})	
+			$("#host").on("click",function(){
+				window.location.href="http://cloud-open.cn/yunzhuji/yzjpc.html";
+			})	
+			
+			//行点击事件
+		    $('#dxproduct').on('click-row.bs.table', function (e, row, element)   
+			{  
+				//$(element).css({"color":"blue","font-size":"16px;"});  
+				console.log(row);
+				alert();
+				  
+			});  			
+		}); 
+		</script>  
+		<style type="text/css">	
+			p{line-height:26px} 		
+		</style>  		  
+    </head>
+    <body>
+		<div class="container-fluid">	
+			<div class="head">
+				<ul>
+					<li><a href="./home.html">首页</a></li>
+					<li><a href="./qykd-dxwp.html" >企业宽带</a></li>
+					<li><a href="" style="background-color: #f2f2f2;">专属产品</a></li>
+					<li><a href="./ziyuancx.html">资源查询</a></li>
+					<li><a href="./subanlc.html">速办流程</a></li>
+					<li><a href="./about.html">关于我们</a></li>
+					<li style="width: 28%" id="kong"><a style="background-color: #dcdddd"></a></li>
+					<li style="width: 5%;display: inline;float: left" id="tel" onmousemove="over('tel')" onmouseout="out('tel')">
+						<a href="">
+							<div>
+								<img width="40px" id="navtel"  src="./static/img/web/home/导航_电话.png"/>
+							</div>
+						</a>
+					</li>
+					<li style="width: 5%" id="email" onmousemove="over('email')" onmouseout="out('email')">
+						<a href="">
+							<div>
+								<img width="40px"  id="navmail"   src="./static/img/web/home/导航_邮箱.png"/>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>			
+			<div  class="main"> 
+				<div id="headerx" style="padding:28px 0px;">  
+					<div style="float:left;">  
+						<img style="width: 100px"; src="./static/img/web/kdsuban/KDSUBAN_LOGO.png" />						
+					</div>  
+	                <div  class="secmenu" style="padding-left: 130px">
+	                	<span style="padding-bottom:15px; border-bottom:1px solid #000;color: #A40B5D">数据专线</span>
+	        	        <span style="padding:0 30px"> <a href="./zscp-hzkd.html">会展宽带 </a></span>        	
+	                	<span style=""><a href="./zscp-hwyh.html">海外优化</a></span>
+	                </div>
+					<div class="search">  
+					    <input type="text" name="fname"  style="border:none;width: 160px"/>
+						<img style="width: 12px;" src="./static/img/web/kdsuban/搜索_放大镜.png" />
+						<hr style="margin-top:4px" />			
+					</div> 
+				</div>  
+			    <div class="ptitle" >高品质数据<span class="keywordcolor">互通互联</span>，只为您<span class="keywordcolor">独享</span>！</div>			
+			</div>	
+			<div style="width:100%;height:200px;padding:0px;background:url('./static/img/web/shujuzx/Banner_联通国内DPLC专线.jpg') no-repeat 5px 5px;background-size:100% 96%;">
+			</div>
+	        <div class="main"> 
+			    <br/>
+				<table align="center" style="width:70%"  border="0px" >
+					<tr>
+						<td><a href="./zscp-dxsjzx-mstp.html"><img width="92%"  src="./static/img/web/shujuzx/按钮_电信数据专线_.png"
+										onmouseover="this.src='./static/img/web/shujuzx/按钮_电信数据专线.png'"
+										onmouseout="this.src='./static/img/web/shujuzx/按钮_电信数据专线_.png'"						
+						> </a></td>
+						<td><img width="92%"   src="./static/img/web/shujuzx/按钮_联通数据专线.png"> </td>
+						<td><a href="./zscp-ydsjzx-sn.html"><img width="92%"   src="./static/img/web/shujuzx/按钮_移动数据专线_.png"
+										onmouseover="this.src='./static/img/web/shujuzx/按钮_移动数据专线.png'"
+										onmouseout="this.src='./static/img/web/shujuzx/按钮_移动数据专线_.png'"						
+						></a> </td>
+					</tr>
+				</table>			
+	        	<br/><br/>
+				<table align="center" style="width:60%" border="0px" >
+					<tr>
+						<td><a href="./zscp-ltsjzx-sndplc.html"><img width="90%" src="./static/img/web/shujuzx/分页按钮_联通市内数据专线_.png"
+								onmouseover="this.src='./static/img/web/shujuzx/分页按钮_联通市内数据专线.png'"
+								onmouseout="this.src='./static/img/web/shujuzx/分页按钮_联通市内数据专线_.png'"							
+						> </a></td>
+						<td><img width="90%" src="./static/img/web/shujuzx/分页按钮_联通国内数据专线.png"> </td>					
+					</tr>
+				</table>
+				<div style="text-align: left; font-size:14px">
+					<br/><br/>
+					<h1>产品介绍</h1>
+					<p><strong>中国联通国内专线业务</strong><span style="font-family:GOTHIC">（Domestic Private Leased Circuit，</span>简称 <span style="font-family:GOTHIC"><strong>DPLC</strong>）</span>，是指在联通覆盖范围内的节点之间，以 SDH</span> 透明数字电路方式，为用户提供两地之间的端到端专线连接。<br/>
+						中国联通从客户需求出发，依托联通国内骨干网及宽带城域网资源，采用国际领先的 <span style="font-family:GOTHIC">DWDM </span>和 <span style="font-family:GOTHIC">SDH </span>传输技术，配置大量的<span style="font-family:GOTHIC"> 622Mbps、155Mbps、2Mbps、1000Mbps、100Mbps、10Mbps</span> 各种速率、各种协议的端口，提供大容量高带宽的国内专线服务，为开通各种通信业务提供支持多带宽选择、承载语音、数据及多媒体流的国内数字电路连接。<br/>
+						中国联通 <span style="font-family:GOTHIC">DPLC</span> 大容量电路带宽和高品质的一站式服务，使用户能够灵活快速地部署业务网络，或实现局域网和广域网的互联。
+					</p>
+					<br/>
+					<h1>产品优势</h1>	
+					<p><span style="font-size:12px">●</span> 国际领先的 <span style="font-family:GOTHIC">SDH/DWDM</span> 网络架构，利用单独的光波通道建设<span style="font-family:GOTHIC"> SDH </span>传输网络，传输质量高，网络时延小，可提供低于 10E-8 的误码率和<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:GOTHIC">  50MS </span>
+电路倒换时间。
+					<br/><span style="font-size:12px">●</span> 多通道保护措施确保任意节点间多路径连接，避免单点故障。
+					<br/><span style="font-size:12px">●</span> 数字透明电路传输支持任意通信协议，可支持数据、话音、图像多种业务；<span style="font-family:GOTHIC"> SDH </span>网提独立分配的固定信道，通信保密性强，不会受其他客<br/>&nbsp;&nbsp;&nbsp;&nbsp;户使
+用情况的影响。
+					<br/><span style="font-size:12px">●</span> 可选带宽丰富，扩展性强，提供以下传输速率：<span style="font-family:GOTHIC">E1(2Mbps)、E2(8Mbps)、E3(34Mbps)、T3(45Mbps)、 STM-1(155Mbps)、
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;STM-4(622Mbps)、STM-16(2.5Gbps)。</span>
+					<br/><span style="font-size:12px">●</span> 提供一站式服务：一个联系人，一点受理，一份帐单，一点报障。</p>	
+					<br/>					
+					<h1>产品应用</h1>	
+					<p>内专线电路简称 <span style="font-family:GOTHIC">DPLC（Domestic Private Leased Circuit）</span>，通过 <span style="font-family:GOTHIC">DDN、SDH</span>、综合传输设备等传输方式，向用户提供包括市内、省内、省际在内的，速率从<span style="font-family:GOTHIC"> 64KBPS-2.5GBPS</span> 的端到端专用带宽连接的服务。目前常见的包括 <span style="font-family:GOTHIC">SDH</span> 和<span style="font-family:GOTHIC"> MSTP</span> 数字专线业务。
+
+					<br/>使用 <span style="font-family:GOTHIC">DPLC </span>产品的客户端一般通过光端机实现网络接入。客户可以利用<span style="font-family:GOTHIC"> DPLC</span> 电路在本地和异地间组建客户专网，满足 2Mb/s 以上数据、图像、语音等业务的实时大容量传输需求。主要有以下两种应用方式：
+
+					<br><span style="font-size:12px">●</span> 点到点：两点之间通信；						
+			        <br/><span style="font-size:12px">●</span> 点到多点：企业总部与其他分支之间通信，例如客户总部以<span style="font-family:GOTHIC"> 155Mb/s</span> 光端机方式接入 <span style="font-family:GOTHIC">DPLC</span> 网，其他分点占用<span style="font-family:GOTHIC"> DPLC</span> 网络资源以 <br/>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:GOTHIC">N×2Mb/s </span> 接
+至总点，形成一点对多点组网方式。</p>
+					<br/>
+					<h1>套餐资费</h1>
+					<table   class="table table-condensed producttable " border="0px">
+						 <thead >
+							<th>设备费用</th>
+							<th colspan="2">设备种类</th>
+							<th>计量方式</th>
+							<th>价格</th>
+						</thead>
+						<tbody class="zftb">
+							<tr>
+								<td rowspan="4"  style="display:table-cell; vertical-align:middle" >新开电路</td>
+								<td colspan="2" width="50%">普通接入设备（含PDH、HDSL、光电转换器、协议转换器等）</td>
+								<td>每端每次</td>
+								<td><span style="font-family:GOTHIC">5000</span></td>																
+							</tr>
+							<tr>
+								<td rowspan="2"  style="display:table-cell; vertical-align:middle" >DH 传输设备</td>
+								<td><span style="font-family:GOTHIC">Metro 1000</span></td>
+								<td>每端每次</td>
+								<td><span style="font-family:GOTHIC">30000</span></td>																								
+							</tr>	
+							<tr>
+							    <td><span style="font-family:GOTHIC">OSN 1500</span></td>
+								<td>每端每次</td>
+								<td><span style="font-family:GOTHIC">50000</span></td>									
+							</tr>
+							<tr>
+								<td><span style="font-family:GOTHIC">OSN 2500</span></td>
+								<td>每端每次</td>
+								<td><span style="font-family:GOTHIC">70000</span></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>增开电路</td>
+								<td colspan="2">含以上各种接入设备</td>
+								<td>每端每次</td>
+								<td><span style="font-family:GOTHIC">1000</span></td>
+							</tr>
+						</tbody>						
+					</table>
+					<div>  
+						<hr style="height:1px;border-width:0;color:gray;background-color:#bfc0c0;margin-top:2px"; />			
+					</div>
+					<div  style="text-align:center;background-color:#A40B5D;color:#ffffff;font-size:15px;">
+						<span>国内（本地）以太网数据专线业务资费</span><br/>
+                    </div>
+					<table  class="table table-condensed producttable "  style="margin-top:0px;text-align:center" border="0px">
+						 <tr style="background-color:#DCDCDC">
+							<td rowspan="2" colspan="2"  style="display:table-cell; vertical-align:middle;">项&nbsp;&nbsp;&nbsp;&nbsp;目</td>
+							<td rowspan="2" style="display:table-cell; vertical-align:middle;" >计费单位</td>							
+							<td colspan="2"  >资费（元）</td>
+						</tr>
+						<tr style="background-color:#DCDCDC">
+							<td style="border-top:#cccccc solid 1px;">本地</td>
+							<td>国内</td>
+						</tr>
+						<tr>
+							<td width="15%" rowspan="3" style="display:table-cell; vertical-align:middle" >常规一次性费用</td>
+							<td width="15%" >申请手续费</td>
+							<td width="10%" >每次每条</td>
+							<td width="10%" colspan="2" >50</td>
+						</tr>	
+						<tr>
+							<td width="15%" >安装调试费</td>
+							<td width="10%" >每次每条</td>
+							<td width="10%" colspan="2" ><span style="font-family:GOTHIC">550</span></td>
+						</tr>
+						<tr>
+							<td width="15%" >工料费</td>
+							<td width="10%" >每次每条</td>
+							<td width="10%" colspan="2" ><span style="font-family:GOTHIC">2400</span></td>
+						</tr>		
+						<tr>
+							<td width="15%" rowspan="14" style="display:table-cell; vertical-align:middle" >月租费</td>
+							<td width="15%" ><span style="font-family:GOTHIC">2Mbit/s</span></td>
+							<td width="15%" >每条</td>
+							<td width="10%" ><span style="font-family:GOTHIC">2000</span></td>
+							<td width="10%" ><span style="font-family:GOTHIC">6000</span></td>
+
+						</tr>		
+						<tr>
+							<td width="15%" ><span style="font-family:GOTHIC">4Mbit/s</span></td>
+							<td width="15%" >每条</td>
+							<td width="10%" ><span style="font-family:GOTHIC">3800</span></td>
+							<td width="10%" ><span style="font-family:GOTHIC">10920</span></td>
+						</tr>		
+						<tr>
+							<td width="15%" ><span style="font-family:GOTHIC">6Mbit/s</span></td>
+							<td width="15%" >每条</td>
+							<td width="10%" ><span style="font-family:GOTHIC">5100</span></td>
+							<td width="10%" ><span style="font-family:GOTHIC">14580</span></td>
+						</tr>		
+						<tr>
+							<td width="15%" ><span style="font-family:GOTHIC">8Mbit/s</span></td>
+							<td width="15%" >每条</td>
+							<td width="10%" ><span style="font-family:GOTHIC">6000</span></td>
+							<td width="10%" ><span style="font-family:GOTHIC">17000</span></td>
+						</tr>		
+						<tr>
+							<td width="15%" ><span style="font-family:GOTHIC">10Mbit/s</span></td>
+							<td width="15%" >每条</td>
+							<td width="10%" ><span style="font-family:GOTHIC">7000</span></td>
+							<td width="10%" ><span style="font-family:GOTHIC">19500</span></td>
+						</tr>		
+						<tr>
+							<td width="15%" ><span style="font-family:GOTHIC">20Mbit/s</span></td>
+							<td width="15%" >每条</td>
+							<td width="10%" ><span style="font-family:GOTHIC">13000</span></td>
+							<td width="10%" ><span style="font-family:GOTHIC">36000</span></td>
+						</tr>		
+						<tr>
+							<td width="15%" ><span style="font-family:GOTHIC">34Mbit/s</span></td>
+							<td width="15%" >每条</td>
+							<td width="10%" ><span style="font-family:GOTHIC">16000</span></td>
+							<td width="10%" ><span style="font-family:GOTHIC">47000</span></td>
+						</tr>		
+						<tr>
+							<td width="15%" ><span style="font-family:GOTHIC">45Mbit/s</span></td>
+							<td width="15%" >每条</td>
+							<td width="10%" ><span style="font-family:GOTHIC">20250</span></td>
+							<td width="10%" ><span style="font-family:GOTHIC">60750</span></td>
+						</tr>		
+						<tr>
+							<td width="15%" ><span style="font-family:GOTHIC">100Mbit/s</span></td>
+							<td width="15%" >每条</td>
+							<td width="10%" ><span style="font-family:GOTHIC">39600</span></td>
+							<td width="10%" ><span style="font-family:GOTHIC">118800</span></td>
+						</tr>		
+						<tr>
+							<td width="15%" ><span style="font-family:GOTHIC">155Mbit/s</span></td>
+							<td width="15%" >每条</td>
+							<td width="10%" ><span style="font-family:GOTHIC">44000</span></td>
+							<td width="10%" ><span style="font-family:GOTHIC">132000</span></td>
+						</tr>		
+						<tr>
+							<td width="15%" ><span style="font-family:GOTHIC">622Mbit/s</span></td>
+							<td width="15%" >每条</td>
+							<td width="10%" ><span style="font-family:GOTHIC">123000</span></td>
+							<td width="10%" ><span style="font-family:GOTHIC">370000</span></td>
+						</tr>
+						<tr>
+							<td width="15%" ><span style="font-family:GOTHIC">1Gbit/s</span></td>
+							<td width="15%" >每条</td>
+							<td width="10%" ><span style="font-family:GOTHIC">309600</span></td>
+							<td width="10%" ><span style="font-family:GOTHIC">929700</span></td>
+						</tr>
+						<tr>
+							<td width="15%" ><span style="font-family:GOTHIC">2.5Gbit/s</span></td>
+							<td width="15%" >每条</td>
+							<td width="10%" ><span style="font-family:GOTHIC">344000</span></td>
+							<td width="10%" ><span style="font-family:GOTHIC">1033000</span></td>
+						</tr>	
+
+						<tr>
+							<td width="15%" ><span style="font-family:GOTHIC">10Gbit/s</span></td>
+							<td width="15%" >每条</td>
+							<td width="10%" ><span style="font-family:GOTHIC">1376000</span></td>
+							<td width="10%" ><span style="font-family:GOTHIC">4132000</span></td>
+						</tr>						
+					</table>
+					<div>  
+						<hr style="height:1px;border-width:0;color:gray;background-color:#bfc0c0;margin-top:3px"; />			
+					</div>					
+				</div>			
+            </div>
+            <div>
+            	<a href="skype:+8602131262710?call"><img width="220px" src="./static/img/web/shujuzx/致电免费咨询.png"></a><br/><br/>
+            </div>
+
+       </div>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?6bf7ae9b5212b8c52b57065299f133f8";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>		
+    </body>
+</html>

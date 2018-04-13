@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.3, maximum-scale=1.0" />
+        <title>嘉值科技</title>
+		<link rel="icon" href="../static/img/vas.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/main.css"/>		
+		<script type="text/javascript" src="../static/js/jquery.min.js"></script>		
+        <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../static/js/respond.min.js"></script>		
+		<script type="text/javascript">
+		$(function(){ 
+			screen();  
+			function screen(){  
+				if($(window).width()<768){  
+					$(".banner").attr("src","../static/img/mob/banner.jpg");  
+					$(".img-zxbtn-left").on("click",function(){
+						window.location.href="tel:4006631663";
+					})
+				}else{  
+					$(".banner").attr("src","../static/img/web/gift/banner.jpg");
+					$(".img-zxbtn-left").on("click",function(){
+						window.location.href="skype:+864006631663?call";
+					})					
+				}  
+			}  
+			$(window).resize(function(){  
+				screen();  
+			})  
+
+			
+			//产品链接
+			$("#system").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=409";
+			})	
+			$("#it").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=433";
+			})	
+			$("#host").on("click",function(){
+				window.location.href="http://cloud-open.cn/yunzhuji/yzjpc.html";
+			})	
+			
+			//行点击事件
+		   $('#dxproduct').on('click-row.bs.table', function (e,row,element)   
+			{  
+				//$(element).css({"color":"blue","font-size":"16px;"});  
+				console.log(row);				  
+			});  			
+		}); 
+		</script>    
+		<style type="text/css">
+			.hitprize{
+			    float:right;
+			   	height:28px;
+				margin-bottom:0px;
+			}
+			body{  
+				/*background: linear-gradient(top,#A40B5D, #E4007F);  */
+				background: red; /* For browsers that do not support gradients */  
+				background: -webkit-linear-gradient(#A40B5D, #E4007F); /* For Safari 5.1 to 6.0 */  
+				background: -o-linear-gradient(#A40B5D, #E4007F); /* For Opera 11.1 to 12.0 */  
+				background: -moz-linear-gradient(#A40B5D, #E4007F); /* For Firefox 3.6 to 15 */  
+				background: linear-gradient(#A40B5D, #E4007F); /* Standard syntax */  
+			}
+
+		</style>
+    </head>
+    <body>
+		<div class="container-fluid">	
+			<div id="banner" class="row">  
+				<div class="col-sm-12">  
+					<a href="http://cloud-open.cn/yunzhuji/qytx.html"><img style="width: 100%;" class="banner" src="../static/img/web/gift/banner.jpg" /></a>
+				</div>  
+			</div>  
+			<div class="main" > 
+				<table class="navtable">
+					<tr>
+						<td>
+							<input id="goods" type="image" src="../static/img/web/gift/goods2.png" class="img-nav" onclick="intent('goods2')" onmouseover="this.src='../static/img/web/gift/goods2.png'"
+                               onmouseout="this.src='../static/img/web/gift/goods.png'"/>
+						</td>
+						<td class="navmdline" >
+							<img src="../static/img/web/gift/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>								
+						<td>
+							<input id="system" type="image" src="../static/img/web/gift/system.png" class="img-nav" onclick="intent('system')" onmouseover="this.src='../static/img/web/gift/system2.png'"
+                               onmouseout="this.src='../static/img/web/gift/system.png'"/>
+						</td>
+						<td class="navmdline" >
+							<img src="../static/img/web/gift/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+						<td>
+							<input id="communicate" type="image" src="../static/img/web/gift/communicate.png"   class="img-nav"  onclick="intent('system')" onmouseover="this.src='../static/img/web/gift/communicate2.png'"
+                               onmouseout="this.src='../static/img/web/gift/communicate.png'"/>
+						</td>
+						<td class="navmdline">
+							<img src="../static/img/web/gift/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+						<td>
+							<input id="it" type="image" src="../static/img/web/gift/it.png" class="img-nav"   onclick="intent('it')" onmouseover="this.src='../static/img/web/gift/it2.png'"
+                           onmouseout="this.src='../static/img/web/gift/it.png'" />
+						</td>
+						<td class="navmdline">
+							<img src="../static/img/web/gift/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+						<td>
+							<input id="host" type="image" src="../static/img/web/gift/host.png" class="img-nav"   onclick="intent('host')" onmouseover="this.src='../static/img/web/gift/host2.png'"
+                           onmouseout="this.src='../static/img/web/gift/host.png'"/>
+						</td>
+					</tr>
+				</table>
+				<div>  
+					<hr style="height:6px;border-width:0;color:gray;background-color:#ffffff;margin-bottom:10px" />			
+				</div>	
+				<table border="0px">
+					<tr>
+						<td width="14%" style="text-align: left;"><img src="../static/img/web/gift/礼盒.png"  style="width:100%;height:auto"/> </td>
+						<td style="text-align: left;padding-left: 10px">
+							<span style="font-family:MicrosoftYaHei-bold-02;font-size:50px;color:#ffffff;">办宽带<span style="color:#f6bfd7;">送</span>&nbsp;首月免单</span>
+							<a href="skype:+864006631663?call"><img src="../static/img/web/gift/免费咨询.png"  style="width:22%;height:auto;padding-top: 10px"/></a>
+						</td>
+						<td style="text-align: right ;width: 32%;"><img src="../static/img/web/gift/宽带_415×142.jpg"  style="width:100%;height:auto"/></td>
+					</tr>
+				</table>	
+
+				<div>  
+					<hr style="height:2px;border-width:0;color:gray;background-color:#ffffff;margin-bottom:10px" />			
+				</div>	
+				<table border="0px">
+					<tr>
+						<td colspan="2" style="text-align: right;">
+							<span style="font-family:MicrosoftYaHei-bold-02;font-size:50px;color:#ffffff;">办宽带<span style="color:#f6bfd7;">送</span>&nbsp;企业云主机</span><br/>
+							<span style="font-family:MicrosoftYaHei-02;font-size:26px;color:#ffffff;">1核CPU&nbsp;/&nbsp;1G内存&nbsp;/&nbsp;30G存储空间&nbsp;/&nbsp;1M带宽</span><br/>
+						</td>
+						<td width="12%"><img src="../static/img/web/gift/礼盒.png"  style="width:100%;height:auto"/> </td>
+
+					</tr>
+					<tr>
+						<td width="30%"><img src="../static/img/web/gift/云主机_400×188.jpg"  style="width:100%;height:auto"/> </td>	
+						<td style="text-align: right;width: 50%">
+
+							<div style="font-family:MicrosoftYaHei-02;font-size:30px;color:#d7c700;margin-bottom: 10px">价值1000元/年</div>	
+							<div style="font-family:MicrosoftYaHei-02;font-size:12px;color:#ffffff;margin-bottom: 5px">企业网站搭建</div>
+							<div style="font-family:MicrosoftYaHei-02;font-size:12px;color:#ffffff;margin-bottom: 5px">APP客户端环境</div>
+							<div style="font-family:MicrosoftYaHei-02;font-size:12px;color:#ffffff;margin-bottom: 5px">OA办公软件服务端</div>	
+							<div style="font-family:MicrosoftYaHei-02;font-size:12px;color:#ffffff;margin-bottom: 5px">数据云存储/备份</div>	
+
+							<a href="skype:+864006631663?call"><img src="../static/img/web/gift/免费咨询.png"  style="width:22%;height:auto"/></a>
+						</td>
+					</tr>
+				</table>			
+				<div>  
+					<hr style="height:2px;border-width:0;color:gray;background-color:#ffffff;margin-bottom:10px" />			
+				</div>	
+				<table border="0px">
+					<tr>
+						<td rowspan="2" style="width: 15%;"><img src="../static/img/web/gift/礼盒.png"  style="width:90%;height:auto;margin-bottom: 30px;"/></td>						
+						<td colspan="2" style="text-align: left;">
+							<span style="font-family:MicrosoftYaHei-bold-02;font-size:45px;color:#ffffff;">办宽带<span style="color:#f6bfd7;">送</span>&nbsp;联通沃 · 云主机</span><br/>
+						</td>
+
+					</tr>
+					<tr>
+
+						<td style="text-align: left;">
+
+							<span style="font-family:MicrosoftYaHei-bold-02;color:#ffffff;font-size:24px;">2核CPU / 4G内存 / 500G存储空间 / 2M带宽</span><br/>
+							<span style="font-family:MicrosoftYaHei-bold-02;color:#ffffff;font-size:24px;">15年专业经验/5分钟响应/1小时上门</span><br/>
+							<span style="font-family:MicrosoftYaHei-02;font-size:30px;color:#d7c700;">价值2400元</span><br/>
+
+							<a href="skype:+864006631663?call"><img src="../static/img/web/gift/免费咨询.png"  style="width:22%;height:auto;margin-top:5px"/></a>
+						</td>
+						<td style="text-align: right;width: 28%;vertical-align: bottom;"><img src="../static/img/web/gift/联通云主机.jpg"  style="width:90%;height:auto"/> </td>
+					</tr>
+				</table>				
+				<div>  
+					<hr style="height:2px;border-width:0;color:gray;background-color:#ffffff;margin-bottom:10px" />			
+				</div>
+				<table border="0px">
+					<tr>
+						<td colspan="2"  style="text-align: right;"><span style="font-family:MicrosoftYaHei-bold-02;font-size:45px;color:#ffffff;">办宽带<span style="color:#f6bfd7;">送</span>&nbsp;免费电话随意拨</span><br/></td>
+						<td rowspan="2" width="14%" style="text-align: left;vertical-align: top;"><img src="../static/img/web/gift/礼盒.png"  style="width:100%;height:auto"/> </td>
+					</tr>
+					<tr>
+						<td width="33%"><img src="../static/img/web/gift/打电话.png"  style="width:100%;height:auto;"/></td>
+		
+						<td style="text-align: right;">
+							
+							<span style="font-family:MicrosoftYaHei-bold-02;color:#ffffff;font-size:25px;">直线号码/1000元话费/智能数字话机</span><br/>
+							<span style="font-family:MicrosoftYaHei-02;font-size:30px;color:#d7c700;">价值1500元</span><br/>
+							<a href="skype:+864006631663?call"><img src="../static/img/web/gift/免费咨询.png"  style="width:22%;height:auto;margin-top:10px "/></a>
+						</td>
+		
+					</tr>
+				</table>	
+				<div>  
+					<hr style="height:2px;border-width:0;color:gray;background-color:#ffffff;margin-bottom:10px" />			
+				</div>	
+				<table border="0px">
+					<tr>
+						<td rowspan="2" style="width: 15%;vertical-align: top"><img src="../static/img/web/gift/礼盒.png"  style="width:90%;height:auto;margin-bottom: 30px;"/></td>						
+						<td colspan="2" style="text-align: left;">
+							<span style="font-family:MicrosoftYaHei-bold-02;font-size:45px;color:#ffffff;">办宽带<span style="color:#f6bfd7;">送</span>&nbsp;企业 IT 外包服务</span><br/>
+						</td>
+
+					</tr>
+					<tr>
+
+						<td style="text-align: left;">
+
+							<span style="font-family:MicrosoftYaHei-bold-02;color:#ffffff;font-size:24px;">办公电脑及网络等专业维护、代送检修</span><br/>
+							<span style="font-family:MicrosoftYaHei-bold-02;color:#ffffff;font-size:24px;">15年专业经验/5分钟响应/1小时上门</span><br/>
+							<span style="font-family:MicrosoftYaHei-02;font-size:30px;color:#d7c700;">价值1000元/月</span><br/>
+
+							<a href="skype:+864006631663?call"><img src="../static/img/web/gift/免费咨询.png"  style="width:22%;height:auto;margin-top:5px"/></a>
+						</td>
+						<td style="text-align: right;width: 34%;vertical-align: bottom;"><img src="../static/img/web/gift/IT服务_400×188.jpg"  style="width:90%;height:auto"/> </td>
+					</tr>
+				</table>				
+				<div>  
+					<hr style="height:2px;border-width:0;color:gray;background-color:#ffffff;margin-bottom:10px" />			
+				</div>	
+				<table border="0px">
+					<tr>
+						<td style="text-align: left;width: 30%;vertical-align: bottom;">
+							<img src="../static/img/web/gift/付费通卡.png"  style="width:80%;height:auto"/>
+						</td>						
+				
+						<td style="text-align: right;">
+							<span style="font-family:MicrosoftYaHei-bold-02;font-size:45px;color:#ffffff;">办宽带送 付费通卡</span><br/>
+							<span style="font-family:MicrosoftYaHei-bold-02;color:#ffffff;font-size:24px;">所有的企业或个人/家庭公共缴费均可适用</span><br/>
+							<span style="font-family:MicrosoftYaHei-02;font-size:30px;color:#d7c700;">价值500-5000元</span><br/>
+
+							<a href="skype:+864006631663?call"><img src="../static/img/web/gift/免费咨询.png"  style="width:22%;height:auto"/></a>
+						</td>
+						<td style="vertical-align: top;text-align: right;width: 15%"><img src="../static/img/web/gift/礼盒.png"  style="width:90%;height:auto"/> </td>
+					</tr>
+				</table>	
+				<div>  
+					<hr style="height:2px;border-width:0;color:gray;background-color:#ffffff;margin-bottom:50px" />			
+				</div><br/>																	
+		</div>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?6bf7ae9b5212b8c52b57065299f133f8";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm,s);
+		})();
+		</script>		
+    </body>
+</html>

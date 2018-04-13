@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.3, maximum-scale=1.0" />
+        <title>嘉值科技</title>
+		<link rel="icon" href="./static/img/vas.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="./static/css/main.css"/>		
+		<script type="text/javascript" src="./static/js/jquery.min.js"></script>		
+        <script type="text/javascript" src="./static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./static/js/respond.min.js"></script>		
+		<script type="text/javascript" src="./static/js/main.js"></script>		
+
+		<script type="text/javascript">
+		$(function(){   
+			//产品链接
+			$("#system").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=409";
+			})	
+			$("#computer").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=433";
+			})	
+			$("#host").on("click",function(){
+				window.location.href="http://cloud-open.cn/yunzhuji/yzjpc.html";
+			})	
+			
+			//行点击事件 
+		    $('#dxproduct').on('click-row.bs.table', function (e, row, element)   
+			{  
+			});  			
+		}); 
+		
+		</script>  
+		<style type="text/css">
+
+		</style>  		  
+    </head>
+    <body>
+		<div class="container-fluid">	
+			<div class="head">
+					<ul>
+						<li><a href="./home.html">首页</a></li>
+						<li><a href=""  style="background-color: #f2f2f2;">企业宽带</a></li>
+						<li><a href="./zscp-dxsjzx-mstp.html">专属产品</a></li>
+						<li><a href="./ziyuancx.html">资源查询</a></li>
+						<li><a href="./subanlc.html">速办流程</a></li>
+						<li><a href="./about.html">关于我们</a></li>
+						<li style="width: 28%" id="kong"><a style="background-color: #dcdddd"></a></li>
+						<li style="width: 5%;display: inline;float: left" id="tel" onmousemove="over('tel')" onmouseout="out('tel')">
+							<a href="">
+								<div>
+									<img width="40px" id="navtel"  src="./static/img/web/home/导航_电话.png"/>
+								</div>
+							</a>
+						</li>
+						<li style="width: 5%" id="email" onmousemove="over('email')" onmouseout="out('email')">
+							<a href="">
+								<div>
+									<img width="40px"  id="navmail"   src="./static/img/web/home/导航_邮箱.png"/>
+								</div>
+							</a>
+						</li>
+					</ul>
+			</div>			
+			<div  class="main"> 
+				<div class="headerx" >  
+					<div style="float:left;">  
+						<img style="width: 100px"; src="./static/img/web/kdsuban/KDSUBAN_LOGO.png" />						
+					</div>  
+	                <div  class="secmenu">
+	                	<span style="padding-bottom:15px; border-bottom:1px solid #000;color: #A40B5D">中国电信宽带</span>
+		                <span style="padding-left: 30px"><a href="./qykd-ltsw.html">中国联通宽带</a></span>
+	                	<span style="padding-left: 30px"><a href="./qykd-ydsw.html">中国移动宽带</a> </span>
+	                	<span style="padding-left: 30px"><a href="./qykd-pbssc.html">博士鹏宽带</a></span>
+	                	<span style="padding-left: 30px"><a href="./qykd-kdyun.html">宽迪云光纤</a></span>
+	                </div>
+					<div class="search">  
+					    <input type="text" name="fname"  style="border:none;width: 160px"/>
+						<img  src="./static/img/web/kdsuban/搜索_放大镜.png" />
+						<hr style="margin-top:4px" />			
+					</div> 
+
+				</div> 
+				<div class="ptitle">小微商企、<span style="color: #F90000">必备</span>首选！</div>			
+				
+			</div>	
+			
+			<div style="width:100%;height:200px;padding:0px;background:url('./static/img/web/qykd/Banner_电信旺铺通.jpg') no-repeat 5px 5px;background-size:100% 96%;">
+					<div style="padding-top:100px;padding-left:10px" > 
+						  <table style="text-align: center;" border="0px">
+						  		<tr>
+						  			<td style="text-align: right;width: 600px;padding-top: 10px"><div style="color: #ffffff"  onmousemove="telover()" onmouseout="telout()">首月面单享豪礼</div></td>
+						  			<td style="width: 30px; text-align: left;padding-top: 10px;padding-left: 4px"><div onmousemove="telover()" onmouseout="telout()"><img width="18px" src="./static/img/web/qykd/conn.png"></div></td>
+						  		    <td><div  id="showtelid" style="color: #ffffff;text-align: left;padding-top: 10px"></div></td>
+						  		</tr>
+						  </table>
+					</div> 				
+			</div>
+             
+	        <div class="main"> 
+	        	<br/>
+				<table width="100%" border="0px" >
+					<tr>
+						<td style="text-align: left;"> 
+							<a href="#"><img width="200px"  src="./static/img/web/qykd/按钮_电信旺铺通.png"
+								>
+							</a>
+						</td>
+						<td>
+							<a href="./qykd-dxsw.html">
+								<img  width="200px" src="./static/img/web/qykd/按钮_电信商务专线_.png"
+								onmouseover="this.src='./static/img/web/qykd/按钮_电信商务专线.png'"
+                                onmouseout="this.src='./static/img/web/qykd/按钮_电信商务专线_.png'"	
+							> 
+							</a>
+						</td>
+						<td width="1%"></td>
+						<td>
+							<a href="./qykd-dxjp.html">
+								<img width="200px"  src="./static/img/web/qykd/按钮_电信精品专线_.png"
+								onmouseover="this.src='./static/img/web/qykd/按钮_电信精品专线.png'"
+                                onmouseout="this.src='./static/img/web/qykd/按钮_电信精品专线_.png'"
+								> 
+							</a>
+						</td>
+						<td style="text-align: right;"> 
+							<a href="./qykd-dxipman.html">
+								<img width="200px"  src="./static/img/web/qykd/按钮_电信IPMAN_.png"
+								onmouseover="this.src='./static/img/web/qykd/按钮_电信IPMAN.png'"
+                                onmouseout="this.src='./static/img/web/qykd/按钮_电信IPMAN_.png'"
+								>
+							</a>
+						</td>
+					</tr>
+				</table>
+				<br/>
+				<div class="img30min">
+	        		<img  src="./static/img/web/qykd/30minute.png">
+	            </div>	
+	            <br/>
+	            <div style="text-align: left;">
+		            <h1>套餐介绍</h1>
+		            <p>电信旺铺通针对商铺、小微企业等客户提供的宽带上网产品，为用户基础的办公上网行为提供流畅体验。 </p><br/>	
+		            <h1>产品属性</h1>	
+		            <p><span style="font-size:12px">●</span> 接入方式：光纤入户/光纤独享
+					<br/><span style="font-size:12px">●</span> 网络类型：上下行不对称
+					<br/><span style="font-size:12px">●</span> 公网IP地址： 动态分配
+					<br/><span style="font-size:12px">●</span> 产品规格：<span style="font-family: GOTHIC;">50M/100M</span> </p>
+				<br/>
+				<h1>套餐资费</h1>
+				<table  class="table table-condensed producttable " style="text-align: center;">
+					 <thead >
+						<th>速率</th>
+						<th>备注</th>
+						<th>资费标准（元/月）</th>
+						<th>年付优惠价（元/年）</th>
+						<th>初装费（元/线）</th>
+					</thead>
+					<tr>
+						<td><span style="font-family: GOTHIC;">50M</span></td>
+						<td>动态<span style="font-family: GOTHIC">IP</span></td>
+
+						<td><span style="font-family: GOTHIC;">199</span></td>
+						<td><span style="font-family: GOTHIC;color: red">2290</span></td>
+						<td><span style="font-family: GOTHIC;">310</span></td>						
+					</tr>
+					<tr>
+						<td><span style="font-family: GOTHIC;">100M</span></td>
+						<td>动态<span style="font-family: GOTHIC">IP</span></td>
+
+						<td><span style="font-family: GOTHIC;">299</span></td>
+						<td><span style="font-family: GOTHIC;color: red">2290</span></td>
+						<td><span style="font-family: GOTHIC;">310</span></td>						
+					</tr>					
+				</table>
+				<div>  
+					<hr style="height:1px;border-width:0;color:gray;background-color:#bfc0c0;margin-top:3px"; />			
+				</div>								
+				</div>	
+					
+            </div>
+            <br/>
+	            <div>
+	            	<a href="./subanlc.html"> <img width="200px" src="./static/img/web/qykd/点击立即速办.png"></a> <br/>
+	            	<span style="font-size: 18px;font-weight: bold;"> 或免费咨询</span><span style="font-size: 20px;color: #A40B5D ;font-family: GOTHIC;">&nbsp;<a href="skype:+8602131262710?call" style="color: #A40B5D">021-31262710</a></span><br/><br/><br/>
+	            </div>
+		</div>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?6bf7ae9b5212b8c52b57065299f133f8";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>		
+    </body>
+</html>

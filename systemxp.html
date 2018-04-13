@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.3, maximum-scale=1.0" />
+        <title>嘉值科技</title>
+		<link rel="icon" href="../static/img/vas.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/main.css"/>		
+		<script type="text/javascript" src="../static/js/jquery.min.js"></script>		
+        <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../static/js/respond.min.js"></script>		
+		<script type="text/javascript">
+		$(function(){  
+			screen();  
+			function screen(){  
+				if($(window).width()<768){  
+					$(".banner").attr("src","../static/img/mob/banner.png");  
+					$(".img-zxbtn-left").on("click",function(){
+						window.location.href="tel:4006631663";
+					})
+				}else{  
+					$(".banner").attr("src","../static/img/web/system/xpbanner.jpg");
+					$(".img-zxbtn-left").on("click",function(){
+						window.location.href="skype:+864006631663?call";
+					})					
+				}  
+			}  
+			$(window).resize(function(){  
+				screen();  
+			})  
+			
+			//产品链接
+			$("#system").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=409";
+			})	
+			$("#computer").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=433";
+			})	
+			$("#host").on("click",function(){
+				window.location.href="http://cloud-open.cn/yunzhuji/yzjpc.html";
+			})	
+			
+			//行点击事件
+		   $('#dxproduct').on('click-row.bs.table', function (e, row, element)   
+			{  
+				//$(element).css({"color":"blue","font-size":"16px;"});  
+				console.log(row);
+				alert();
+				  
+			});  			
+		}); 
+
+		function setCheckState(obj)
+		{
+			if(obj.value==0)
+			{
+				obj.src="../static/img/web/system/checked.png";
+				obj.value=1;
+			}else{
+				obj.src="../static/img/web/system/unchecked.png";
+				obj.value=0;
+			}
+		}
+        function smb() {
+		    //alert($("#dd").serialize());
+            $.ajax({
+                //几个参数需要注意一下
+                type: "POST",//方法类型
+                //dataType: "json",//预期服务器返回的数据类型
+                url: "http://www.cloud-open.cn/client.php?c=feedback&a=getClientInfo",//url
+                //data: $(form[name=dd]).serialize(),
+				data:"xxxd",
+                success: function (result) {
+					alert(result);
+                },
+                error: function () {
+                    alert("异常！");
+                }
+            })
+        }		
+		
+		</script>  
+		<style type="text/css">
+			.syssubnavtb{
+				width: 30%;
+				margin: 0 auto;
+			};
+			.syshh{
+				line-height: 10px;
+			};
+			.syspdttb{
+		margin-bottom: 0px;
+		max-width: 60%;
+		width: 60%;
+		margin:auto;
+			}
+			.syspdttb td{
+				margin-top: 0px;
+				text-align: left;
+				vertical-align: middle;
+			};
+			a{
+				color:#00F;
+			};	
+			
+	.tablexxx {
+		margin-bottom: 0px;		
+		max-width: 90%;
+		width: 90%;
+		margin:auto;
+	}
+
+		</style>  		  
+		
+    </head>
+    <body>
+		<div class="container-fluid">	
+			<div id="banner" class="row">  
+				<div class="col-sm-12">  
+					<a href="http://cloud-open.cn/yunzhuji/qytx.html"><img style="width: 100%;" class="banner" src="../static/img/web/system/xpbanner.jpg" /></a>
+				</div>  
+			</div>  
+			<div class="main"> 
+				<table class="navtable" border="0">
+					<tr>
+						<td>
+							<input id="hot" type="image" src="../static/img/web/hot.png" class="img-nav" />
+						</td>
+						<td class="navmdline" >
+							<img src="../static/img/web/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>								
+						<td>
+							<input id="system" type="image" src="../static/img/web/system2.png" class="img-nav" />
+						</td>
+						<td class="navmdline" >
+							<img src="../static/img/web/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+						<td>
+							<input id="communicate" type="image" src="../static/img/web/communicate.png"  onmousedown="mouseDown()" class="img-nav" />
+						</td>
+						<td class="navmdline">
+							<img src="../static/img/web/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+						<td>
+							<input id="computer" type="image" src="../static/img/web/computer.png" class="img-nav" />
+						</td>
+						<td class="navmdline">
+							<img src="../static/img/web/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+						<td>
+							<input id="host" type="image" src="../static/img/web/host.png" class="img-nav" />
+						</td>
+					</tr>
+				</table>
+	
+				<div class="syshh" style="margin-bottom: 8px;">  
+					<img width="100%" src="../static/img/web/system/hh1.png" class="img-responsive" />  
+				</div>
+				<table class="syssubnavtb" >
+					<tr>
+						<td>
+							<input type="image" src="../static/img/web/system/qykds.png" class="img-subnav" />
+						</td>
+						<td>
+							<img src="../static/img/web/system/dmiddle.png"  class="sub-navbtnimg" />
+						</td>								
+						<td>
+							<input type="image" src="../static/img/web/system/sjzxq.png" class="img-subnav" />
+						</td>		
+					</tr>
+				</table>
+				<div class="syshh">  
+					<img width="100%" src="../static/img/web/system/hh2.png" class="img-responsive" />  
+				</div>				
+				<div style="width: 20%;height: auto;margin: 20px auto;"><img src="../static/img/web/system/xpdz.png"  class="img-responsive" /></div>
+				<div style="width: 35%;height: auto;margin: 10px auto;"><img src="../static/img/web/system/mfkc.png"  class="img-responsive" /></div>		
+
+				<div style="margin-top:20px"><p> <h4>此弱电集成方案针对中小型企业，能满足办公网络、语音通信、安防、门禁考勤等需求<br/>
+						产品范围：综合布线、网络设备、无线覆盖、通信系统、监控系统、门禁系统</h4></p></div>		
+				<div><a href="#"><span style="text-decoration: underline;color: black"> 如有不同设备及品牌需求，可免费定制独立方案
+</span></a></div>		
+				<div style="margin-top: 10px;font-size: 22px">▼</div>			
+				<table>
+					<tr>
+						<td><img  src="../static/img/web/system/shpdtsg.jpg"  class="img-responsive" /></td>
+						<td bgcolor="#EFEFEF"><br/><br/><br/>
+							<span style="font-size: 20px">上海PICC人民保险公司</span><br/>
+							上海人保大厦办公楼<br/>
+							2800个信息点综合布线工程<br/>
+							▼
+
+						</td>
+						<td><img src="../static/img/web/system/hbzq.jpg"  class="img-responsive" /></td>
+					</tr>
+					<tr>
+						<td bgcolor="#EFEFEF">
+							&#9650<br/>
+							<span style="font-size: 20px">上海浦东新区图书馆</span><br/>
+							总面积六万多平方米的<br/>
+							弱电系统集成总包工程<br/><br/><br/>
+						</td>
+
+						<td><img  src="../static/img/web/system/shpdtsg.jpg"  class="img-responsive" /></td>
+						<td bgcolor="#EFEFEF">
+							&#9650<br/>
+							<span style="font-size: 20px">华宝证券全国营业部</span><br/>
+							12家营业部48路摄像头本地录像监控<br/>
+							总部云视频统一监控工程<br/><br/><br/>
+
+						</td>
+					</tr>
+					<tr>
+						<td><img  src="../static/img/web/system/cyts.jpg"  class="img-responsive" /></td>
+						<td bgcolor="#EFEFEF" style="font-color:#7a6a56 "><br/><br/>
+							<span style="font-size: 22px">上海漕河泾科创园区</span><br/>
+							<span style="font-size: 14px">共享空间100套私有云桌面</span><br/>
+							供初创企业使用<br/>
+								▼
+						</td>
+						<td><img src="../static/img/web/system/hbzq.jpg"  class="img-responsive" /></td>
+					</tr>
+					<tr>
+						<td bgcolor="#EFEFEF">
+							&#9650<br/>
+							<span style="font-size: 20px">上海CYTS中青旅</span><br/>
+							上海32家门店语音系统、视频会议系统<br/>
+							及门禁考勤系统工程<br/><br/><br/>
+						</td>
+						<td><img  src="../static/img/web/system/shpdtsg.jpg"  class="img-responsive" /></td>
+						<td bgcolor="#EFEFEF">
+							      &#9650<br/>
+							<span style="font-size: 20px">迪亚天天连锁便利店</span><br/>
+							上海市区300多个门店<br/>
+							VPN组网、WIFI覆盖工程<br/><br/><br/>
+						</td>
+					</tr>
+				</table> 										
+				<div><p> <h4> 您的企业需要哪些产品配置</h4></p></div>	
+				<div style="font-size: 22px">▼</div>
+				<div>
+					<hr style="height:2px;border-width:0;color:gray;background-color:black" />			
+				</div>									
+				<div>
+					<img  style="margin:0px auto;width: 30%;height: auto;" src="../static/img/web/system/fwxm.gif"  class="img-responsive" /><br>
+				</div>
+	
+				<div style="margin-left:40px">
+					<table  style="border-top-color:red">
+						<tr>
+							<td>
+								<input style="padding-top: 10px;height:26px" name="w1"   type="image" src="../static/img/web/system/checked.png" onclick="setCheckState(this)"  value="1" /><span style="font-size: 20px">&nbsp;综合布线</span>
+							</td>
+							<td width="40px"></td>
+							<td>
+								<input style="padding-top: 10px;height:26px" name="w2"   type="image" src="../static/img/web/system/checked.png" onclick="setCheckState(this)"   value="1" /><span style="font-size: 20px">&nbsp;路由器、交换机</span>
+							</td>
+							<td width="40px"></td>
+							<td>
+								<input style="padding-top: 10px;height:26px" name="w3"   type="image" src="../static/img/web/system/checked.png" onclick="setCheckState(this)"   value="1" /><span style="font-size: 20px">&nbsp;Wi-Fi无线路由器</span>
+							</td>
+							<td width="40px"></td>
+							<td>
+								<input style="padding-top: 10px;height:26px"  name="w4"  type="image" src="../static/img/web/system/checked.png" onclick="setCheckState(this)"   value="1" /><span style="font-size: 20px">&nbsp;防火墙</span>
+							</td>
+							<td width="40px"></td>
+							<td>
+								<input style="padding-top: 10px;height:26px" name="w5"   type="image" src="../static/img/web/system/checked.png" onclick="setCheckState(this)"   value="1" /><span style="font-size: 20px">&nbsp;服务器、数据存储</span>
+							</td>																					
+						</tr>
+						</form>
+					</table>
+					<table>
+						<tr>
+							<td style="word-break: keep-all;white-space:nowrap;">
+								<input id="xx" style="padding-top: 10px;height:26px"   name="w[]"   type="image" src="../static/img/web/system/checked.png" onclick="setCheckState(this)"   value="1" /><span style="font-size: 20px">&nbsp;电话程控交换机</span>
+							</td>
+							<td width="40px"></td>
+							<td style="word-break: keep-all;white-space:nowrap;">
+								<input style="padding-top: 10px;height:26px"  name="w[]" type="image" src="../static/img/web/system/checked.png" onclick="setCheckState(this)"   value="1" /><span style="font-size: 20px">&nbsp;门禁考勤</span>
+							</td>
+							<td width="40px"></td>
+							<td style="word-break: keep-all;white-space:nowrap;">
+								<input style="padding-top: 10px;height:26px"  name="w[]"  type="image" src="../static/img/web/system/checked.png" onclick="setCheckState(this)"   value="1" /><span style="font-size: 20px">&nbsp;Wi-Fi无线路由器</span>
+							</td>
+							<td width="40px"></td>
+							<td style="word-break: keep-all;white-space:nowrap;">
+								<input style="padding-top: 10px;height:26px" name="w[]"   type="image" src="../static/img/web/system/checked.png" onclick="setCheckState(this)"   value="1" /><span style="font-size: 20px">&nbsp;视频监控</span>
+							</td>
+							<td width="40px"></td>
+							<td style="word-break: keep-all;white-space:nowrap;">
+								<input style="padding-top: 10px;height:26px"  name="w[]"  type="image" src="../static/img/web/system/checked.png" onclick="setCheckState(this)"   value="1" /><span style="font-size: 20px">&nbsp;网络机柜</span>
+							</td>																					
+						</tr>
+					</table>	
+				</div>
+				<div class="input-group">
+					<br/>
+					<table class="table-responsive" border="0">
+						<tr>
+							<td style="background:#EFEFEF;border: 1px;border:#EC3F4D solid 2px;word-break: keep-all;white-space:nowrap;">
+								<span style="font-size: 18px">&nbsp;联系姓名&nbsp;</span> <input  type="text" style="min-width: 40px;width: 130px;height: 22px"/>&nbsp;
+							</td>
+							
+						    <td width="13px"></td>
+
+							<td style="background:#EFEFEF;padding: 0px 4px; border: 1px;border:#EC3F4D solid 2px;word-break: keep-all;white-space:nowrap;">
+								<span style="font-size: 18px">联系手机&nbsp;</span> &nbsp;<input type="text" style="height: 22px;width: 170px;"/><span style="font-size: 16px;">获取验证码&nbsp;</span> 
+							</td>
+						    <td width="13px"></td>
+							<td style="background:#EFEFEF;padding: 0px 4px; border: 1px;border:#EC3F4D solid 2px;word-break: keep-all;white-space:nowrap;">
+								<span style="font-size: 18px">填写验证码&nbsp;</span> <input  type="text" style="width: 100px;height: 22px"/>&nbsp;
+							</td>
+	
+						    <td width="13px">&nbsp;</td>
+
+							<td style="">
+								<a href="#"  onclick="smb();" ><img  src="../static/img/web/system/submit.gif" class="img-responsive"> </a>
+							</td>	
+
+						</tr>
+					</table>
+				</div>
+				
+				<div>
+					<hr style="height:2px;border-width:0;color:gray;background-color:black" />			
+				</div>	
+				<table>
+					<tr>
+						<td>
+							<a href="#"><img src="../static/img/web/system/syszxbtnleft.png"  class="img-responsive" /></a>
+						</td>
+						<td style="width: 13px"></td>
+						<td>
+							<a href="#"><img src="../static/img/web/system/syszxbtnright.png"  class="img-responsive"/></a>
+						</td>
+					</tr>
+				</table>				
+			</div>
+		</div>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?6bf7ae9b5212b8c52b57065299f133f8";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>		
+    </body>
+</html>

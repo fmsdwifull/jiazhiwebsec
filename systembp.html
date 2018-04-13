@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.3, maximum-scale=1.0" />
+        <title>嘉值科技</title>
+		<link rel="icon" href="../static/img/vas.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/main.css"/>		
+		<script type="text/javascript" src="../static/js/jquery.min.js"></script>		
+        <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../static/js/respond.min.js"></script>		
+		<script type="text/javascript">
+		$(function(){  
+			screen();  
+			function screen(){  
+				if($(window).width()<768){  
+					$(".banner").attr("src","../static/img/mob/banner.png");  
+					$(".img-zxbtn-left").on("click",function(){
+						window.location.href="tel:4006631663";
+					})
+				}else{  
+					$(".banner").attr("src","../static/img/web/system/bpbanner.jpg");
+					$(".img-zxbtn-left").on("click",function(){
+						window.location.href="skype:+864006631663?call";
+					})					
+				}  
+			}  
+			$(window).resize(function(){  
+				screen();  
+			})  
+			
+			//产品链接
+			$("#system").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=409";
+			})	
+			$("#computer").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=433";
+			})	
+			$("#host").on("click",function(){
+				window.location.href="http://cloud-open.cn/yunzhuji/yzjpc.html";
+			})	
+			
+			//行点击事件
+		   $('#dxproduct').on('click-row.bs.table', function (e, row, element)   
+			{  
+				//$(element).css({"color":"blue","font-size":"16px;"});  
+				console.log(row);
+				alert();
+				  
+			});  			
+		}); 
+		</script>  
+		<style type="text/css">
+			.syssubnavtb{
+				width: 30%;
+				margin: 0 auto;
+			};
+			.syshh{
+				line-height: 10px;
+			};
+			.syspdttb{
+		margin-bottom: 0px;
+		max-width: 60%;
+		width: 60%;
+		margin:auto;
+			}
+			.syspdttb td{
+				margin-top: 0px;
+				text-align: left;
+				vertical-align: middle;
+			};
+			a{
+				color:#00F;
+			};
+		</style>  		  
+		
+    </head>
+    <body>
+		<div class="container-fluid">	
+			<div id="banner" class="row">  
+				<div class="col-sm-12">  
+					<a href="http://cloud-open.cn/yunzhuji/qytx.html"><img style="width: 100%;" class="banner" src="../static/img/web/system/bpbanner.jpg" /></a>
+				</div>  
+			</div>  
+			<div class="main"> 
+				<table class="navtable" border="0">
+					<tr>
+						<td>
+							<input id="hot" type="image" src="../static/img/web/hot.png" class="img-nav" />
+						</td>
+						<td class="navmdline" >
+							<img src="../static/img/web/system/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>								
+						<td>
+							<input id="system" type="image" src="../static/img/web/system2.png" class="img-nav" />
+						</td>
+						<td class="navmdline" >
+							<img src="../static/img/web/system/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+						<td>
+							<input id="communicate" type="image" src="../static/img/web/communicate.png"  onmousedown="mouseDown()" class="img-nav" />
+						</td>
+						<td class="navmdline">
+							<img src="../static/img/web/system/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+						<td>
+							<input id="computer" type="image" src="../static/img/web/computer.png" class="img-nav" />
+						</td>
+						<td class="navmdline">
+							<img src="../static/img/web/system/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+						<td>
+							<input id="host" type="image" src="../static/img/web/host.png" class="img-nav" />
+						</td>
+					</tr>
+				</table>
+	
+				<div class="syshh" style="margin-bottom: 8px;">  
+					<img width="100%" src="../static/img/web/system/hh1.png" class="img-responsive" />  
+				</div>
+				<table class="syssubnavtb" >
+					<tr>
+						<td>
+							<input type="image" src="../static/img/web/system/qykds.png" class="img-subnav" />
+						</td>
+						<td>
+							<img src="../static/img/web/system/dmiddle.png"  class="sub-navbtnimg" />
+						</td>								
+						<td>
+							<input type="image" src="../static/img/web/system/sjzxq.png" class="img-subnav" />
+						</td>		
+					</tr>
+				</table>
+				<div class="syshh">  
+					<img width="100%" src="../static/img/web/system/hh2.png" class="img-responsive" />  
+				</div>				
+				<div style="width: 20%;height: auto;margin: 10px auto;"><img src="../static/img/web/system/pergw.png"  class="img-responsive" /></div>
+				<div style="width: 30%;height: auto;margin: 10px auto;"><img src="../static/img/web/system/mfkc.png"  class="img-responsive" /></div>		
+
+				<div style="margin-top:20px"><p> <h4> 此综合布线方案针对中小企业及团队，能搭建办公网络的基础环境</h4></p></div>		
+				<div><a href="#"><span style="text-decoration: underline;color: black"> 24工位以下规模，需根据实际工位及环境实地勘测，拟定独立方案
+</span></a></div>		
+				<div style="margin-top: 10px">▼</div>			
+				<div  style="margin-top: 10px"><img src="../static/img/web/system/pdcimg.png" class="img-responsive" /></div>
+				<div><p> <h4> 产品配置与使用范围</h4></p></div>	
+				<div style="margin-bottom:10px">▼</div>
+				<!--
+
+				-->
+				<table class="table" style="border-top-color:red;text-align: left;margin: 0px auto;border-top:1px solid green;border-bottom:2px solid black" >
+					<tr>
+						<td style="border-top-color:black;border-top-width:2px;"><span style="background:green">安普网线</span></td>
+						<td style="border-top-color:black;border-top-width:2px;">							超五类非屏蔽、纯铜线芯；8芯对绞串扰小、抗拉伸
+						</td>
+						<td style="border-top-color:black;border-top-width:2px;">						使用于路由器、交换机、监控设备、电M等</td>
+					</tr>
+					<tr>
+						<td>信息面板</td>
+						<td>
+							电脑、电话双口插座；UL94V-0防火耐热材料，硬度、弹性适中；<br/>
+							配有防水盖以保护模块，遮蔽灰尘和污物进入；支持非屏蔽超五类、<br/>
+							屏蔽超五类、非屏蔽六类、屏蔽六类模型块化信息模块
+						</td>
+						<td><br>使用于办公桌、壩面、地面等</td>
+					</tr>
+					<tr>
+						<td>网络模块</td>
+						<td>
+							超五类RJ45非屏蔽模块；免打线设计、50µ镀金针片、低电阻率；；<br/>
+							环保PC胶料、结实耐用
+						</td>
+						<td style="padding-top: 20px">配合信患面板使用</td>
+					</tr>
+					<tr>
+						<td>电话模块</td>
+						<td>
+							RJ11非屏蔽模块；垂直打线设计、30µ镀金针片、低电阻率；环保<br/> 
+							PC胶料、结实耐用
+						</td>
+						<td style="padding-top: 20px">配合信患面板使用</td>
+					</tr>
+					<tr>
+						<td>线路水晶头</td>
+						<td>
+							纯铜镀金、三叉簧片、阻燃绝缘、插拔灵活；经久不坏 
+						</td>
+						<td>配合网线、电话线使用</td>
+					</tr>
+					<tr>
+						<td>线槽及辅料</td>
+						<td>
+							PVC100X50，30X60，跳线、胀栓等
+						</td>
+						<td>使用于吊顶、墙面、地面等</td>
+					</tr>																									
+				</table>					
+				<div>
+					<br>
+					<img src="../static/img/web/system/syszxbtnleft.png"  class="" />&nbsp;
+					<img src="../static/img/web/system/syszxbtnright.png"  class="" />
+				</div>									
+			</div>
+		</div>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?6bf7ae9b5212b8c52b57065299f133f8";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>		
+    </body>
+</html>

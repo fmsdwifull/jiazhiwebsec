@@ -1,0 +1,280 @@
+@font-face
+{
+	font-family: '方正兰亭超细黑简体';   /*字体名称*/
+	src:url('../fonts/FZLTCXHJW.ttf') format('truetype');  
+}
+@font-face
+{
+	font-family: '方正兰亭超细黑繁体';   /*字体名称*/
+	src:url('../fonts/FZLTCXHFW.ttf') format('truetype');  						
+}	
+@font-face
+{
+	font-family: 'MicrosoftYaHei-Bold-01';   /*字体名称*/
+	src:url('../fonts/MicrosoftYaHei-Bold-01.ttf') format('truetype');							
+}	
+@font-face
+{
+	font-family: 'MicrosoftYaHei-Bold-02';   /*字体名称*/
+	src:url('../fonts/MicrosoftYaHei-Bold-02.ttf') format('truetype');							
+}	
+@font-face
+{
+	font-family: 'MicrosoftYaHei-01';   /*字体名称*/
+	src:url('../fonts/MicrosoftYaHei-01.ttf') format('truetype');							
+}	
+@font-face
+{
+	font-family: 'MicrosoftYaHei-02';   /*字体名称*/
+	src:url('../fonts/MicrosoftYaHei-02.ttf') format('truetype');							
+}	
+@font-face
+{
+	font-family: 'GOTHIC';   /*字体名称*/
+	src:url('../fonts/GOTHIC.TTF') format('truetype');							
+}	
+body {  
+	font-family:'MicrosoftYaHei-01';
+    text-align:center;	
+}   
+
+input,button,select,textarea{outline:none;}
+.producttable{
+	margin-bottom: 0px;
+	max-width: 100%;
+	width: 100%;
+	margin:auto;
+}
+.zxbtntable{
+	margin-bottom: 0px;
+	max-width: 100%;
+	width: 100%;
+	margin:auto;
+}
+/*
+	.tablem.table-bordered > tr >td {
+		height: 120px;
+		max-height: 120px;
+	}
+*/	
+.navmdline{
+}	
+.weblogimg{
+	padding-top:45px;
+}
+.subnavimg{
+	
+}
+
+.img-subnav {
+   width: 70%;  //图片宽度等于父元素宽度
+   height: auto;  //高度自适应
+  -webkit-appearance: none;
+   border-radius: 0;   
+}
+	
+table th tr td{
+	align:center;
+}
+
+.img-zxbtn{
+	width: 99%;  //图片宽度等于父元素宽度
+    height: auto;  //高度自适应
+    -webkit-appearance: none;
+    border-radius: 0;	
+}	
+
+.container-fluid {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.main{ 
+	margin:0 auto;
+	width:65%;
+} 
+@media screen and (min-width: 960px){  
+	.navtable {
+		max-width: 90%;
+		width: 90%;
+		margin:20px auto;
+	}
+	.img-nav {
+	   width: 60%;  //图片宽度等于父元素宽度
+	   height: auto;  //高度自适应
+	}		
+	.navbtnimg{
+		height:40px;
+	}
+	.subnavtable {
+		margin-bottom: 0px;
+		max-width: 60%;
+		width: 60%;
+		margin:auto;
+	}		
+	.sub-navbtnimg{
+		height:18px;
+		margin-bottom:5px;
+	}
+	.moblogimg{
+		display:none;
+	}
+	table th{
+		background:#DCDDDD;
+		text-align:center;
+		font-family:微软雅黑;		
+	}		
+	.webnodisplay{
+		display:none;				
+	}
+	.captitle{
+		font-family:微软雅黑;	
+		font-size:20px;
+		font-weight:bold;
+		color:#222222;
+	}		
+	.head{
+			margin:0 auto;
+			width:65%;
+		}
+
+		.navtable {
+			max-width: 80%;
+			width: 80%;
+			margin: 30px auto 25px auto;
+		}
+		table{
+			width: 100%;
+		}
+
+		table th {
+			background: #DCDDDD;
+			text-align: center;
+			font-family: 微软雅黑;
+		}
+
+		.webnodisplay {
+			display: none;
+		}
+
+		.white_v_line {
+			background-color: #FFFFFF;
+			width: 2px;
+		}
+
+		.head ul{/*设置导航栏的框框*/
+			margin: 0px auto;/*框框整体的位置，30px是指离网页的顶部和下部的距离，auto控制的是左右距离为自动调节*/
+			width: 100%;/*框框的宽度*/
+			height: 50px;/*框框的长度*/
+			padding: 0px;/*将框框的padding设置为零，不然会导致框框里的内容与框边缘有间隔*/
+			border:0px solid #000;/*添加边框*/
+		}
+		.head li{
+			list-style-type: none;/* 去掉li前的点 */
+			float: left;/*将li设置成做浮动，变为联动*/
+			width: 10%;
+			margin-left: 1px;
+		}
+		.head a{
+			display: block;/*将a变成块状*/
+			width: 100%;/*设置块的宽度*/
+			height: 50px;/*设置块的长度*/
+			font-family: Microsoft Yahei;
+			line-height: 50px;/*设置字体在块中的高度*/
+			background-color: #dcdddd;
+			margin: 0px 0px;/*块里的高宽通过margin设置*/
+			color: #000;
+			text-align: center;/*字体居中*/
+			text-decoration: none;/*去掉下划线*/
+			font-size: 15px;
+		}
+
+		.head a span{
+			display: none;
+		}    
+		.head a:hover{
+			background-color:  #f2f2f2;
+			color: black;
+			text-decoration: none;
+
+		}
+
+		.head a:hover span{
+			display: block;
+		}	
+		.secmenu{
+			float: left;
+			padding-left:40px;
+			font-size: 10px
+		}
+		
+		 .secmenu a{
+			color : #000000;
+			text-decoration: none;/*去掉下划线*/
+		 } 
+		.secmenu a:hover{
+		   padding-bottom:15px; border-bottom:1px solid #000;
+		   text-decoration: none;/*去掉下划线*/
+		   color : #000000;
+		}
+		
+		.img30min{
+			text-align:left;
+			margin-top:22px;
+		}
+		.img30min img{
+			width:50%;
+		}
+		
+		.zftb{
+			  text-align:center;
+			  font-family:GOTHIC;		
+		}
+		.ptitle{
+			margin-top:50px;
+			font-size:30px;
+			margin-bottom:30px;			
+		}
+		.footer{
+			width:100%;
+			height:50px;
+			background-color:#DCDCDC;
+			padding:20px 0px;
+			color:#595757;
+			font-size:12px;			
+		}	
+		.bannertel{
+			color: #ffffff;
+			text-align: left;
+			padding-top: 10px;
+		}		
+		.search{
+			float:right;
+			height:auto;margin-bottom:0px;
+			padding-bottom:0px;
+			padding-right: 18px
+		}
+		.search img{
+			width:12px;
+		}		
+		.keywordcolor{
+			color:#F90000;
+		}
+		.tdcellvm{
+			display:table-cell; 
+			vertical-align:middle;
+		}
+		p{line-height:26px} 	
+		.headerx{
+			padding:28px 0px;
+		}
+		input{
+			-webkit-appearance: none;border-radius: 0;
+			border:1px solid #D0CFCF;
+		}
+		.logo{
+			float:left;
+		}
+		.logo img{
+			width: 100px;
+		}
+}  

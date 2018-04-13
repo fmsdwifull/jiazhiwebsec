@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.3, maximum-scale=1.0" />
+        <title>嘉值科技</title>
+		<link rel="icon" href="./static/img/vas.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="./static/css/main.css"/>		
+		<script type="text/javascript" src="./static/js/jquery.min.js"></script>		
+        <script type="text/javascript" src="./static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./static/js/respond.min.js"></script>	
+		<script type="text/javascript" src="./static/js/main.js"></script>		
+		
+		<script type="text/javascript">
+		$(function(){   
+			//产品链接
+			$("#system").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=409";
+			})	
+			$("#computer").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=433";
+			})	
+			$("#host").on("click",function(){
+				window.location.href="http://cloud-open.cn/yunzhuji/yzjpc.html";
+			})	
+			
+			//行点击事件
+		    $('#dxproduct').on('click-row.bs.table', function (e, row, element)   
+			{  
+				//$(element).css({"color":"blue","font-size":"16px;"});  
+				console.log(row);
+				alert();
+				  
+			});  			
+		}); 
+		
+		</script>  
+		<style type="text/css">
+
+
+		</style>  		  
+    </head>
+    <body>
+		<div class="container-fluid">	
+			<div class="head">
+				<ul>
+					<li><a href="./home.html">首页</a></li>
+					<li><a href="" style="background-color: #f2f2f2;" >企业宽带</a></li>
+					<li><a href="./zscp-dxsjzx-mstp.html">专属产品</a></li>
+					<li><a href="./ziyuancx.html">资源查询</a></li>
+					<li><a href="./subanlc.html">速办流程</a></li>
+					<li><a href="./about.html">关于我们</a></li>
+					<li style="width: 28%" id="kong"><a style="background-color: #dcdddd"></a></li>
+					<li style="width: 5%;display: inline;float: left" id="tel" onmousemove="over('tel')" onmouseout="out('tel')">
+						<a href="">
+							<div>
+								<img width="40px" id="navtel"  src="./static/img/web/home/导航_电话.png"/>
+							</div>
+						</a>
+					</li>
+					<li style="width: 5%" id="email" onmousemove="over('email')" onmouseout="out('email')">
+						<a href="">
+							<div>
+								<img width="40px"  id="navmail"   src="./static/img/web/home/导航_邮箱.png"/>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>			
+			<div  class="main"> 
+				<div id="headerx" style="padding:28px 0px;">  
+					<div style="float:left;">  
+						<img style="width: 100px"; src="./static/img/web/kdsuban/KDSUBAN_LOGO.png" />						
+					</div>  
+	                <div  class="secmenu">
+    	                <span style="padding-right: 30px;"><a href="./qykd-dxwp.html">中国电信宽带</a></span>
+		                <span style="padding-right: 30px"><a href="./qykd-ltsw.html">中国联通宽带</a></span>
+		                <span style="padding-right: 30px"><a href="./qykd-ydsw.html">中国移动宽带</a> </span>	                	
+		                <span style="padding-bottom:15px; border-bottom:1px solid #000;color: #A40B5D">博士鹏宽带 </span>
+		                <span style="padding-left: 30px"><a href="./qykd-kdyun.html">宽迪云光纤</a></span>
+	                </div>
+					<div class="search">  
+					    <input type="text" name="fname"  style="border:none;width: 160px"/>
+						<img style="width: 12px;" src="./static/img/web/kdsuban/搜索_放大镜.png" />
+						<hr style="margin-top:4px" />			
+					</div> 
+				</div>  
+			    <div class="ptitle" >登上云动车，开启企业<span class="keywordcolor">飞速</span>发展时代！</div>			
+			</div>	
+			
+			<div style="width:100%;height:200px;padding:0px;background:url('./static/img/web/qykd/Banner_鹏博士云动车.jpg') no-repeat 5px 5px;background-size:100% 96%;">
+				<div style="padding-top:100px;padding-left:10px" > 
+					  <table style="text-align: center;" border="0px">
+							<tr>
+								<td style="text-align: right;width: 600px;padding-top: 10px"><div style="color: #ffffff"  onmousemove="telover()" onmouseout="telout()">首月面单享豪礼</div></td>
+								<td style="width: 30px; text-align: left;padding-top: 10px;padding-left: 4px"><div onmousemove="telover()" onmouseout="telout()"><img width="18px" src="./static/img/web/qykd/conn.png"></div></td>
+								<td><div  id="showtelid" class="bannertel"></div></td>
+							</tr>
+					  </table>
+				</div> 						
+			</div>
+	        <div class="main"> 
+	        	<br/>
+				<table align="center" style="width:70%" border="0px" ><!---这个很有趣-->
+					<tr>
+						<td><a href="./qykd-pbssc.html"><img   width="92%"  src="./static/img/web/qykd/按钮_鹏博士云商城_.png"
+							onmouseover="this.src='./static/img/web/qykd/按钮_鹏博士云商城.png'"
+							onmouseout="this.src='./static/img/web/qykd/按钮_鹏博士云商城_.png'"	
+						> </a></td>
+						<td><a href="./qykd-pbskx.html"><img width="92%"  src="./static/img/web/qykd/按钮_鹏博士云快线_.png"
+							onmouseover="this.src='./static/img/web/qykd/按钮_鹏博士云快线.png'"
+							onmouseout="this.src='./static/img/web/qykd/按钮_鹏博士云快线_.png'"	
+						> </a></td>
+						<td><img width="92%"  src="./static/img/web/qykd/按钮_鹏博士云动车.png"					
+						> </td>
+					</tr>
+				</table>
+				<br/>
+				<div class="img30min">
+			       	<img  src="./static/img/web/qykd/30minute.png">
+			    </div>	
+	            <br/>
+	            <div style="text-align: left;">
+		            <h1>套餐介绍</h1>
+		            <p>云动车是基于上海鹏博士公司覆盖全市的高速、稳定、可靠的全光纤城域网络，为上海市广大中小企业、商业用户提供的一项基础宽带上网产品。云动车为用户上网电子商务、视频、游戏、娱乐、搜索、即时通信、新闻浏览、收发邮件、自动办公、企业应用等提供流畅的体验。 </p><br/>	
+
+		            <h1>产品属性</h1>	
+		            <p>● 接入方式：通过五类线接入楼道宽带接入终端设备
+					<br/>● 认证方式：<span style="font-family:GOTHIC">IP</span>专线（无须拨号，永久在线）
+					<br/>● IP地址： 静态公网IP地址
+					<br/>● 产品规格：<span style="font-family:GOTHIC">50M/100M/</span>接入桌面 
+					<br/>
+					<h1>套餐资费</h1>
+					<table  class="table table-condensed producttable " border="0px">
+						 <thead >
+							<th>速率</th>
+							<th>备注</th>
+							<th>特惠资费（元/年）</th>
+							<th>特惠资费（元/2年）</th>
+							<th>额外增加</th>
+							<th>安装费</th>
+
+						</thead>
+						<tbody class="zftb">
+							<tr>
+								<td>50M</td>
+								<td>可用1个IP地址</td>
+								<td>19800</td>
+								<td>33800</td>
+								<td rowspan="2" style="padding-top: 15px">每增加1个可用IP地址<br/>收取300元/年的使用费用</td>
+								<td rowspan="2" style="padding-top: 15px">引接距离1.5公里里内免收工程建设费用<br/>超过1.5公里按6000元/KM收取</td>				
+							</tr>
+							<tr>
+								<td>50M</td>
+								<td>可用1个IP地址</td>
+								<td>33800</td>
+								<td>53800</td>
+							</tr>																			
+						</tbody>						
+					</table>
+					<div>  
+						<hr style="height:1px;border-width:0;color:gray;background-color:#bfc0c0;margin-top:3px"; />			
+					</div>					
+				</div>
+            </div>
+            <br/>
+	            <div>
+	            	<a href="./subanlc.html"> <img width="200px" src="./static/img/web/qykd/点击立即速办.png"></a> <br/>
+	            	<span style="font-size: 18px;font-weight: bold;"> 或免费咨询</span><span style="font-size: 20px;color: #A40B5D ;font-family: GOTHIC;">&nbsp;<a href="skype:+8602131262710?call" style="color: #A40B5D">021-31262710</a></span><br/><br/><br/>
+	            </div>
+		</div>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?6bf7ae9b5212b8c52b57065299f133f8";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>		
+    </body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width、 initial-scale=1、 minimum-scale=0.3、 maximum-scale=1.0" />
+        <title>嘉值科技</title>
+		<link rel="icon" href="../static/img/vas.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/main.css"/>		
+		<script type="text/javascript" src="../static/js/jquery.min.js"></script>		
+        <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../static/js/respond.min.js"></script>		
+		<script type="text/javascript">
+		$(function(){ 
+			$(".img-zxbtn-left").on("click",function(){
+				window.location.href="skype:+864006631663?call";
+			})		
+						
+			//产品链接
+			$("#system").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=409";
+			})	
+			$("#it").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=433";
+			})	
+			$("#host").on("click",function(){
+				window.location.href="http://cloud-open.cn/yunzhuji/yzjpc.html";
+			})	
+			
+			//行点击事件
+		   $('#dxproduct').on('click-row.bs.table', function (e,row,element)   
+			{  
+				//$(element).css({"color":"blue"、"font-size":"16px;"});  
+				console.log(row);				  
+			});  			
+		}); 
+		</script>    
+		<style type="text/css">
+			body{  
+				font-family:'MicrosoftYaHei-01';
+			}		
+			.syssubnavtb {
+				width: 60%;
+				margin: 0px auto ;
+				text-align: center;
+				font-size:19px;
+			}		
+			.syssubnavtb a {
+				color: black;
+				background-color: white;
+				font-size:19px;
+				text-decoration:none;
+			}
+
+			.syssubnavtb a:hover {
+				color: white;
+				background-color: black;
+			}				
+		</style>
+    </head>
+    <body>
+		<div class="container-fluid">	
+			<div id="banner" class="row">  
+				<div class="col-sm-12">  
+					<a href="http://cloud-open.cn/yunzhuji/qytx.html"><img style="width: 100%;" class="banner" src="../static/img/web/outsource/Website_Banner_驻场_1920×480.jpg" /></a>
+				</div>  
+			</div>  
+			<div class="main"> 
+				<table class="navtable">
+					<tr>
+						<td>
+							<input id="goods" type="image" src="../static/img/web/outsource/goods.png" class="img-nav" onclick="intent('goods2')" onmouseover="this.src='../static/img/web/outsource/goods2.png'"
+                               onmouseout="this.src='../static/img/web/outsource/goods.png'"/>
+						</td>
+						<td class="navmdline" >
+							<img src="../static/img/web/outsource/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>								
+						<td>
+							<input id="system" type="image" src="../static/img/web/outsource/system.png" class="img-nav" onclick="intent('system')" onmouseover="this.src='../static/img/web/outsource/system2.png'"
+                               onmouseout="this.src='../static/img/web/outsource/system.png'"/>
+						</td>
+						<td class="navmdline" >
+							<img src="../static/img/web/outsource/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+							<td>
+							<input id="communicate" type="image" src="../static/img/web/outsource/communicate.png"     class="img-nav"  src="static/img/web/communicate.png" onmouseover="this.src='../static/img/web/outsource/communicate2.png'"
+                           onmouseout="this.src='../static/img/web/outsource/communicate.png'" class="img-nav" onclick="intent('communicate')"/>
+						</td>
+						<td class="navmdline">
+							<img src="../static/img/web/outsource/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+						<td>
+							<input id="it" type="image" src="../static/img/web/outsource/it2.png" class="img-nav"   onclick="intent('it')" onmouseover="this.src='../static/img/web/outsource/it2.png'"
+                           onmouseout="this.src='../static/img/web/outsource/it.png'" />
+						</td>
+						<td class="navmdline">
+							<img src="../static/img/web/outsource/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+						<td>
+							<input id="host" type="image" src="../static/img/web/outsource/host.png" class="img-nav"   onclick="intent('host')" onmouseover="this.src='../static/img/web/outsource/host2.png'"
+                           onmouseout="this.src='../static/img/web/outsource/host.png'"/>
+						</td>
+					</tr>
+				</table>
+	
+				<div>  
+					<hr style="height:6px;border-width:0;color:gray;background-color:#000000;margin-bottom:10px" />			
+				</div>
+                <table class="syssubnavtb">
+                    <tr>
+                        <td>
+                           <a href="">电脑闪修</a>
+                        </td>
+                        <td>
+							<img src="../static/img/web/outsource/dmiddle.png"  class="sub-navbtnimg" />
+						</td>
+                        <td>
+                            <a href="#">IT外包服务</a>
+                        </td>
+                        <td>
+							<img src="../static/img/web/outsource/dmiddle.png"  class="sub-navbtnimg" />
+						</td>	
+                        <td>
+                            <a style="background-color: black;color:white;">IT驻场服务</a>
+                        </td>				
+                    </tr>
+                </table>
+				<div>  
+					<hr style="height:2px;border-width:0;color:gray;background-color:#595757;margin:10px 0px" />			
+				</div>                		
+                <div style="margin:0 auto;padding: 10px 0px;">
+     										           
+				</div>	
+				<div style="float: left;padding: 10px 0px">
+					<a href=""><img style="width: 36%;margin-bottom: 40px" src="../static/img/web/outsource/IT驻场_7888元.png"/> </a>
+					<p><span style="font-size: 16px;">如果您的企业，IT办公环境稳定性有较高要求……</span></p>
+					<p><span style="font-size: 16px;">如果您的企业，需要降低人力资源管理成本……</span></p>
+					<h3><span style="font-size: 18px;">那么，您需要</span><span style="color: red;font-size: 18px;"> IT驻场服务了！</span></h3>
+					<p><span style="font-size: 30px">我们<span style="color: red;font-size: 30px;">给您的</span>不只是一位网管，而是资深大牛！</span></p>
+					<p><span style="font-size: 30px">我们<span style="color: red;font-size: 30px;">给您的</span>不只是一位工程师，而是整个团队！</span></p>
+					<table border="0px" style="margin-top: 30px">
+						<tr>
+							<td style="width: 46%">
+								<a href="" target="_blank"> <img style="width: 90%;height: auto;" src="../static/img/web/outsource/点击了解详情.png" /></a>
+							</td>
+							<td style="width: 46%">
+								<a href="skype:+864006631663?call" target="_blank"> <img style="width: 90%" src="../static/img/web/outsource/免费咨询热线.png" /></a>
+							</td>
+						</tr>
+					</table>
+					<hr style="height:2px;border-width:2px;color:gray;background-color:#595757; margin:20px auto " />
+					<span style="font-size: 33px;">我们提供的服务内容</span> <br/>
+					<span style="font-size: 31px;color: #727171;font-family:GOTHIC">SERVICE CONTENT</span>					
+
+				</div>
+
+				<div style="float: left;margin-bottom: 50px;">
+					<table>
+						<td><img style="width: 60%;margin-bottom: 5px" src="../static/img/web/outsource/IT驻场_电脑维护.png" /><br/>电脑维护</td>
+						<td><img style="width: 60%;margin-bottom: 5px" src="../static/img/web/outsource/IT驻场_系统维护.png" /><br/>系统维护</td>
+						<td><img style="width: 60%;margin-bottom: 5px" src="../static/img/web/outsource/IT驻场_软件驱动.png" /><br/>软件驱动</td>
+						<td><img style="width: 60%;margin-bottom: 5px" src="../static/img/web/outsource/IT驻场_分区重装.png" /><br/>分区重装</td>
+						<td><img style="width: 60%;margin-bottom: 5px" src="../static/img/web/outsource/IT驻场_查杀病毒.png" /><br/>查杀病毒</td>
+						<td><img style="width: 60%;margin-bottom: 5px" src="../static/img/web/outsource/IT驻场_网络搭建.png" /><br/>网络搭建</td>
+						<td><img style="width: 60%;margin-bottom: 5px" src="../static/img/web/outsource/IT驻场_设备安装.png" /><br/>设备安装</td>
+						<td><img style="width: 60%;margin-bottom: 5px" src="../static/img/web/outsource/IT驻场_外设视讯.png" /><br/>外设视讯</td>
+						<td><img style="width: 60%;margin-bottom: 5px" src="../static/img/web/outsource/IT驻场_域控服务器.png" /><br/>域控服务器</td>
+						<td><img style="width: 60%;margin-bottom: 5px" src="../static/img/web/outsource/IT驻场_远程支持.png" /><br/>远程支持</td>
+						<td><img style="width: 60%;margin-bottom: 5px" src="../static/img/web/outsource/IT驻场_代送检修.png" /><br/>代送检修</td>
+
+					</table>
+					<div style="width: 60%;margin:35px auto">
+						<hr style="height:2px;border-width:2px;color:gray;background-color:#595757;"" />
+					</div>
+					<div>
+						<p><span style="font-size: 18px">我们提供桌面设备支持、网络维护管理、服务器维护管理等各类IT服务人员派驻服务，
+</span></p>
+						<p><span style="font-size: 18px">通过流程化的预防性体系和严格的工程师绩效考核体系，控制服务质量和安全保密等客户刚性需求。</span></p>
+						<span style="font-size: 14px">● 每周五工作日（周一至周五），按照客户工作时间提供工程师派驻服务
+</span><br/>
+						<span style="font-size: 14px">● 非工程师派驻时间（如法定休息日），客户也可以获得全天候远程服务
+</span><br/>
+						<span style="font-size: 14px">● 将企业人力资源管理成本将至最低，服务不满意可随时更换派驻工程师
+</span><br/>
+						<span style="font-size: 14px">● 我们将提供丰富详尽、专业的IT运维报表功能和IT管理风险预警报告机制</span><br/>
+					</div>
+				</div>
+
+		</div>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?6bf7ae9b5212b8c52b57065299f133f8";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm,s);
+		})();
+		</script>		
+    </body>
+</html>

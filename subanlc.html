@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.3, maximum-scale=1.0" />
+        <title>嘉值科技</title>
+		<link rel="icon" href="./static/img/vas.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="./static/css/main.css"/>		
+		<script type="text/javascript" src="./static/js/jquery.min.js"></script>		
+        <script type="text/javascript" src="./static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./static/js/respond.min.js"></script>	
+		<script type="text/javascript" src="./static/js/main.js"></script>		
+		
+		<script type="text/javascript">
+		$(function(){   
+			//产品链接
+			$("#system").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=409";
+			})	
+			$("#computer").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=433";
+			})	
+			$("#host").on("click",function(){
+				window.location.href="http://cloud-open.cn/yunzhuji/yzjpc.html";
+			})	
+			
+			//行点击事件
+		    $('#dxproduct').on('click-row.bs.table', function (e, row, element)   
+			{  
+				//$(element).css({"color":"blue","font-size":"16px;"});  
+				console.log(row);
+				alert();
+				  
+			});  			
+		}); 
+
+		 var currentimg = './static/img/web/sblc/宽带运营商_列表中国电信.png';
+		 var isspread = 0;
+		 function changex(obj)
+		 {
+			//console.info(obj.parentNode.parentNode );
+			//alert(obj.parentNode.id);
+			//obj.parentNode.style="background-image: url('4.png'); text-align:right";
+			//obj.parentNode.parentNode.style= "background-image:url('1.png') ;background-size:100% 98%;text-align:right;padding-right:20px" 
+            //alert(obj.parentNode.id);
+
+			if(obj.parentNode.id=='m1')
+			{
+				if(isspread==0)
+				{
+				    isspread =1;
+					$('#m2').css("display","block");
+					$('#m3').css("display","block");
+					$('#m4').css("display","block");
+					$('#m5').css("display","block");
+					//console.info(obj.parentNode);
+					$("#mimg").attr("src","./static/img/web/sblc/宽带运营商_收起箭头.png");
+				}else{
+					isspread =0;
+					$('#m2').css("display","none");
+					$('#m3').css("display","none");
+					$('#m4').css("display","none");
+					$('#m5').css("display","none");
+					$("#mimg").attr("src","./static/img/web/sblc/宽带运营商_下拉箭头.png");
+				}
+			}
+			if(obj.parentNode.id=='m2')
+			{
+				//m2对应的图片是
+                //先获取m2对应的图片
+
+                //alert($('#img2').attr('src'));
+                var m2img = $('#img2').attr('src');
+			    m1.parentNode.style="background-image:url("+m2img+") ;background-size:100% 100%;text-align:right;padding-right:20px";         
+			    //m1.parentNode.style="background-image:url('./static/img/web/sblc/宽带运营商_列表中国联通.png') //;background-size:90% 98%;text-align:right;padding-right:20px";
+			    $('#m2').css("display","none");
+			    $('#m3').css("display","none");
+				$('#m4').css("display","none");
+				$('#m5').css("display","none");
+				//$("#img2").attr("src","./static/img/web/sblc/宽带运营商_列表中国电信.png");
+				$("#img2").attr("src",currentimg);
+				currentimg = m2img;
+			    $("#mimg").attr("src","./static/img/web/sblc/宽带运营商_下拉箭头.png");
+			    isspread =0;
+			}			
+			if(obj.parentNode.id=='m3')
+			{
+				//m2对应的图片是
+                //先获取m2对应的图片
+
+                //alert($('#img2').attr('src'));
+                var m3img = $('#img3').attr('src');
+			    m1.parentNode.style="background-image:url("+m3img+") ;background-size:100% 100%;text-align:right;padding-right:20px";         
+			    //m1.parentNode.style="background-image:url('./static/img/web/sblc/宽带运营商_列表中国联通.png') //;background-size:90% 98%;text-align:right;padding-right:20px";
+			    $('#m2').css("display","none");
+			    $('#m3').css("display","none");
+				$('#m4').css("display","none");
+				$('#m5').css("display","none");
+				//$("#img2").attr("src","./static/img/web/sblc/宽带运营商_列表中国电信.png");
+				$("#img3").attr("src",currentimg);
+				currentimg = m3img;
+			    $("#mimg").attr("src","./static/img/web/sblc/宽带运营商_下拉箭头.png");
+			    isspread =0;
+			}	
+			if(obj.parentNode.id=='m4')
+			{
+				//m2对应的图片是
+                //先获取m2对应的图片
+
+                //alert($('#img2').attr('src'));
+                var m4img = $('#img4').attr('src');
+			    m1.parentNode.style="background-image:url("+m4img+") ;background-size:100% 100%;text-align:right;padding-right:20px";         
+			    //m1.parentNode.style="background-image:url('./static/img/web/sblc/宽带运营商_列表中国联通.png') //;background-size:90% 98%;text-align:right;padding-right:20px";
+			    $('#m2').css("display","none");
+			    $('#m3').css("display","none");
+				$('#m4').css("display","none");
+				$('#m5').css("display","none");
+				//$("#img2").attr("src","./static/img/web/sblc/宽带运营商_列表中国电信.png");
+				$("#img4").attr("src",currentimg);
+				currentimg = m4img;
+			    $("#mimg").attr("src","./static/img/web/sblc/宽带运营商_下拉箭头.png");
+			    isspread =0;
+			}	
+			if(obj.parentNode.id=='m5')
+			{
+				//m2对应的图片是
+                //先获取m2对应的图片
+
+                //alert($('#img2').attr('src'));
+                var m5img = $('#img5').attr('src');
+			    m1.parentNode.style="background-image:url("+m5img+") ;background-size:100% 100%;text-align:right;padding-right:20px";         
+			    //m1.parentNode.style="background-image:url('./static/img/web/sblc/宽带运营商_列表中国联通.png') //;background-size:90% 98%;text-align:right;padding-right:20px";
+			    $('#m2').css("display","none");
+			    $('#m3').css("display","none");
+				$('#m4').css("display","none");
+				$('#m5').css("display","none");
+				//$("#img2").attr("src","./static/img/web/sblc/宽带运营商_列表中国电信.png");
+				$("#img5").attr("src",currentimg);
+				currentimg = m5img;
+			    $("#mimg").attr("src","./static/img/web/sblc/宽带运营商_下拉箭头.png");
+			    isspread =0;
+			}	
+
+
+		 }
+</script>
+		<style type="text/css">
+			#m2{
+				display:none;
+			}
+			#m3{
+				display:none;
+			}	
+			#m4{
+				display:none;
+			}	
+			#m5{
+				display:none;
+			}							
+		</style>  		  
+    </head>
+    <body>
+		<div class="container-fluid">	
+			<div class="head">
+				<ul>
+					<li><a href="./home.html">首页</a></li>					
+					<li><a href="./qykd-dxwp.html" >企业宽带</a></li>
+					<li><a href="./zscp-dxsjzx-mstp.html">专属产品</a></li>
+					<li><a href="./ziyuancx.html">资源查询</a></li>
+					<li><a href=""  style="background-color: #f2f2f2;">速办流程</a></li>
+					<li><a href="./about.html">关于我们</a></li>
+					<li style="width: 28%" id="kong"><a style="background-color: #dcdddd"></a></li>
+					<li style="width: 5%;display: inline;float: left" id="tel" onmousemove="over('tel')" onmouseout="out('tel')">
+						<a href="">
+							<div>
+								<img width="40px" id="navtel"  src="./static/img/web/home/导航_电话.png"/>
+							</div>
+						</a>
+					</li>
+					<li style="width: 5%" id="email" onmousemove="over('email')" onmouseout="out('email')">
+						<a href="">
+							<div>
+								<img width="40px"  id="navmail"   src="./static/img/web/home/导航_邮箱.png"/>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div  class="main" > 
+				<div id="headerx" style="padding:28px 0px;">  
+					<div style="float:left;">  
+						<img style="width: 100px"; src="./static/img/web/kdsuban/KDSUBAN_LOGO.png" />
+					</div>  
+					<div class="search">  
+					    <input type="text" name="fname"  style="border:none;"/>
+						<img  src="./static/img/web/kdsuban/搜索_放大镜.png" />
+						<hr style="margin-top:4px" />			
+
+					</div> 
+
+				</div>  <br/> <br/> 
+			    <p style="font-size:30px" >请<span style="color: red">选择</span>企业宽带运营商</p>
+			    <div style="margin:0px auto;text-align:center">
+					<table  align="center" style="width:60%" border="0px">
+						<tr>
+							<td width="28%" height="50px" style="background-color:#00A0E9;" ><span style="font-size:24px;color:#ffffff;">
+								宽带运营商</span>
+							</td>
+							<td width="2px"></td>
+							<td width="28%"  height="50px" style="background-color: #80CFF5; background-size: 80px 80px;  position:absolute;padding:10px 10px 0px 10px;" >
+								<table style="border-collapse:separate; border-spacing:0px 0px;" bolder="1px" >
+									<tr>
+										<td width="100%" height="30" style="background-image:url('./static/img/web/sblc/宽带运营商_列表中国电信.png') ;background-size:100% 100%;text-align:right;padding-right:20px">
+											<div id="m1"> 
+												<a href="#" onclick="changex(this)">
+											     <img   width="20px" id="mimg" src="./static/img/web/sblc/宽带运营商_下拉箭头.png" >
+											    </a>
+											</div>
+										<td>
+									</tr>	
+									<tr>
+										<td width="300px" height="30"  style="border-collapse:separate; border-spacing:0px 0px;">
+											<div id="m2"><a href="#"  onclick="changex(this)" ><img id="img2"  width="100%" height="30" src="./static/img/web/sblc/宽带运营商_列表中国联通.png" /></a></div>
+										<td>
+									</tr>		
+									<tr>
+										<td width="300px" height="30"  style="border-collapse:separate; border-spacing:0px 0px;">
+											<div id="m3"><a href="#"  onclick="changex(this)" ><img  id="img3" width="100%" height="30" src="./static/img/web/sblc/宽带运营商_列表中国移动.png" /></a></div>
+										<td>
+									</tr>	
+									<tr>
+										<td width="300px" height="30"  style="border-collapse:separate; border-spacing:0px 0px;">
+											<div id="m4"><a href="#"  onclick="changex(this)" ><img  id="img4"   width="100%" height="30" src="./static/img/web/sblc/宽带运营商_列表中国联通鹏博士.png" /></a></div>
+										<td>
+									</tr>
+									<tr>
+										<td width="300px" height="30"  style="border-collapse:separate; border-spacing:0px 0px;">
+											<div id="m5"><a href="#"  onclick="changex(this)" ><img  id="img5"     width="100%" height="30" src="./static/img/web/sblc/宽带运营商_列表宽迪云光纤.png" /></a></div>
+										<td>
+									</tr>																								
+								</table>
+							</td>
+						</tr>
+					</table>	
+				</div>
+			</div>	
+				<br/><br/>
+				<div style="width:90%;background:url('./static/img/web/sblc/底图.png') no-repeat;background-size:76% 98%;background-position:70% 0px;margin:0 auto;border:0px solid #F00">
+					<br/>
+					<img style="width:20px" src="./static/img/web/sblc/箭头.png"/>
+					<br/><br/>
+					<span style="font-size:26px">填写互联网接入服务<span style="color:red">协议</span></span>
+					<br/><br/>
+					<table align="center" style="width:47%" border="0px" ">
+						<tr>
+							<td style="padding-right:3px"><img style="width:100%" src="./static/img/web/sblc/预览协议.png"/> <td>
+							<td style="padding-right:3px"><img style="width:100%" src="./static/img/web/sblc/发送至邮箱.png"/> <td>
+							<td><img style="width:100%" src="./static/img/web/sblc/直接下载.png"/> <td>
+						</tr>
+					</table>
+					<br/>
+					<img style="width:300px" src="./static/img/web/sblc/寻求客服帮助.png"/>
+					<br/><br/>
+					<img style="width:20px" src="./static/img/web/sblc/箭头.png"/>
+					<br/><br/><br/>
+					<img style="width:380px" src="./static/img/web/sblc/协议扫描件回传.png"/>
+					<br/><br/><br/>
+					<img style="width:20px" src="./static/img/web/sblc/箭头.png"/>
+					<br/><br/><br/>	
+					<img style="width:300px" src="./static/img/web/sblc/工程师电话预约.png"/>	
+					<br/><br/><br/>
+					<img style="width:20px" src="./static/img/web/sblc/箭头.png"/>
+					<br/><br/><br/>					
+					<img style="width:300px" src="./static/img/web/sblc/工程师安装完成.png"/>	
+					<br/><br/><br/>
+					<img style="width:20px" src="./static/img/web/sblc/箭头.png"/>
+					<br/><br/><br/>					
+					<img style="width:300px" src="./static/img/web/sblc/开始使用.png"/>						
+				</div>			
+			<br/><br/>
+			<div class="footer">
+				沪<span class="zftb">ICP</span>备<span class="zftb">12010294</span>号<span class="zftb">-1 Copyright © 2018 </span>上海宽迪信息科技有限公司 - 保留所有权利
+			</div>	
+		</div>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?6bf7ae9b5212b8c52b57065299f133f8";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>		
+    </body>
+</html>

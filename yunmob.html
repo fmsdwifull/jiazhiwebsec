@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>嘉值科技</title>
+    <link rel="icon" href="../static/img/vas.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css"/>    
+
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>   
+        <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/respond.min.js"></script>    
+    <style type="text/css">
+      
+        #btn{
+            background-image: url("../resources/images/yzjm/u454.png");
+            background-size:100% 100%;
+        } 
+        a:link {
+         text-decoration: none;
+        }
+        a:visited {
+         text-decoration: none;
+        }
+        a:hover {
+         text-decoration: none;
+        }
+        a:active {
+         text-decoration: none;
+        }        
+
+
+    </style>
+
+</style> 
+
+    <script type="text/javascript">
+    $(function(){  
+      screen();  
+      function screen(){  
+        if($(window).width()<768){  
+          $(".banner").attr("src","../static/img/mob/banner.png");  
+          $(".img-zxbtn-left").on("click",function(){
+            window.location.href="tel:4006631663";
+          })
+        }else{  
+          $(".banner").attr("src","../static/img/web/banner.png");
+          $(".img-zxbtn-left").on("click",function(){
+            window.location.href="skype:+864006631663?call";
+          })          
+        }  
+      }  
+      $(window).resize(function(){  
+        screen();  
+      })  
+      
+      //产品链接
+      $("#system").on("click",function(){
+        window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=409";
+      })  
+      $("#computer").on("click",function(){
+        window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=433";
+      })  
+      $("#host").on("click",function(){
+        window.location.href="http://cloud-open.cn/yunzhuji/yzjpc.html";
+      })  
+      
+      //行点击事件
+       $('#dxproduct').on('click-row.bs.table', function (e, row, element)   
+      {  
+        //$(element).css({"color":"blue","font-size":"16px;"});  
+        console.log(row);
+        alert();
+          
+      }); 
+        $(function () { $('#collapseOne').collapse('hide')});
+        $(function () { $('#collapseTwo').collapse('hide')});
+        $(function () { $('#collapseThree').collapse('hide')});
+        $(function () { $('#collapseFour').collapse('hide')});        
+
+    }); 
+    </script>    
+    
+    </head>
+    <body>
+    <div class="container-fluid">
+      <div id="header" class="navbar-default "  style="width: 100%;z-index: 1;position:absolute;">
+          <div class="navbar-header"  style="background-color:#ffffff;text-align:left">
+                  <div style="text-align: left; background-color:#ffffff;">
+                      <div style="float: left;margin-left: 20px;"><img   style="width: 50px;height:auto;margin-top:10px" src="../resources/images/index/u1.png" /></div> 
+                      <div style="float: left;">
+                        <div style="float: left;margin-top:15px ">
+                          <img  style="padding-left: 30px;margin-top:5px" height="30px" src="../resources/images/yzjm/u451.png" /> 
+                        </div>
+                        <div style="float: left;font-size: 18px;margin-top: 25px;"><strong>400-663-1663</strong></div>
+                      </div> 
+                      <div style="float: right;margin-top: 10px;">    
+                          <button type="button" class="navbar-toggle" data-toggle="collapse"
+                              data-target="#example-navbar-collapse">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <!--      
+                          <button  id="btn" type="button" style="width: 50px;height: 39px"  class="navbar-toggle"  data-toggle="collapse"  data-target="#example-navbar-collapse">
+                          -->
+                      </div>
+                  </div>
+              </button>              
+          </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+          <ul class="nav navbar-nav"  style="margin-top: 0;">
+            <li><a href="#"><span  style="font-size: 15px"><strong>首页</strong></span></a></li>
+            <li><a href="#"><span  style="font-size: 15px"><strong>关于我们</strong></span></a></li>
+            <li><a href="#"><span  style="font-size: 15px"><strong>企业通讯</strong></span></a></li>
+            <li><a href="#"><span  style="font-size: 15px"><strong>企业云服务</strong></span></a></li>
+            <li><a href="#"><span  style="font-size: 15px"><strong>系统集成</strong></span></a></li>
+            <li><a href="#"><span  style="font-size: 15px"><strong>合作伙伴</strong></span></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div id="banner" class="row" style="margin-top: 55px" >  
+        <div class="col-sm-12"  >  
+          <a href="http://cloud-open.cn/yunzhuji/qytx.html"><img style="width: 100%;" class="banner" src="../static/img/web/banner.png" /></a>
+        </div>  
+      </div>  
+
+        <div id="footer" >
+            <div class="panel-group" id="accordion" style="margin:0px">
+              <div class="panel panel-default">
+                <div class="panel-heading"  style="background-color:#C9C9C9;padding-left: 50px;">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion"  href="#collapseOne">
+                       关于我们 
+                       <img  style="float: right;width: 20px;height: auto;" src="../resources/images/yzjm/u490.png" />
+                    </a>
+
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                  <div class="panel-body" style="font-size: 15px;">
+                              <span><p>嘉值概况</p></span>
+                              <span><p>嘉值荣誉</p></span>
+                              <span><p>招贤纳士</p></span>
+                              <span><p>联系我们</p></span>
+                              <span><p>网站地图</p></span>                           
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-group" id="accordion" style="margin:0px">
+              <div class="panel panel-default">
+                <div class="panel-heading"  style="background-color:#C9C9C9;padding-left: 50px;">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion"  href="#collapseTwo">
+                       企业通讯 
+                       <img  style="float: right;width: 20px;height: auto;" src="../resources/images/yzjm/u490.png" />
+                    </a>
+
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse in">
+                  <div class="panel-body" style="font-size: 15px">
+                              <span><p>嘉值概况</p></span>
+                              <span><p>嘉值荣誉</p></span>
+                              <span><p>招贤纳士</p></span>                         
+                  </div>
+                </div>
+              </div>
+            </div>   
+            <div class="panel-group" id="accordion" style="margin:0px">
+              <div class="panel panel-default">
+                <div class="panel-heading"  style="background-color:#C9C9C9;padding-left: 50px;">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion"  href="#collapseThree">
+                       企业云服务 
+                       <img  style="float: right;width: 20px;height: auto;" src="../resources/images/yzjm/u490.png" />
+                    </a>
+
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse in">
+                  <div class="panel-body" style="font-size: 15px">
+                      <span><p>云主机</p></span>
+                      <span><p>云桌面</p></span>
+                      <span><p>云会议</p></span>                         
+                  </div>
+                </div>
+              </div>
+            </div>            
+            <div class="panel-group" id="accordion" style="margin:0px">
+              <div class="panel panel-default">
+                <div class="panel-heading"  style="background-color:#C9C9C9;padding-left: 50px;">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion"  href="#collapseFour">
+                       系统集成 
+                       <img  style="float: right; width: 20px;height: auto;" src="../resources/images/yzjm/u490.png" />
+                    </a>
+
+                  </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse in">
+                  <div class="panel-body" style="font-size: 15px">
+                      <span><p>综合布线</p></span>
+                      <span><p>视频监控</p></span>
+                      <span><p>无线覆盖</p></span>                         
+                  </div>
+                </div>
+              </div>
+            </div>                                
+        <div style="background-color: rgb(242, 242, 242)">
+        <table class="table"  style="width: 70%;margin:0 auto;text-align:center;background-color: rgb(242, 242, 242)" >
+          <tr>
+            <td>
+                  <img style="" src="../static/img/mob/wx.png" class="img-responsive"><p><span>关注嘉值微信</span></p>
+            </td>
+            <td>
+                <img style="" src="../static/img/mob/wb.png" class="img-responsive"><p><span>关注嘉值微博</span></p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+        <div style="text-align: center;background-color: rgb(242, 242, 242);margin-bottom: 5px;padding-bottom: 10px">
+            <span style="font-size: 15px;">联系热线：400-663-1663</span>
+        </div>
+
+
+        <!-- Unnamed () -->
+        <div id="u705" class="text" style="visibility: visible;background-color: rgb(51, 51, 51);padding-top: 30px">
+          <p style="font-size:16px;color: rgb(255, 255, 255)"><span>©2017 上海嘉值信息科技有限公司</span></p>
+          <p style="font-size:14px;color: rgb(255, 255, 255)"><span>网站建设备案号：沪ICP备12010294号-1</span></p>
+          <p style="font-size:14px;color: rgb(255, 255, 255)"><span>地址：上海市静安区万荣路1188号G座2号楼303室</span></p><br/>
+      </div>       
+      </div>
+
+
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?6bf7ae9b5212b8c52b57065299f133f8";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+    })();
+    </script>   
+    </body>
+</html>
+

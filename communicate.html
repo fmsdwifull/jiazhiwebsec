@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.3, maximum-scale=1.0" />
+        <title>嘉值科技</title>
+		<link rel="icon" href="../static/img/vas.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/main.css"/>		
+		<script type="text/javascript" src="../static/js/jquery.min.js"></script>		
+        <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../static/js/respond.min.js"></script>		
+		<script type="text/javascript">
+		$(function(){  
+			screen();  
+			function screen(){  
+				if($(window).width()<768){  
+					$(".banner").attr("src","../static/img/mob/banner.png");  
+					$(".img-zxbtn-left").on("click",function(){
+						window.location.href="tel:4006631663";
+					})
+				}else{  
+					$(".banner").attr("src","../static/img/web/communicate/banner.png");
+					$(".img-zxbtn-left").on("click",function(){
+						window.location.href="skype:+864006631663?call";
+					})					
+				}  
+			}  
+			$(window).resize(function(){  
+				screen();  
+			})  
+			
+			//产品链接
+			$("#system").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=409";
+			})	
+			$("#computer").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=433";
+			})	
+			$("#host").on("click",function(){
+				window.location.href="http://cloud-open.cn/yunzhuji/yzjpc.html";
+			})	
+			
+			//行点击事件
+		   $('#dxproduct').on('click-row.bs.table', function (e, row, element)   
+			{  
+				//$(element).css({"color":"blue","font-size":"16px;"});  
+				console.log(row);
+				alert();
+				  
+			});  			
+		}); 
+		</script>    
+		<style type="text/css">  
+		    input{
+				height:20px;
+			}
+			select{		
+				width:120px;
+				height:22px;
+				border: solid 1px #000;
+				appearance:none;
+				-moz-appearance:none;
+				-webkit-appearance:none;
+				padding-right: 14px;
+				background: url("表单_下拉箭头.png") no-repeat scroll right  transparent;
+			}
+			select::-ms-expand { display: none; }
+			option{
+				text-align: center;
+			}
+		</style>
+    </head>
+    <body>
+		<div class="container-fluid">	
+			<div id="banner" class="row">  
+				<div class="col-sm-12">  
+					<a href="http://cloud-open.cn/yunzhuji/qytx.html"><img style="width: 100%;" class="banner" src="../static/img/web/communicate/banner.png" /></a>
+				</div>  
+			</div>  
+			<div class="main"> 
+				<table class="navtable">
+					<tr>
+						<td>
+							<input id="hot" type="image" src="../static/img/web/hot.png" class="img-nav" />
+						</td>
+						<td class="navmdline" >
+							<img src="../static/img/web/communicate/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>								
+						<td>
+							<input id="system" type="image" src="../static/img/web/system.png" class="img-nav" />
+						</td>
+						<td class="navmdline" >
+							<img src="../static/img/web/communicate/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+						<td>
+							<input id="communicate" type="image" src="../static/img/web/communicate2.png"  onmousedown="mouseDown()" class="img-nav" />
+						</td>
+						<td class="navmdline">
+							<img src="../static/img/web/communicate/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+						<td>
+							<input id="computer" type="image" src="../static/img/web/computer.png" class="img-nav" />
+						</td>
+						<td class="navmdline">
+							<img src="../static/img/web/communicate/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+						<td>
+							<input id="host" type="image" src="../static/img/web/host.png" class="img-nav" />
+						</td>
+					</tr>
+				</table>
+	
+				<div  style="margin-bottom:4px">  
+					<img width="100%" src="../static/img/web/communicate/hh1.png" class="img-responsive mobnodisplay" />  
+					<img width="100%" src="../static/img/mob/hh1.gif" class="img-responsive webnodisplay" />  
+				</div>
+				<table class="subnavtable" >
+						<tr>
+							<td>
+								<input type="image" src="../static/img/web/communicate/qykds.png" class="img-subnav" />
+							</td>
+							<td>
+								<img src="../static/img/web/communicate/dmiddle.png"  class="sub-navbtnimg" />
+							</td>								
+							<td>
+								<input type="image" src="../static/img/web/communicate/sjzxq.png" class="img-subnav" />
+							</td>		
+							<td>
+								<img src="../static/img/web/communicate/dmiddle.png"  class="sub-navbtnimg" />
+							</td>								
+							<td>
+								<input type="image" src="../static/img/web/communicate/zhkdq.png" class="img-subnav" />
+							</td>	
+							<td>
+								<img src="../static/img/web/communicate/dmiddle.png"  class="sub-navbtnimg" />
+							</td>								
+							<td>
+								<input type="image" src="../static/img/web/communicate/hwyhq.png" class="img-subnav" />
+							</td>
+						</tr>
+				</table>			
+				<div style="margin-bottom:5px">  
+					<img width="100%" src="../static/img/web/communicate/hh2.png" class="img-responsive" />
+				</div>
+				<div class="row" >
+					<div class="col-md-2" style="align:right; padding-right:0px"><!--background-color: #dedef8;-->
+						<table>					
+							<tr>
+								<td align="right">
+									<a href="http://cloud-open.cn/index.php?c=article&a=type&tid=368"><img src="../static/img/web/communicate/dx.png" class="img-responsive weblogimg" /></a>  
+								</td>
+							</tr>
+						</table>						
+					</div>		
+					<div  class="col-md-10 col-sm-12" >
+						<div class="moblogimg">
+							<a href="http://cloud-open.cn/index.php?c=article&a=type&tid=368"><img src="../static/img/mob/dx.png" class="img-responsive" /></a>  						
+						</div>
+						<div class="mobnodisplay">
+							<table id="dxproduct" class="table table-condensed producttable " >
+								<caption><div class="captitle">中国电信 CHINA TELECOM</div> </caption>
+								<thead >
+								  <tr>
+									<th>产品名称</th>
+									<th>适用</th>
+									<th>配置</th>
+									<th>价格</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>旺铺通</td>
+									<td>商铺，初创企业类用户</td>
+									<td>下行50M,上行4M,动态IP</td>
+									<td><span style="color:red">1900</span>元/年</td>
+								  </tr>
+								  <tr>
+									<td class="">商务专线/<span style="color:red">限时0元享</span></td>
+									<td>网站浏览，邮件收发等</td>
+									<td>50M上下对称，动态IP</td>
+									<td><span style="color:red">6800</span>元/年</td>
+								  </tr>	
+								  <tr>
+									<td>精品专线/<span style="color:red">首月免费</span></td>
+									<td>OA/ERP/SAP，视频会议等场景</td>
+									<td>50M上下对称，一个固定IP</td>
+									<td><span style="color:red">33880</span>元/年</td>
+								  </tr>
+								  <tr>
+									<td>IPMAN/<span style="color:red">首月免费</span></td>
+									<td>多IP，大型服务器集群搭建场景</td>
+									<td>100M上下对称，一个固定IP</td>
+									<td><span style="color:red">3279</span>元/年</td>
+								  </tr>
+								</tbody>
+							</table>	
+						</div>
+						<div class="webnodisplay">
+							<table class="table table-condensed producttable mobproducttable"  >
+								<caption class="captitle"><span style="font-weight:bold;font-size:20px">中国电信 CHINA TELECOM</span> </caption>
+								<thead >
+								  <tr>
+									<th><span style="font-family:微软雅黑">产品名称</span></th>
+									<th>适用</th>
+									<th>配置</th>
+									<th>价格</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td style="vertical-align: middle !important;text-align: center;">旺铺通</td>
+									<td>商铺,初创企业</td>
+									<td>下行50M,上行4M<br/>动态IP</td>
+									<td style="padding:0"><span style="color:red">1900</span>元/年</td>
+								  </tr>
+								  <tr>
+									<td>商务专线<br/><span style="color:red;font-size:11px">限时0元享</span></td>
+									<td>网站浏览,<br/>邮件收发等</td>
+									<td>50M上下对称<br/>动态IP</td>
+									<td><span style="color:red">6800</span>元/年</td>
+								  </tr>	
+								  <tr>
+									<td>精品专线<br/><span style="color:red">首月免费</span></td>
+									<td>OA/ERP/SAP<br/>视频会议等场景</td>
+									<td>50M上下对称<br/>一个固定IP</td>
+									<td><span style="color:red">33880</span>元/年</td>
+								  </tr>
+								  <tr>
+									<td>IPMAN<br/><span style="color:red">首月免费</span></td>
+									<td>多IP，大型服务器<br/>集群搭建场景</td>
+									<td>10M上下对称<br/>一个固定IP</td>
+									<td><span style="color:red">3279</span>元/<span style="color:red">月</span></td>
+								  </tr>
+								</tbody>
+							</table>	
+						</div>						
+						<img width="100%"  src="../static/img/web/communicate/hh1.png"  /> 
+						<table class="zxbtntable" >
+							<tr>
+								<td>
+									<input type="image" src="../static/img/web/communicate/left.png" class="img-zxbtn img-zxbtn-left" />
+								</td>
+								<td>
+									<input type="image" src="../static/img/web/communicate/right.png" class="img-zxbtn img-zxbtn-right mobnodisplay" />
+								</td>
+							</tr>
+						</table>
+						<img width="100%"  src="../static/img/web/communicate/hh2.png"/>  
+					</div>
+				</div>	
+				<div class="row" >
+					<div class="col-md-2" style="align:right; padding-right:0px"><!--background-color: #dedef8;-->
+						<table class="tablem" >					
+							<tr>
+								<td align="right">
+									<a href="http://cloud-open.cn/index.php?c=article&a=type&tid=370"><img src="../static/img/web/communicate/lt.png" class="img-responsive weblogimg" /> </a> 
+								</td>
+							</tr>
+						</table>						
+					</div>					
+					<div  class="col-md-10 col-sm-12">
+						<div class="moblogimg">
+							<a href="http://cloud-open.cn/index.php?c=article&a=type&tid=370"><img src="../static/img/mob/lt.png" class="img-responsive" /> </a>  						
+						</div>		
+						<div class="mobnodisplay">																		
+							<table class="table table-condensed producttable mobproducttable"  >
+								 <caption class="captitle"><span style="font-weight:bold;font-size:20px">中国联通 CHINA Unicom</span> </caption>
+								<thead >
+								  <tr>
+									<th>产品名称</th>
+									<th>适用</th>
+									<th>配置</th>
+									<th>价格</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>沃 &sdot;SOHO</td>
+									<td>商铺,初创企业类</td>
+									<td>40M上下对称动态IP</td>
+									<td><span style="color:red">2400</span>元/年</td>
+								  </tr>
+								  <tr>
+									<td>沃 &sdot;极速</td>
+									<td>网站浏览,邮件收发等</td>
+									<td>60M上下对称动态IP</td>
+									<td><span style="color:red">5700</span>元/年</td>
+								  </tr>	
+								  <tr>
+									<td>沃 &sdot;动车</td>
+									<td>OA/ERP/SAP视频会议等场景</td>
+									<td>60M上下对称5个动态IP</td>
+									<td><span style="color:red">2400</span>元/年</td>
+								  </tr>
+								  <tr>
+									<td>沃 &sdot;专线</td>
+									<td>多IP,大型服务器集群搭建场景</td>
+									<td>10M上下对称1个固定IP</td>
+									<td><span style="color:red">59400</span>元/<span style="color:red">月</span></td>
+								  </tr>
+								</tbody>
+							</table>
+						</div>		
+						<div class="webnodisplay">																		
+							<table class="table table-condensed producttable mobproducttable"  >
+								 <caption class="captitle"><span style="font-weight:bold;font-size:20px">中国联通 CHINA Unicom</span> </caption>
+								<thead >
+								  <tr>
+									<th>产品名称</th>
+									<th>适用</th>
+									<th>配置</th>
+									<th>价格</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>沃 &sdot;SOHO</td>
+									<td>商铺,初创企业类</td>
+									<td>40M上下对称<br/>动态IP</td>
+									<td><span style="color:red">2400</span>元/年</td>
+								  </tr>
+								  <tr>
+									<td>沃 &sdot;极速</td>
+									<td>网站浏览,<br/>邮件收发等</td>
+									<td>60M上下对称<br/>动态IP</td>
+									<td><span style="color:red">5700</span>元/年</td>
+								  </tr>	
+								  <tr>
+									<td>沃 &sdot;动车</td>
+									<td>OA/ERP/SAP<br/>视频会议等场景</td>
+									<td>60M上下对称<br/>5个动态IP</td>
+									<td><span style="color:red">2400</span>元/年</td>
+								  </tr>
+								  <tr>
+									<td>沃 &sdot;专线</td>
+									<td>多IP,大型服务器<br/>集群搭建场景</td>
+									<td>10M上下对称<br/>一个固定IP</td>
+									<td><span style="color:red">59400</span>元/<span style="color:red">月</span></td>
+								  </tr>
+								</tbody>
+							</table>
+						</div>						
+						<img width="100%"  src="../static/img/web/communicate/hh.png" class="img-zxbtn" /> 
+						<table class="zxbtntable" >
+							<tr>
+								<td>
+									<input type="image" src="../static/img/web/communicate/left.png" class="img-zxbtn img-zxbtn-left" />
+								</td>
+								<td>
+									<input type="image" src="../static/img/web/communicate/right.png" class="img-zxbtn img-zxbtn-right mobnodisplay" />
+								</td>
+							</tr>
+						</table>
+						<img width="100%"  src="../static/img/web/communicate/hh2.png"/>  
+				    </div>
+				</div>	
+	
+				<div class="row" >
+					<div class="col-md-2" style="align:right; padding-right:0px"><!--background-color: #dedef8;-->
+						<table class="tablem" >					
+							<tr>
+								<td align="right">
+									<a href="http://cloud-open.cn/index.php?c=article&a=type&tid=369 "><img src="../static/img/web/communicate/yd.png" class="img-responsive weblogimg" /></a>  
+								</td>
+							</tr>
+						</table>						
+					</div>					
+					<div  class="col-md-10 col-sm-12">
+						<div class="moblogimg">
+							<a href="http://cloud-open.cn/index.php?c=article&a=type&tid=369 "><img src="../static/img/mob/yd.png" class="img-responsive" /> </a> 						
+						</div>	
+						<div class="webnodisplay">												
+							<table class="table table-condensed producttable mobproducttable " >
+								<caption class="captitle"><span style="font-weight:bold;font-size:20px">中国移动 CHINA MOBILE</span> </caption>
+								<thead >
+								  <tr>
+									<th>产品名称</th>
+									<th>适用</th>
+									<th>配置</th>
+									<th>价格</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>光网宽带</td>
+									<td>商铺,初创企业</td>
+									<td>20M上下对称<br/>动态IP</td>
+									<td><span style="color:red">2980</span>元/年</td>
+								  </tr>
+								  <tr>
+									<td>光网宽带</td>
+									<td>网站浏览，<br/>邮件收发等</td>
+									<td>50M上下对称<br/>动态IP</td>
+									<td><span style="color:red">3980</span>元/年</td>
+								  </tr>	
+								  <tr>
+									<td>光网宽带</td>
+									<td>OA/ERP/SAP<br/>视频会议等场景</td>
+									<td>100M上下对称<br/>动态IP</td>
+									<td><span style="color:red">4980</span>元/年</td>
+								  </tr>
+								  <tr>
+									<td>CMNET</td>
+									<td>多IP,大型服务器<br/>集群搭建场景</td>
+									<td>50M上下对称<br/>1个固定IP</td>
+									<td><span style="color:red">1500</span>元/<span style="color:red">月</span></td>
+								  </tr>
+								</tbody>
+							</table>
+						</div>			
+						<div class="mobnodisplay">												
+							<table class="table table-condensed producttable mobproducttable " >
+								<caption class="captitle"><span style="font-weight:bold;font-size:20px">中国移动 CHINA MOBILE</span> </caption>
+								<thead >
+								  <tr>
+									<th>产品名称</th>
+									<th>适用</th>
+									<th>配置</th>
+									<th>价格</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>光网宽带</td>
+									<td>商铺,初创企业</td>
+									<td>20M上下对称动态IP</td>
+									<td><span style="color:red">2980</span>元/年</td>
+								  </tr>
+								  <tr>
+									<td>光网宽带</td>
+									<td>网站浏览，邮件收发等</td>
+									<td>50M上下对称动态IP</td>
+									<td><span style="color:red">3980</span>元/年</td>
+								  </tr>	
+								  <tr>
+									<td>光网宽带</td>
+									<td>OA/ERP/SAP视频会议等场景</td>
+									<td>100M上下对称动态IP</td>
+									<td><span style="color:red">4980</span>元/年</td>
+								  </tr>
+								  <tr>
+									<td>CMNET</td>
+									<td>多IP,大型服务器集群搭建场景</td>
+									<td>50M上下对称1个固定IP</td>
+									<td><span style="color:red">1500</span>元/<span style="color:red">月</span></td>
+								  </tr>
+								</tbody>
+							</table>
+						</div>							
+						<img width="100%"  src="../static/img/web/communicate/hh.png" class="img-zxbtn" /> 
+						<table class="zxbtntable" >
+							<tr>
+								<td>
+									<input type="image" src="../static/img/web/communicate/left.png" class="img-zxbtn img-zxbtn-left" />
+								</td>
+								<td>
+									<input type="image" src="../static/img/web/communicate/right.png" class="img-zxbtn img-zxbtn-right mobnodisplay" />
+								</td>
+							</tr>
+						</table>
+						<img width="100%"  src="../static/img/web/communicate/hh2.png"/>  
+				    </div>
+				</div>					
+				<div class="row" >
+					<div class="col-md-2  xx" style="align:right; padding-right:0px"><!--background-color: #dedef8;-->
+						<table class="tablem" >					
+							<tr>
+								<td align="right">
+									<a href="http://cloud-open.cn/index.php?c=article&a=type&tid=428"><img src="../static/img/web/communicate/pb.png" class="img-responsive weblogimg" /></a>  
+								</td>
+							</tr>
+						</table>						
+					</div>					
+					<div  class="col-md-10 col-sm-12" >
+						<div class="moblogimg">
+							<a href="http://cloud-open.cn/index.php?c=article&a=type&tid=428"><img src="../static/img/mob/pb.png" class="img-responsive" /> </a> 						
+						</div>
+						<div class="mobnodisplay">						
+							<table class="table table-condensed producttable mobproducttable " >
+								 <caption class="captitle"><span style="font-weight:bold;font-size:20px">鹏博士宽带 DR.PGROUPENG</span> </caption>
+								<thead >
+								  <tr>
+									<th>产品名称</th>
+									<th>适用</th>
+									<th>配置</th>
+									<th>价格</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>云@商城</td>
+									<td>商铺,初创企业</td>
+									<td>50M上下对称<br/>动态IP,楼内接入</td>
+									<td><span style="color:red">4000</span>元/年</td>
+								  </tr>
+								  <tr>
+									<td>云@商城</td>
+									<td>网站浏览,<br/>邮件收发等</td>
+									<td>100M上下对称<br/>动态IP,楼内接入</td>
+									<td><span style="color:red">6000</span>元/年</td>
+								  </tr>	
+								  <tr>
+									<td>云@快线</td>
+									<td>OA/ERP/SAP<br/>视频会议等场景</td>
+									<td>50M上下对称<br/>动态IP,楼外拨号</td>
+									<td><span style="color:red">6000</span>元/年</td>
+								  </tr>
+								  <tr>
+									<td>云@动车</td>
+									<td>多IP，大型服务器<br/>集群搭建场景</td>
+									<td>100M上下对称<br/>1个固定IP</td>
+									<td><span style="color:red">33800</span>元/年</td>
+								  </tr>
+								</tbody>
+							</table>	
+						</div>	
+						<div class="webnodisplay">						
+							<table class="table table-condensed producttable mobproducttable " >
+								 <caption class="captitle"><span style="font-weight:bold;font-size:20px">鹏博士宽带 DR.PGROUPENG</span> </caption>
+								<thead >
+								  <tr>
+									<th>产品名称</th>
+									<th>适用</th>
+									<th>配置</th>
+									<th>价格</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>云@商城</td>
+									<td>商铺,初创企业</td>
+									<td>50M上下对称<br/>动态IP,楼内接入</td>
+									<td><span style="color:red">4000</span>元/年</td>
+								  </tr>
+								  <tr>
+									<td>云@商城</td>
+									<td>网站浏览,<br/>邮件收发等</td>
+									<td>100M上下对称动<br/>态IP,楼内接入</td>
+									<td><span style="color:red">6000</span>元/年</td>
+								  </tr>	
+								  <tr>
+									<td>云@快线</td>
+									<td>OA/ERP/SAP<br/>视频会议等场景</td>
+									<td>50M上下对称<br/>动态IP,楼外拨号</td>
+									<td><span style="color:red">6000</span>元/年</td>
+								  </tr>
+								  <tr>
+									<td>云@动车</td>
+									<td>多IP，大型服务器<br/>集群搭建场景</td>
+									<td>100M上下对称<br/>1个固定IP</td>
+									<td><span style="color:red">33800</span>元/年</td>
+								  </tr>
+								</tbody>
+							</table>	
+						</div>						
+						<img width="100%"  src="../static/img/web/communicate/hh.png" class="img-zxbtn" /> 
+						<table class="zxbtntable" >
+							<tr>
+								<td>
+									<input type="image" src="../static/img/web/communicate/left.png" class="img-zxbtn img-zxbtn-left" />
+								</td>
+								<td>
+									<input type="image" src="../static/img/web/communicate/right.png" class="img-zxbtn img-zxbtn-right mobnodisplay" />
+								</td>
+							</tr>
+						</table>
+						<img width="100%"  src="../static/img/web/communicate/hh2.png"/>  						
+					</div>
+				</div>				
+				<div class="row" >
+					<div class="col-md-2 " style="align:right; padding-right:0px"><!--background-color: #dedef8;-->
+						<table class="tablem" >					
+							<tr>
+								<td align="right">
+									<a href="http://cloud-open.cn/index.php?c=article&a=type&tid=429"><img src="../static/img/web/communicate/jz.png" class="img-responsive weblogimg" /> </a> 
+								</td>
+							</tr>
+						</table>						
+					</div>			
+							
+					<div  class="col-md-10 col-sm-12" >		
+						<div class="moblogimg">
+							<a href="http://cloud-open.cn/index.php?c=article&a=type&tid=429"><img src="../static/img/mob/jz.png" class="img-responsive" /></a>  						
+						</div>		
+						<div class="mobnodisplay">						
+							<table class="table table-condensed producttable mobproducttable " >
+								 <caption class="captitle"><span style="font-weight:bold;font-size:20px">嘉值光纤云 VAS Technology</span> </caption>
+								<thead >
+								  <tr>
+									<th>产品名称</th>
+									<th>适用</th>
+									<th>配置</th>
+									<th>价格</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>云光纤A</td>
+									<td>OA/ERP/SAP视频会议等场景</td>
+									<td>50M上下对称1个固定IP</td>
+									<td><span style="color:red">21000</span>元/年</td>								
+								  </tr>
+								  <tr>
+									<td>云光纤B</td>
+									<td>多IP，大型服务器集群搭建场景</td>
+									<td>100M上下对称1个固定IP</td>
+									<td><span style="color:red">31100</span>元/年</td>		
+								  </tr>	
+								</tbody>
+							</table>
+						</div>						
+						<div class="webnodisplay">						
+							<table class="table table-condensed producttable mobproducttable " >
+								 <caption class="captitle"><span style="font-weight:bold;font-size:20px">嘉值光纤云 VAS Technology</span> </caption>
+								<thead >
+								  <tr>
+									<th>产品名称</th>
+									<th>适用</th>
+									<th>配置</th>
+									<th>价格</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td>云光纤A</td>
+									<td>OA/ERP/SAP<br/>视频会议等场景</td>
+									<td>50M上下对称<br/>1个固定IP</td>
+									<td><span style="color:red">21000</span>元/年</td>								
+								  </tr>
+								  <tr>
+									<td>云光纤B</td>
+									<td>多IP，大型服务器<br/>集群搭建场景</td>
+									<td>100M上下对称<br/>1个固定IP</td>
+									<td><span style="color:red">31100</span>元/年</td>		
+								  </tr>	
+								</tbody>
+							</table>
+						</div>
+						
+						<img width="100%"  src="../static/img/web/communicate/hh.png" class="img-zxbtn" /> 
+						<table class="zxbtntable" >
+							<tr>
+								<td>
+									<input type="image"  src="../static/img/web/communicate/left.png" class="img-zxbtn img-zxbtn-left" />
+								</td>
+								<td>
+									<input type="image" src="../static/img/web/communicate/right.png" class="img-zxbtn img-zxbtn-right mobnodisplay" />
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>	
+				<div style="margin:20px auto">
+					<span style="font-size:24px">企业宽带光纤资源查询</span>
+					<table>
+					   <tr>
+                            <td>
+								<table  border="1px">
+									<tr>
+										<td style="padding:6px">
+											<span style="font-size: 14px">您的企业所在的位置</span>
+											<select >
+												<option>上海市</option>  
+											</select>
+											<select>
+												<option>静安区</option>  
+												<option>浦东新区</option>  
+											</select>
+										</td>
+										
+									</tr>
+								</table>
+							</td>
+                            <td style="padding-left:20px">
+								<table  border="1px">
+									<tr>
+										<td style="padding:6px">
+											<span style="font-size: 14px">手动输入您的企业地址</span>
+											<input type="text" style="width:310px" />
+										</td>
+									</tr>
+								</table>
+							</td>							
+					   </tr>
+					</table>
+					<table style="margin-top:10px">
+					   <tr>
+                            <td>
+								<table  border="1px">
+									<tr>
+										<td style="padding:6px">
+											<span style="font-size: 14px">联系姓名</span>
+											<input type="text" style="width:120px" />
+										</td>
+									</tr>
+								</table>
+							</td>
+                            <td style="padding-left:10px">
+								<table  border="1px">
+									<tr>
+										<td style="padding:6px">
+											<span style="font-size: 14px">联系手机</span>
+											<input type="text" style="width:150px" />
+										</td>
+									</tr>
+								</table>
+							</td>	
+                            <td style="padding-left:10px">
+								<table  border="1px">
+									<tr>
+										<td style="padding:6px">
+											<span style="font-size: 14px">短信验证码</span>
+											<input type="text" style="width:90px" />
+											<span style="font-size: 14px">获取验证码</span>
+
+										</td>
+									</tr>
+								</table>
+							</td>	
+                            <td style="padding-left:10px">
+								<img width="106px"  src="./button.png" />
+							</td>							
+					   </tr>
+					</table>
+					
+				</div>				
+			</div>
+		</div>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?6bf7ae9b5212b8c52b57065299f133f8";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>		
+    </body>
+</html>

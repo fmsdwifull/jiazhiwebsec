@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.3, maximum-scale=1.0" />
+        <title>嘉值科技</title>
+		<link rel="icon" href="./static/img/vas.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="./static/css/main.css"/>		
+		<script type="text/javascript" src="./static/js/jquery.min.js"></script>		
+        <script type="text/javascript" src="./static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./static/js/respond.min.js"></script>		
+		<script type="text/javascript" src="./static/js/main.js"></script>		
+		
+		<script type="text/javascript">
+		$(function(){   
+			//产品链接
+			$("#system").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=409";
+			})	
+			$("#computer").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=433";
+			})	
+			$("#host").on("click",function(){
+				window.location.href="http://cloud-open.cn/yunzhuji/yzjpc.html";
+			})	
+			
+			//行点击事件
+		    $('#dxproduct').on('click-row.bs.table', function (e, row, element)   
+			{  
+				//$(element).css({"color":"blue","font-size":"16px;"});  
+				console.log(row);
+				alert();
+				  
+			});  			
+		}); 
+
+		</script>  
+		<style type="text/css">
+
+
+		</style>  		  
+    </head>
+    <body>
+		<div class="container-fluid">	
+			<div class="head">
+				<ul>
+					<li><a href="./home.html">首页</a></li>
+					<li><a href="" style="background-color: #f2f2f2;" >企业宽带</a></li>
+					<li><a href="./zscp-dxsjzx-mstp.html">专属产品</a></li>
+					<li><a href="./ziyuancx.html">资源查询</a></li>
+					<li><a href="./subanlc.html">速办流程</a></li>
+					<li><a href="./about.html">关于我们</a></li>
+					<li style="width: 28%" id="kong"><a style="background-color: #dcdddd"></a></li>
+					<li style="width: 5%;display: inline;float: left" id="tel" onmousemove="over('tel')" onmouseout="out('tel')">
+						<a href="">
+							<div>
+								<img width="40px" id="navtel"  src="./static/img/web/home/导航_电话.png"/>
+							</div>
+						</a>
+					</li>
+					<li style="width: 5%" id="email" onmousemove="over('email')" onmouseout="out('email')">
+						<a href="">
+							<div>
+								<img width="40px"  id="navmail"   src="./static/img/web/home/导航_邮箱.png"/>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>		
+			<div  class="main"> 
+				<div id="headerx" style="padding:28px 0px;">  
+					<div class="logo">  
+						<img  src="./static/img/web/kdsuban/KDSUBAN_LOGO.png" />
+					</div>  
+	                <div  class="secmenu">
+	                	<span style="padding-right: 30px;"><a href="./qykd-dxwp.html">中国电信宽带</a></span>
+	                	<span style="padding-bottom:15px; border-bottom:1px solid #000;color: #A40B5D">中国联通宽带</span>
+            			<span style="padding-left: 30px"><a href="./qykd-ydsw.html">中国移动宽带</a> </span>
+	                	<span style="padding-left: 30px"><a href="./qykd-pbssc.html">博士鹏宽带</a></span>
+	                	<span style="padding-left: 30px"><a href="./qykd-kdyun.html">宽迪云光纤</a></span>
+	                </div>
+					<div class="search">  
+					    <input type="text" name="fname"  style="border:none;width: 160px"/>
+						<img style="width: 12px;" src="./static/img/web/kdsuban/搜索_放大镜.png" />
+						<hr style="margin-top:4px;color:#727171" />			
+					</div> 
+
+				</div> 
+			    <div class="ptitle" >所谓沃快<span class="keywordcolor">车</span>，唯快不破！</div>			
+				
+			</div>	
+			
+			<div style="width:100%;height:200px;padding:0px;background:url('./static/img/web/qykd/Banner_联通沃快车.jpg') no-repeat 5px 5px;background-size:100% 96%;">
+				<div style="padding-top:100px;padding-left:10px" > 
+					  <table style="text-align: center;" border="0px">
+					  		<tr>
+					  			<td style="text-align: right;width: 600px;padding-top: 10px"><div style="color: #ffffff"  onmousemove="telover()" onmouseout="telout()">首月面单享豪礼</div></td>
+					  			<td style="width: 30px; text-align: left;padding-top: 10px;padding-left: 4px"><div onmousemove="telover()" onmouseout="telout()"><img width="18px" src="./static/img/web/qykd/conn.png"></div></td>
+					  		    <td><div  id="showtelid" class="bannertel"></div></td>
+					  		</tr>
+					  </table>
+				</div> 				
+			</div>
+             
+	        <div class="main"> 
+	        	<br/>
+				<table width="100%" border="0px">
+					<tr>
+						<td style="text-align:left;"> 
+							<a href="./qykd-ltsw.html"><img  width="200px" src="./static/img/web/qykd/按钮_联通沃商务_.png"
+								onmouseover="this.src='./static/img/web/qykd/按钮_联通沃商务.png'"
+								onmouseout="this.src='./static/img/web/qykd/按钮_联通沃商务_.png'"								
+							> </a>						
+						</td>
+						<td>
+							<img  width="200px" src="./static/img/web/qykd/按钮_联通沃快车.png">
+						</td>
+						<td width="1%"></td>
+						<td>
+							<a href="./qykd-ltdc.html"><img width="200px"  src="./static/img/web/qykd/按钮_联通沃动车_.png"
+								onmouseover="this.src='./static/img/web/qykd/按钮_联通沃动车.png'"
+								onmouseout="this.src='./static/img/web/qykd/按钮_联通沃动车_.png'"							
+							> </a>
+						</td>
+						<td style="text-align: right;"> 
+							<a href="./qykd-ltzx.html"><img width="200px"  src="./static/img/web/qykd/按钮_联通沃专线_.png"
+								onmouseover="this.src='./static/img/web/qykd/按钮_联通沃专线.png'"
+								onmouseout="this.src='./static/img/web/qykd/按钮_联通沃专线_.png'"							
+							> </a>							
+						</td>
+					</tr>
+				</table>
+				<br/>
+				<div class="img30min">
+			       	<img  src="./static/img/web/qykd/30minute.png">
+			    </div>	
+	            <br/>
+	            <div style="text-align: left;">
+		            <h1>套餐介绍</h1>
+		            <p>联通沃快车系列<span style="font-family:GOTHIC">DIA</span>宽带接入产品是基于<span style="font-family:GOTHIC">FTTB+LAN</span>或<span style="font-family:GOTHIC">EPON</span>技术，客户端以<span style="font-family:GOTHIC">RJ45</span>以太网方式接入，在楼内交换机上进行端口限速和业务收敛后，通过以太环网、<span style="font-family:GOTHIC">PON</span>光纤或<span style="font-family:GOTHIC">MSTP</span>方式上联到上海联通<span style="font-family:GOTHIC">IP</span>城域网汇聚层设备，并接入到<span style="font-family:GOTHIC">China169</span>互联网。  </p><br/>	
+		            <h1>产品属性</h1>	
+		            <p><span style="font-size:12px">●</span> 接入方式：光纤入户/光纤独享
+					<br/><span style="font-size:12px">●</span> 网络类型：上下行对称
+					<br/><span style="font-size:12px">●</span> 公网IP地址： 动态/静态分配IP地址
+					<br/><span style="font-size:12px">●</span> 产品规格：<span style="font-family:GOTHIC">60M 80M 100M / 30M 40M 50M</span> </p>
+					
+					<br/>
+					<h1>套餐资费</h1>
+					<table  class="table table-condensed producttable ">
+						 <thead >
+							<th>产品</th>					 
+							<th>速率</th>
+							<th>备注</th>
+							<th>资费标准（元/月）</th>
+							<th>年付优惠价（元/年）</th>
+							<th>初装费（元/线）</th>
+						</thead>
+						<tbody class="zftb">
+							<tr>
+								<td rowspan="3" width="15%" style="display:table-cell; vertical-align:middle" >极速版</td>						
+								<td>60M</td>
+								<td>动态IP/上下行对称</td>
+								<td>600</td>
+								<td style="color:red">5760</td>
+								<td>500</td>						
+							</tr>
+							<tr>
+								<td>80M</td>
+								<td>动态IP/上下行对称</td>
+								<td>800</td>
+								<td style="color:red">7680</td>
+								<td>500</td>						
+							</tr>	
+							<tr>
+								<td>100M</td>
+								<td>动态IP/上下行对称</td>
+								<td>1000</td>
+								<td style="color:red">9600</td>
+								<td>500</td>						
+							</tr>
+							<tr>
+								<td rowspan="3"  class="tdcellvm" style="display:table-cell; vertical-align:middle" >商务版</td>						
+								<td>30M</td>
+								<td>1个固定IP/上下行对称</td>
+								<td>600</td>
+								<td style="color:red">5760</td>
+								<td>500</td>						
+							</tr>
+							<tr>
+								<td>40M</td>
+								<td>1个固定IP/上下行对称</td>
+								<td>1000</td>
+								<td style="color:red">9600</td>
+								<td>500</td>						
+							</tr>	
+							<tr>
+								<td>50M</td>
+								<td>1个固定IP/上下行对称</td>
+								<td>1600</td>
+								<td style="color:red">15360</td>
+								<td>500</td>						
+							</tr>						
+						</tbody>						
+					</table>
+					<div>  
+						<hr style="height:1px;border-width:0;color:gray;background-color:#bfc0c0;margin-top:3px"; />			
+					</div>
+				</div>	
+				<br/>				
+            </div>
+            <br/>
+	            <div>
+	            	<a href="./subanlc.html"> <img width="200px" src="./static/img/web/qykd/点击立即速办.png"></a> <br/>
+	            	<span style="font-size: 18px;font-weight: bold;"> 或免费咨询</span><span style="font-size: 20px;color: #A40B5D ;font-family: GOTHIC;">&nbsp;<a href="skype:+8602131262710?call" style="color: #A40B5D">021-31262710</a></span><br/><br/><br/>
+	            </div>
+		</div>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?6bf7ae9b5212b8c52b57065299f133f8";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>		
+    </body>
+</html>

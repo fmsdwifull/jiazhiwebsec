@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.3, maximum-scale=1.0" />
+        <title>嘉值科技</title>
+		<link rel="icon" href="../static/img/vas.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/main.css"/>		
+		<script type="text/javascript" src="../static/js/jquery.min.js"></script>		
+        <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../static/js/respond.min.js"></script>		
+		<script type="text/javascript">
+		$(function(){  
+			screen();  
+			function screen(){  
+				if($(window).width()<768){  
+					$(".banner").attr("src","../static/img/mob/banner.png");  
+					$(".img-zxbtn-left").on("click",function(){
+						window.location.href="tel:4006631663";
+					})
+				}else{  
+					$(".banner").attr("src","../static/img/web/haiwai/Website_Banner_1920×480.jpg");
+					$(".img-zxbtn-left").on("click",function(){
+						window.location.href="skype:+864006631663?call";
+					})					
+				}  
+			}  
+			$(window).resize(function(){  
+				screen();  
+			})  
+			
+			//产品链接
+			$("#system").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=409";
+			})	
+			$("#computer").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=433";
+			})	
+			$("#host").on("click",function(){
+				window.location.href="http://cloud-open.cn/yunzhuji/yzjpc.html";
+			})	
+			
+			//行点击事件
+		   $('#dxproduct').on('click-row.bs.table', function (e, row, element)   
+			{  
+				//$(element).css({"color":"blue","font-size":"16px;"});  
+				console.log(row);
+				  
+			});  			
+		}); 
+		</script>  
+		<style type="text/css">
+			body
+			  {
+			  background-color:"#EBEFEF;
+			  }
+			  .syssubnavtb{
+				   width: 30%;
+				   margin: 0 auto;
+			    };
+		</style>  		  
+		
+    </head>
+    <body bgcolor="#EBEFEF">
+		<div class="container-fluid">	
+			<div id="banner" class="row">  
+				<div class="col-sm-12">  
+					<a href="http://cloud-open.cn/yunzhuji/qytx.html"><img style="width: 100%;" class="banner" src="../static/img/web/haiwai/Website_Banner_1920×480.jpg" /></a>
+				</div>  
+			</div>  
+			<div class="main"> 
+				<table class="navtable">
+					<tr>
+						<td>
+							<input id="goods" type="image" src="../static/img/web/gift/goods.png" class="img-nav" onclick="intent('goods2')" onmouseover="this.src='../static/img/web/gift/goods2.png'"
+                               onmouseout="this.src='../static/img/web/gift/goods.png'"/>
+						</td>
+						<td class="navmdline" >
+							<img src="../static/img/web/gift/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>								
+						<td>
+							<input id="system" type="image" src="../static/img/web/gift/system.png" class="img-nav" onclick="intent('system')" onmouseover="this.src='../static/img/web/gift/system2.png'"
+                               onmouseout="this.src='../static/img/web/gift/system.png'"/>
+						</td>
+						<td class="navmdline" >
+							<img src="../static/img/web/gift/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+						<td>
+							<input id="communicate" type="image" src="../static/img/web/gift/communicate2.png"   class="img-nav"  onclick="intent('system')" onmouseover="this.src='../static/img/web/gift/communicate2.png'"
+                               onmouseout="this.src='../static/img/web/gift/communicate.png'"/>
+						</td>
+						<td class="navmdline">
+							<img src="../static/img/web/gift/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+						<td>
+							<input id="it" type="image" src="../static/img/web/gift/it.png" class="img-nav"   onclick="intent('it')" onmouseover="this.src='../static/img/web/gift/it2.png'"
+                           onmouseout="this.src='../static/img/web/gift/it.png'" />
+						</td>
+						<td class="navmdline">
+							<img src="../static/img/web/gift/cmiddle.png" class="img-responsive navbtnimg" />  
+						</td>		
+						<td>
+							<input id="host" type="image" src="../static/img/web/gift/host.png" class="img-nav"   onclick="intent('host')" onmouseover="this.src='../static/img/web/gift/host2.png'"
+                           onmouseout="this.src='../static/img/web/gift/host.png'"/>
+						</td>
+					</tr>
+				</table>
+	
+				<div class="syshh" style="margin-bottom: 8px;">  
+					<img width="100%" src="../static/img/web/system/hh1.png" class="img-responsive" />  
+				</div>
+				<table class="subnavtable" >
+						<tr>
+							<td>
+								<input type="image" src="../static/img/web/communicate/qykds.png" class="img-subnav" />
+							</td>
+							<td>
+								<img src="../static/img/web/communicate/dmiddle.png"  class="sub-navbtnimg" />
+							</td>								
+							<td>
+								<input type="image" src="../static/img/web/communicate/sjzxq.png" class="img-subnav" />
+							</td>		
+							<td>
+								<img src="../static/img/web/communicate/dmiddle.png"  class="sub-navbtnimg" />
+							</td>								
+							<td>
+								<input type="image" src="../static/img/web/communicate/zhkdq.png" class="img-subnav" />
+							</td>	
+							<td>
+								<img src="../static/img/web/communicate/dmiddle.png"  class="sub-navbtnimg" />
+							</td>								
+							<td>
+								<input type="image" src="../static/img/web/communicate/hwyhq.png" class="img-subnav" />
+							</td>
+						</tr>
+				</table>
+				<div class="syshh">  
+					<img width="100%" src="../static/img/web/system/hh2.png" class="img-responsive" />  
+				</div>				
+			</div>
+			<table width="100%" border="0px" style="background-color: #EBEFEF">
+				<tr>
+					<td rowspan="3" style="background-image:url('../static/img/web/haiwai/地球背景.png'); background-repeat:no-repeat; background-size:100% 96%; text-align: left;padding-left: 290px;font-family: 10px">
+						<h1 style="color: white;font-weight: bold;margin-left: -60px;">互联网全球专线服务产品</h1>
+						<span style="color: white">提供客户接入全球互联网服务，使客户享受互联网所带来的多种应用，</span><br/>
+						<p style="color: white">包括电子邮件、信息、传输 www 浏览和网上搜索等。</p>
+						<span style="color: white">选择互联网全球专线服务，客户将从互联网技术和专业的服务中受益。</span><br/>
+						<span style="color: white">互联网全球专线服务产品，是以多种速率（64Kbps—155Mbps）</span><br/>
+						<p style="color: white">为用户提供互联网访问服务。</p>
+						<span style="color: white">互联网骨干平台融合国内外各大运营商互联网络资源（BGP），</span><br/>
+						<p style="color: white">可为用户提供高带宽、高稳定性互联网接入服务。</p>
+
+						<span style="color: white">客户可采用专线连接用户当地或附近国际运营商骨干网，</span><br/>
+						<span style="color: white">通过运营商骨干网访问国际互联网，互联网国际专线</span><br/>
+						<span style="color: white">服务产品接入的方式，解决了互联网优化服务的</span><br/>
+						<span style="color: white">通信质量不足的问题，是那些业务系统非常</span><br/>
+						<span style="color: white">依赖高质量互联网的用户的首选。</span><br/><br/>
+						<a href="skype:+864006631663?call" target="_blank"><img src="../static/img/web/haiwai/了解更多请咨询.png" style="width: 320px;padding-left: 150px;"></a>
+					</td>
+
+				</tr>
+				<tr>
+					<td style="width: 44%;height: 60px">
+					</td>
+			
+				</tr>	
+				<tr>
+					<td style="width: 38%;vertical-align: top;text-align: left;">
+						<img  src="../static/img/web/haiwai/引号1.png" style="width: 120px;margin-left: 160px " />	<br/>
+						<div style="margin-top: -40px;text-align: right;margin-right: 230px" >
+							<h1><span style="font-weight: 900;">产品特点</span></h1>
+							<p><span style="background-color: #000000;color: white;font-size: 20px;font-weight: bold;" >安全可靠、传输稳定</span></p>
+							
+							<span style="margin-left: -34px">太平洋电信网络采用先进的技术构建成熟的<span style="font-family:GOTHIC">IP</span>骨干网络，</span><br/>
+							<span style="">融合多家国际运营商的互联网络资源，为用户提供</span><br/>
+							<p><span style="">高速、优质的国际互联访问服务。</span><br/></p>
+
+							<p><span style="background-color: #000000;color: white;font-size: 20px;font-weight: bold;" >专业的技术支持体系及网络服务</span></p>
+							<span style="">● 协助客户端路由器安装</span><br/>
+							<span style="">● 标准的测试、验收、交付流程</span><br/>
+							<p><span style="">●<span style="font-family:GOTHIC"> 7×24×365</span> 网络管理服务和技术支持</span><br/></p>
+							<p><span style="background-color: #000000;color: white;font-size: 20px;font-weight: bold;" >灵活的带宽选择和充裕的IP地址</span></p>
+							
+							<span style="margin-left: -70px" >支持多种电路接入，如 <span style="font-family:GOTHIC">SDH、MSTP </span>等，支持多种带宽选择方式，</span><br/>
+							<span style="margin-left: -60px">包括 <span style="font-family:GOTHIC">E1、T3/E3、2-1Gbps，</span>以及<span style="font-family:GOTHIC">V.35、G.703 E1/CE1、</span></span><br/>
+							<span style="">Ethernet/FE/GE、T3/E3、STM-1 等多种物理接口。</span><br/>
+						</div>				
+					</td>
+			
+				</tr>
+			
+			</table>
+			<div style="background-color: #EBEFEF;height: 500px">
+				<div style="background-image:url('../static/img/web/haiwai/世界地图背景.png'); background-repeat:no-repeat; background-position:center;
+                    background-position:top;
+				    background-size:60% 65%; text-align: center;height: 500px">
+					<br/>
+					<img src="../static/img/web/haiwai/引号2.png" style="width: 300px;height: auto;padding-left: 180px">
+					<div style="margin-top: -30px">
+						<span style="font-size: 36px"><strong>产品定位</strong></span>
+						<p>● 需要建立门户网站，满足世界各地用户的访问需求的企事业单位。</p>
+						<p>● 要求快速访问国际互联网络、消除互联网国际访问速度瓶颈的用户。</p>
+						<p>● 核心节点在海外，需要搭建跨区域、跨国企业专网（Intranet）的用户。</p>
+					</div>
+					<br/><br/>
+				    <img src="../static/img/web/haiwai/引号3.png" style="width: 130px;height: auto;margin-left: -160px">
+				    <div style=" width: 76%;margin:0 auto;text-align: left;margin-top: -40px;padding-left: 150px" >
+						<p style="text-align: left;font-size: 36px;padding-left: 300px"><strong>应用场景</strong></p>
+						<p>某合资企业在分别在海外与国内设有分支机构，需要解决全球互联访问，满足国内与海外数据中心的数据交换与国际
+	</p>
+						<p>订单的处理。通过选用太平洋电信互联网国际专线服务，帮助客户顺利实现了供应商之间的快速数据交互，成功助 力
+	</p>
+						<span style="text-align:left">企业拓展全球市场。</span>
+					</div>
+				</div>					
+		    </div>
+		    <table style="	width: 98%;margin: 0 auto;background-color:#EBEFEF;margin-top: -10px " border="0px">
+
+		    	<tr>
+		    		<td width="170px"></td>
+		    		<td style="vertical-align: bottom;">
+		                <img src="../static/img/web/haiwai/地球1.png" style="width: 80px"><br/>
+		                <br/>
+						<span style="background-color: #000000;color: white;font-size: 20px;font-weight: bold;" >客户需求</span>
+		    		</td>
+		    		<td style="vertical-align: bottom;">
+		    			<img src="../static/img/web/haiwai/地球2.png" style="width: 80px"><br/>
+		    			<br/>
+		    		    <span style="background-color: #000000;color: white;font-size: 20px;font-weight: bold;" >解决方案</span>
+			
+		    		</td>
+		    		<td style="vertical-align: bottom;">
+		    			<img src="../static/img/web/haiwai/地球3.png" style="width: 80px"><br/>
+		    			<br/>
+		    		    <span style="background-color: #000000;color: white;font-size: 20px;font-weight: bold;" >企业收益 </span>   
+		    		</td>
+		    		<td width="170px"></td>
+		    	</tr>	
+		    	<tr>
+		    		<td width="170px"></td>
+		    		<td style="text-align: left;padding-left: 0px;vertical-align: top"> 
+		    		    <br/> 		
+		    			<p>● 解决国内至海外数据中心访问速度延迟、丢包、</p>	
+			    		<p>抖动等问题；</p>	
+			    		<p>● 解决国内与海外总部数据中心的业务交互处理，</p>	
+			    		<p>快速相应响应 <span style="font-family:GOTHIC">ERP、SAP、</span>财务软件、邮件、视频</p>	
+			    		<p>等需求，提高客户全球组网业务需求。</p>	
+			    	</td>
+		    		<td style="text-align: left;padding-left: 0px;vertical-align: top"> 
+		    		    <br/> 
+		    			<p>● 通过太平洋电信互联网国际专线服务产品；</p>	
+			    		<p>● 核心机构办通过专线接入太平洋电信全球骨干网</p>	
+
+		    		</td>
+		    		<td style="text-align: left;padding-left: 0px;vertical-align: top">  
+		    			<br/>
+		    			<p>● 企业内网通信效率明显提高，企业客户满意度大<br/>幅上升；</p>
+		    			<p>● 日常 <span style="font-family:GOTHIC">IT </span>维护成本下降，<span style="font-family:GOTHIC">IT </span> 运维质量明显提高。</p>
+		    		</td>
+		    		<td width="170px"></td>
+		    	</tr>
+		    </table>
+		    <div style="background-color:#EBEFEF ">
+		    	<br/><br/>
+			    <table  style="	width: 100%;margin: 0 auto;background-color:#EBEFEF ">
+			    	<tr>
+			    		<td width="170px"></td>
+			    		<td><a href="skype:+864006631663?call" target="_blank"><img src="../static/img/web/haiwai/免费咨询.png" style="width: 100%"></a></td>
+			    		<td width="10px"></td>
+			    		<td><a href="skype:+864006631663?call" target="_blank"><img src="../static/img/web/haiwai/在线咨询.png" style="width: 100%"></a></td>
+			    		<td width="170px"></td>
+			    	</tr>
+			    </table>
+			    <br/><br/>
+		    </div>
+		</div>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?6bf7ae9b5212b8c52b57065299f133f8";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>		
+    </body>
+</html>

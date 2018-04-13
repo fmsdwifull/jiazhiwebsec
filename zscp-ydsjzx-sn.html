@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.3, maximum-scale=1.0" />
+        <title>嘉值科技</title>
+		<link rel="icon" href="./static/img/vas.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="./static/css/main.css"/>		
+		<script type="text/javascript" src="./static/js/jquery.min.js"></script>		
+        <script type="text/javascript" src="./static/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./static/js/respond.min.js"></script>		
+		<script type="text/javascript" src="./static/js/main.js"></script>		
+		
+		<script type="text/javascript">
+		$(function(){   
+			//产品链接
+			$("#system").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=409";
+			})	
+			$("#computer").on("click",function(){
+				window.location.href="http://cloud-open.cn/index.php?c=article&a=type&tid=433";
+			})	
+			$("#host").on("click",function(){
+				window.location.href="http://cloud-open.cn/yunzhuji/yzjpc.html";
+			})	
+			
+			//行点击事件
+		    $('#dxproduct').on('click-row.bs.table', function (e, row, element)   
+			{  
+				//$(element).css({"color":"blue","font-size":"16px;"});  
+				console.log(row);
+				alert();
+				  
+			});  			
+		}); 
+		</script>  
+		<style type="text/css">
+			p{line-height:26px} 		
+
+		</style>  		  
+    </head>
+    <body>
+		<div class="container-fluid">
+			<div class="head">
+				<ul>
+					<li><a href="./home.html">首页</a></li>
+					<li><a href="./qykd-dxwp.html" >企业宽带</a></li>
+					<li><a href="" style="background-color: #f2f2f2;">专属产品</a></li>
+					<li><a href="./ziyuancx.html">资源查询</a></li>
+					<li><a href="./subanlc.html">速办流程</a></li>
+					<li><a href="./about.html">关于我们</a></li>
+					<li style="width: 28%" id="kong"><a style="background-color: #dcdddd"></a></li>
+					<li style="width: 5%;display: inline;float: left" id="tel" onmousemove="over('tel')" onmouseout="out('tel')">
+						<a href="">
+							<div>
+								<img width="40px" id="navtel"  src="./static/img/web/home/导航_电话.png"/>
+							</div>
+						</a>
+					</li>
+					<li style="width: 5%" id="email" onmousemove="over('email')" onmouseout="out('email')">
+						<a href="">
+							<div>
+								<img width="40px"  id="navmail"   src="./static/img/web/home/导航_邮箱.png"/>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>		
+			<div  class="main"> 
+				<div id="headerx" style="padding:28px 0px;">  
+					<div style="float:left;">  
+						<img style="width: 100px"; src="./static/img/web/kdsuban/KDSUBAN_LOGO.png" />						
+					</div>  
+	                <div  class="secmenu" style="padding-left: 130px">
+	                	<span style="padding-bottom:15px; border-bottom:1px solid #000;color: #A40B5D">数据专线</span>
+	        	        <span style="padding:0 30px"> <a href="./zscp-hzkd.html">会展宽带 </a></span>        	
+	                	<span style=""><a href="./zscp-hwyh.html">海外优化</a></span>
+	                </div>
+					<div class="search">  
+					    <input type="text" name="fname"  style="border:none;width: 160px"/>
+						<img style="width: 12px;" src="./static/img/web/kdsuban/搜索_放大镜.png" />
+						<hr style="margin-top:4px" />			
+					</div> 
+				</div> 
+			    <div class="ptitle" >为企业建立<span class="keywordcolor">安全、可靠、高速</span>的专用数据通道！</div>			
+				
+			</div>	
+			
+			<div style="width:100%;height:200px;padding:0px;background:url('./static/img/web/shujuzx/Banner_移动市内数据专线.jpg') no-repeat 5px 5px;background-size:100% 96%;">
+				
+			</div>
+             
+	        <div class="main"> 
+			    <br/>
+				<table align="center" style="width:70%"  border="0px" >
+					<tr>
+						<td><a href="./zscp-dxsjzx-mstp.html"><img width="92%"  src="./static/img/web/shujuzx/按钮_电信数据专线_.png"
+										onmouseover="this.src='./static/img/web/shujuzx/按钮_电信数据专线.png'"
+										onmouseout="this.src='./static/img/web/shujuzx/按钮_电信数据专线_.png'"						
+						> </a></td>						
+						<td><a href="./zscp-ltsjzx-sndplc.html"><img width="92%"  src="./static/img/web/shujuzx/按钮_联通数据专线_.png"
+										onmouseover="this.src='./static/img/web/shujuzx/按钮_联通数据专线.png'"
+										onmouseout="this.src='./static/img/web/shujuzx/按钮_联通数据专线_.png'"						
+						> </a></td>		
+						<td><img width="92%"  src="./static/img/web/shujuzx/按钮_移动数据专线.png"> </td>
+					</tr>
+				</table>			
+	        	<br/><br/>
+				<table align="center" style="width:60%" border="0px" >
+					<tr>
+						<td><img width="90%" src="./static/img/web/shujuzx/分页按钮_移动市内数据专线.png"> </td>
+						<td><a href="./zscp-ydsjzx-gn.html"><img width="90%"  src="./static/img/web/shujuzx/分页按钮_移动国内数据专线_.png"
+								onmouseover="this.src='./static/img/web/shujuzx/分页按钮_移动国内数据专线.png'"
+								onmouseout="this.src='./static/img/web/shujuzx/分页按钮_移动国内数据专线_.png'"							
+						> </a></td>					
+					</tr>
+				</table>
+				<div style="text-align: left; font-size:14px">
+				    <br/>
+					<h1>产品介绍</h1>
+					<p>本产品为中国移动依托丰富的传输网络资源推出的数据专线产品，向企事业单位提供数字电路、光纤等电路的租用和维护服务。
+集团客户可以自由选择 <span style="font-family:GOTHIC">2Mbps-2.5Gbps</span> 甚至更高带宽通道及多种接口类型，建立安全、可靠、高速的专用数据通道环境，以承载和传送语音、数据、视频等各类业务。<br/>
+中国移动数据专线主要应用于企业多个不同办公地点之间互联，自建 IDC 之间互联或作为备用线路使用。目前已实现对东南亚、西欧、北美、非洲和大洋洲的覆盖，可为客户提供稳定、安全的跨国数据专线业务。</p>
+					<br/>
+					<h1>产品优势</h1>	
+					<p><span style="font-size:12px">● </span>采用 <span style="font-family:GOTHIC">DWDM (Dense Wavelength Division Multiplexing)、SDH (Synchronous Digital Hierarchy)、PTN (Packet Transport Network)</span> 等
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;先进传输技术，传输网络高带宽、自愈性能强、稳定可靠；
+					<br/><span style="font-size:12px">● </span>带宽可扩展性非常强，支持大容量的带宽需求；
+					<br/><span style="font-size:12px">● </span>支持承载数据、语音、多媒体各种通信业务；
+					<br/><span style="font-size:12px">● </span>实时网络监控，保障网络稳定运行。</p>
+			
+					<br/>
+					<h1>套餐资费</h1>
+					<p style="font-size:12px;color:#A40B5D;line-height:20px">两带宽速率之间的资费标准：<br/>
+假设速率为X，其相邻的低端口速率为X1，资费标准为F1，高端口速率为X2，资费标准为F2，则速率X的收费标准<span style="font-family:GOTHIC">F = F1+(X-X1)×(F2-F1)/(X2-X1)</span></p> 
+					<table  style="text-align:center;"   class="table table-condensed producttable " >
+						<tr style="background-color:#DCDCDC">
+							<td>资费名称</td>
+							<td rowspan="2" style="display:table-cell; vertical-align:middle">标准资费</td>
+							<td rowspan="2" style="display:table-cell; vertical-align:middle">分支机构最低价</td>								
+						</tr>
+						<tr style="background-color:#DCDCDC">
+							<td style="border-top:#000000 solid 1px;">联网调测费</td>
+						</tr>	
+						<tr style="background-color:#DCDCDC">
+							<td style="border-top:#000000 solid 1px;">光缆接入工程费</td>
+							<td style="border-top:#000000 solid 1px;">1000元/线/次</td>
+							<td style="border-top:#000000 solid 1px;">实际勘测，遵循工程费报价原则</td>
+						</tr>
+						<tbody class="zftb">
+							<tr>
+								<td>2Mbps</td>
+								<td>2000</td>
+								<td>800</td>
+							</tr>
+							<tr>
+								<td>4Mbps</td>
+								<td>3500</td>
+								<td>1400</td>
+							</tr>
+							<tr>
+								<td>6Mbps</td>
+								<td>5000</td>
+								<td>2000</td>
+							</tr>
+							<tr>
+								<td>8Mbps</td>
+								<td>6000</td>
+								<td>2400</td>
+							</tr>
+							<tr>
+								<td>10Mbps</td>
+								<td>7000</td>
+								<td>2800</td>
+							</tr>
+							<tr>
+								<td>20Mbps</td>
+								<td>10750</td>
+								<td>4300</td>
+							</tr>
+							<tr>
+								<td>30Mbps</td>
+								<td>14500</td>
+								<td>5800</td>
+							</tr>
+							<tr>
+								<td>34Mbps</td>
+								<td>16000</td>
+								<td>6400</td>
+							</tr>
+							<tr>
+								<td>40Mbps</td>
+								<td>17388</td>
+								<td>6955</td>
+							</tr>
+							<tr>
+								<td>50Mbps</td>
+								<td>19702</td>
+								<td>7881</td>
+							</tr>
+							<tr>
+								<td>60Mbps</td>
+								<td>22017</td>
+								<td>8807</td>
+							</tr>
+							<tr>
+								<td>70Mbps</td>
+								<td>24331</td>
+								<td>9732</td>
+							</tr>		
+							<tr>
+								<td>80Mbps</td>
+								<td>26645</td>
+								<td>10658</td>
+							</tr>						
+							<tr>
+								<td>90Mbps</td>
+								<td>28959</td>
+								<td>11584</td>
+							</tr>						
+							<tr>
+								<td>100Mbps</td>
+								<td>31273</td>
+								<td>12509</td>
+							</tr>						
+							<tr>
+								<td>150Mbps</td>
+								<td>42843</td>
+								<td>17137</td>
+							</tr>						
+							<tr>
+								<td>155Mbps</td>
+								<td>44000</td>
+								<td>17600</td>
+							</tr>						
+							<tr>
+								<td>200Mbps</td>
+								<td>51612</td>
+								<td>20645</td>
+							</tr>						
+							<tr>
+								<td>300Mbps</td>
+								<td>68529</td>
+								<td>27412</td>
+							</tr>						
+							<tr>
+								<td>400Mbps</td>
+								<td>85445</td>
+								<td>34178</td>
+							</tr>						
+							<tr>
+								<td>500Mbps</td>
+								<td>102362</td>
+								<td>40945</td>
+							</tr>						
+							<tr>
+								<td>600Mbps</td>
+								<td>119278</td>
+								<td>47711</td>
+							</tr>						
+							<tr>
+								<td>622Mbps</td>
+								<td>123000</td>
+								<td>49200</td>
+							</tr>						
+							<tr>
+								<td>700Mbps</td>
+								<td>132179</td>
+								<td>52872</td>
+							</tr>						
+							<tr>
+								<td>800Mbps</td>
+								<td>143947</td>
+								<td>57579</td>
+							</tr>						
+							<tr>
+								<td>900Mbps</td>
+								<td>155715</td>
+								<td>62286</td>
+							</tr>
+							<tr>
+								<td>1Gbps</td>
+								<td>167482</td>
+								<td>66993</td>
+							</tr>						
+							<tr>
+								<td>2Gbps</td>
+								<td>285161</td>
+								<td>114064</td>
+							</tr>
+							<tr>
+								<td>2.5Gbps</td>
+								<td>344000</td>
+								<td>137600</td>
+							</tr>						
+							<tr>
+								<td>10Gbps</td>
+								<td>963200</td>
+								<td>385280</td>
+							</tr>		
+						</tbody>	
+					</table>
+					<div>  
+						<hr style="height:1px;border-width:0;color:gray;background-color:#bfc0c0;margin-top:3px"; />			
+					</div>				
+				</div>	
+            </div>
+            <div>
+            	<a href="skype:+8602131262710?call"><img width="220px" src="./static/img/web/shujuzx/致电免费咨询.png"><br/></a><br/>
+            </div>
+
+        </div>
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?6bf7ae9b5212b8c52b57065299f133f8";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+		})();
+		</script>		
+    </body>
+</html>
